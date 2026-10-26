@@ -1,0 +1,99 @@
+file,variable,value_ko,gloss_en,n_rows
+kobep_transaction_ledger.csv,method_ko,장내매도(-),on-market sale,464808.0
+kobep_transaction_ledger.csv,method_ko,장내매수(+),on-market purchase,381358.0
+kobep_transaction_ledger.csv,method_ko,기타(-),other (disposal),65498.0
+kobep_transaction_ledger.csv,method_ko,기타(+),other (acquisition),50503.0
+kobep_transaction_ledger.csv,method_ko,신규보고(+),holding at first report,4248.0
+kobep_transaction_ledger.csv,method_ko,차입(+),borrowed shares,3967.0
+kobep_transaction_ledger.csv,method_ko,장외매도(-),off-market sale,1676.0
+kobep_transaction_ledger.csv,method_ko,행사가액조정,exercise-price adjustment,1485.0
+kobep_transaction_ledger.csv,method_ko,장외매수(+),off-market purchase,1285.0
+kobep_transaction_ledger.csv,method_ko,시간외매매(-),after-hours sale,902.0
+kobep_transaction_ledger.csv,method_ko,유상신주취득(+),rights / paid-in new shares,721.0
+kobep_transaction_ledger.csv,method_ko,CB인수(+),convertible bond subscribed,684.0
+kobep_transaction_ledger.csv,method_ko,전환등(-),conversion (disposal side),590.0
+kobep_transaction_ledger.csv,method_ko,대여(-),shares lent,582.0
+kobep_transaction_ledger.csv,method_ko,시간외매매(+),after-hours purchase,490.0
+kobep_transaction_ledger.csv,method_ko,전환사채의권리행사(+),convertible bond conversion,477.0
+kobep_transaction_ledger.csv,method_ko,무상신주취득(+),bonus shares received,444.0
+kobep_transaction_ledger.csv,method_ko,출자전환,debt-to-equity swap,421.0
+kobep_transaction_ledger.csv,method_ko,제3자배정유상증자(+),third-party allotment,416.0
+kobep_transaction_ledger.csv,method_ko,합병(+),merger (acquisition),413.0
+kobep_transaction_ledger.csv,method_ko,자본감소,capital reduction,409.0
+kobep_transaction_ledger.csv,method_ko,특별관계해소(-),related-party relation ended,395.0
+kobep_transaction_ledger.csv,method_ko,신규상장(+),new listing,370.0
+kobep_transaction_ledger.csv,method_ko,회사분할,corporate demerger,358.0
+kobep_transaction_ledger.csv,method_ko,담보주식처분권보유,right to dispose of pledged shares,340.0
+kobep_transaction_ledger.csv,method_ko,주식배당(+),stock dividend,332.0
+kobep_transaction_ledger.csv,method_ko,주식분할,stock split,312.0
+kobep_transaction_ledger.csv,method_ko,교환(-),exchange (disposal),307.0
+kobep_transaction_ledger.csv,method_ko,합병(-),merger (disposal),235.0
+kobep_transaction_ledger.csv,method_ko,주식병합,reverse split,187.0
+kobep_transaction_ledger.csv,method_ko,BW인수(+),bond with warrant subscribed,152.0
+kobep_transaction_ledger.csv,method_ko,신규상장(무상취득)(+),new listing (acquired free),123.0
+kobep_transaction_ledger.csv,method_ko,전환권등소멸(-),conversion right extinguished,116.0
+kobep_transaction_ledger.csv,method_ko,계약중도해지,contract terminated early,111.0
+kobep_transaction_ledger.csv,method_ko,신규등록(+),new registration,102.0
+kobep_transaction_ledger.csv,method_ko,신주인수권증권의권리행사(+),warrant exercise,90.0
+kobep_transaction_ledger.csv,method_ko,공개매수(+),tender offer (bought),77.0
+kobep_transaction_ledger.csv,method_ko,콜옵션권리행사배정에따른주식처분(-),disposal on call-option assignment,67.0
+kobep_transaction_ledger.csv,method_ko,교환사채의권리행사(+),exchangeable bond exercise,65.0
+kobep_transaction_ledger.csv,method_ko,신주인수권사채의권리행사(+),bond-with-warrant exercise,52.0
+kobep_transaction_ledger.csv,method_ko,교환(+),exchange (acquisition),51.0
+kobep_transaction_ledger.csv,method_ko,수증(+),gift received,49.0
+kobep_transaction_ledger.csv,method_ko,공개매수청약(-),tender offer (tendered),43.0
+kobep_transaction_ledger.csv,method_ko,신규상장(유상취득)(+),new listing (acquired for value),38.0
+kobep_transaction_ledger.csv,method_ko,풋옵션권리행사에따른주식처분(-),disposal on put exercise,37.0
+kobep_transaction_ledger.csv,method_ko,신고대량매매(+),reported block purchase,30.0
+kobep_transaction_ledger.csv,method_ko,주식소각,share retirement,30.0
+kobep_transaction_ledger.csv,method_ko,신고대량매매(-),reported block sale,28.0
+kobep_transaction_ledger.csv,method_ko,콜옵션권리행사에따른주식취득(+),acquisition on call exercise,26.0
+kobep_transaction_ledger.csv,method_ko,실권주인수(+),forfeited shares taken up,24.0
+kobep_transaction_ledger.csv,method_ko,계열사편입(+),joined the group (affiliate),22.0
+kobep_transaction_ledger.csv,method_ko,풋옵션권리행사배정에따른주식취득(+),acquisition on put assignment,19.0
+kobep_transaction_ledger.csv,method_ko,대물변제(-),payment in kind (given),15.0
+kobep_transaction_ledger.csv,method_ko,계약기간만료,contract expired,14.0
+kobep_transaction_ledger.csv,method_ko,대물변제수령(+),payment in kind (received),13.0
+kobep_transaction_ledger.csv,method_ko,증여(-),gift given,12.0
+kobep_transaction_ledger.csv,method_ko,콜옵션권리행사에따른CB취득(+),CB acquired on call exercise,12.0
+kobep_transaction_ledger.csv,method_ko,주식매수선택권부여(+),stock option granted,9.0
+kobep_transaction_ledger.csv,method_ko,주식매수선택권행사(-),stock option exercised (disposal),8.0
+kobep_transaction_ledger.csv,method_ko,주식매수선택권행사(+),stock option exercised (acquisition),8.0
+kobep_transaction_ledger.csv,method_ko,매출(-),secondary offering,6.0
+kobep_transaction_ledger.csv,method_ko,주식매수청구권 행사(-),appraisal right exercised,6.0
+kobep_transaction_ledger.csv,method_ko,콜옵션취득(+),call option acquired,6.0
+kobep_transaction_ledger.csv,method_ko,우선주무배당(+),preferred share voting revived (no dividend),5.0
+kobep_transaction_ledger.csv,method_ko,???(+),unreadable in the filing (encoding damage),4.0
+kobep_transaction_ledger.csv,method_ko,임원퇴임(-),officer retired,3.0
+kobep_transaction_ledger.csv,method_ko,??????(+),unreadable in the filing (encoding damage),3.0
+kobep_transaction_ledger.csv,method_ko,?峻???(+),unreadable in the filing (encoding damage),2.0
+kobep_transaction_ledger.csv,method_ko,상속(+),inheritance,1.0
+kobep_transaction_ledger.csv,method_ko,수증취소(-),gift cancelled,1.0
+kobep_transaction_ledger.csv,method_ko,장내매수(+)장내매수(+),on-market purchase (label duplicated by filer),1.0
+kobep_transaction_ledger.csv,method_ko,신규주요주주(+),became a major shareholder,1.0
+kobep_transaction_ledger.csv,method_ko,신규선임(+),newly appointed,1.0
+kobep_transaction_ledger.csv,method_ko,주식매수선택권부여취소(-),stock option grant cancelled,1.0
+kobep_transaction_ledger.csv,method_ko,자사주펀드해지(-),treasury-share fund terminated,1.0
+kobep_terms_event.csv,method_ko,기타(+),other (acquisition),12.0
+kobep_terms_event.csv,method_ko,기타(-),other (disposal),4.0
+kobep_terms_event.csv,method_ko,특별관계해소(-),related-party relation ended,2.0
+kobep_terms_event.csv,method_ko,계약중도해지,contract terminated early,1.0
+kobep_terms_event.csv,method_ko,합병(+),merger (acquisition),1.0
+kobep_terms_event.csv,method_ko,신규보고(+),holding at first report,1.0
+kobep_terms_event.csv,method_ko,CB인수(+),convertible bond subscribed,1.0
+kobep_security_class.csv,security_ko,??????? ???,UNREADABLE,
+kobep_security_class.csv,security_ko,교환사채권,EXCHANGEABLE_BOND,
+kobep_security_class.csv,security_ko,기타,OTHER,
+kobep_security_class.csv,security_ko,보통주,COMMON,
+kobep_security_class.csv,security_ko,보통주로 전환될 우선주,CONVERTIBLE_PREFERRED,
+kobep_security_class.csv,security_ko,신주인수권부사채권,BOND_WITH_WARRANT,
+kobep_security_class.csv,security_ko,신주인수권이표시된것,WARRANT,
+kobep_security_class.csv,security_ko,신주인수권표시증서,SUBSCRIPTION_CERTIFICATE,
+kobep_security_class.csv,security_ko,의결권있는,VOTING_SHARE,
+kobep_security_class.csv,security_ko,의결권있는 우선주,VOTING_PREFERRED,
+kobep_security_class.csv,security_ko,의결권있는 주식,VOTING_SHARE,
+kobep_security_class.csv,security_ko,의결권있는 주식으로 상환될주식,REDEEMABLE_INTO_VOTING,
+kobep_security_class.csv,security_ko,의결권있는 주식으로 전환될주식,CONVERTIBLE_TO_VOTING,
+kobep_security_class.csv,security_ko,의결권있는 주식의결권있는 주식,VOTING_SHARE,
+kobep_security_class.csv,security_ko,전환사채권,CONVERTIBLE_BOND,
+kobep_security_class.csv,security_ko,증권예탁증권,DEPOSITARY_RECEIPT,

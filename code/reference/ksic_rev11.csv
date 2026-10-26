@@ -1,0 +1,2039 @@
+ksic_code,name_ko,name_en,level
+A,"농업, 임업 및 어업(01~03)","Agriculture, forestry and fishing",1
+B,광업(05~08),Mining and quarrying,1
+C,제조업(10~34),Manufacturing,1
+D,"전기, 가스, 증기 및 공기조절 공급업(35)","Electricity, gas, steam and air conditioning supply",1
+E,"수도, 하수 및 폐기물 처리, 원료 재생업(36 ~ 39)","Water supply; sewage, waste management, materials recovery",1
+F,건설업(41~42),Construction,1
+G,도매 및 소매업(45~47),Wholesale and retail trade,1
+H,운수 및 창고업(49~52),Transportation and storage,1
+I,숙박 및 음식점업(55~56),Accommodation and food service activities,1
+J,정보통신업(58~63),Information and communication,1
+K,금융 및 보험업(64~66),Financial and insurance activities,1
+L,부동산업(68),Real estate activities,1
+M,"전문, 과학 및 기술 서비스업(70~73)","Professional, scientific and technical activities",1
+N,"사업시설 관리, 사업 지원 및 임대 서비스업(74~76)",Business facilities management and business support services; rental and leasing activities,1
+O,"공공행정, 국방 및 사회보장 행정(84)",Public administration and defence; compulsory social security,1
+P,교육 서비스업(85),Education,1
+Q,보건업 및 사회복지 서비스업(86~87),Human health and social work activities,1
+R,"예술, 스포츠 및 여가관련 서비스업(90~91)","Arts, sports and recreation related services",1
+S,"협회 및 단체, 수리 및 기타 개인 서비스업(94~96)","Membership organizations, repair and other personal services",1
+T,가구 내 고용활동 및 달리 분류되지 않은 자가소비 생산활동(97~98),Activities of households as employers; undifferentiated goods-and services-producing activities of households for own use,1
+U,국제 및 외국기관(99),Activities of extraterritorial organizations and bodies,1
+01,농업,Agriculture,2
+011,작물 재배업,Growing of crops,3
+0111,곡물 및 기타 식량작물 재배업,Growing of cereal crops and other crops for food,4
+01110,곡물 및 기타 식량작물 재배업,Growing of cereal crops and other crops for food,5
+0112,"채소, 화훼작물 및 종묘 재배업","Growing of vegetable crops, horticultural and nursery products",4
+01121,채소작물 재배업,Growing of vegetable crops,5
+01122,화훼작물 재배업,Growing of horticultural products,5
+01123,종자 및 묘목 생산업,Growing of seed crops and nursery products,5
+0113,"과실, 음료용 및 향신용 작물 재배업","Growing of fruit, beverage and spice crops",4
+01131,과실작물 재배업,Growing of fruit,5
+01132,음료용 및 향신용 작물 재배업,Growing of beverage and spice crops,5
+0114,기타 작물 재배업,Growing of other crops,4
+01140,기타 작물 재배업,Growing of other crops,5
+0115,시설작물 재배업,Growing of crops under cover,4
+01151,"채소, 화훼 및 과실작물 시설 재배업","Growing of vegetable, fruit crops and horticultural products under cover",5
+01159,기타 시설작물 재배업,Growing of other crops under cover,5
+012,축산업,Animal production,3
+0121,소 사육업,Raising of cattle,4
+01211,젖소 사육업,Raising of dairy cattle,5
+01212,육우 사육업,Raising of beef cattle,5
+0122,양돈업,Raising of pigs,4
+01220,양돈업,Raising of pigs,5
+0123,가금류 및 조류 사육업,Raising of poultry and other birds,4
+01231,양계업,Raising of chickens,5
+01239,기타 가금류 및 조류 사육업,Raising of other poultry and birds,5
+0129,기타 축산업,Raising of other animals,4
+01291,말 및 양 사육업,"Raising of horses, sheep and goats",5
+01299,그 외 기타 축산업,Raising of other animals n.e.c.,5
+013,작물재배 및 축산 복합농업,Growing of crops combined with raising of animals : mixed farming,3
+0130,작물재배 및 축산 복합농업,Growing of crops combined with raising of animals : mixed farming,4
+01300,작물재배 및 축산 복합농업,Growing of crops combined with raising of animals : mixed farming,5
+014,작물재배 및 축산 관련 서비스업,Services incidental to growing of crops and raising of animals,3
+0141,작물재배 관련 서비스업,Services incidental to growing of crops,4
+01411,작물재배 지원 서비스업,Support activities for crop production,5
+01412,"농산물 건조, 선별 및 기타 수확 후 서비스업","Drying, sorting, grading of agricultural products and other post-harvest crop activities",5
+0142,축산 관련 서비스업,Support activities for animal production,4
+01420,축산 관련 서비스업,Support activities for animal production,5
+015,수렵 및 관련 서비스업,"Hunting, trapping and related service activities",3
+0150,수렵 및 관련 서비스업,"Hunting, trapping and related service activities",4
+01500,수렵 및 관련 서비스업,"Hunting, trapping and related service activities",5
+02,임업,Forestry,2
+020,임업,Forestry,3
+0201,영림업,Silviculture activities,4
+02011,임업용 종묘 생산업,Operation of forest tree nurseries,5
+02012,육림업,Afforestation,5
+0202,벌목업,Logging,4
+02020,벌목업,Logging,5
+0203,임산물 채취업,Gathering of non-wood forest products,4
+02030,임산물 채취업,Gathering of non-wood forest products,5
+0204,임업 관련 서비스업,Support services to forestry,4
+02040,임업 관련 서비스업,Support services to forestry,5
+03,어업,Fishing and aquaculture,2
+031,어로 어업,Fishing,3
+0311,해수면 어업,Marine fishing,4
+03111,원양 어업,Deep see fishing,5
+03112,연근해 어업,Littoral fishing,5
+0312,내수면 어업,Freshwater fishing,4
+03120,내수면 어업,Freshwater fishing,5
+032,양식어업 및 어업관련 서비스업,Aquaculture and services incidental to fishing and aquaculture,3
+0321,양식 어업,Aquaculture,4
+03211,해수면 양식 어업,Marine aquaculture,5
+03212,내수면 양식 어업,Inland aquaculture,5
+03213,수산물 부화 및 수산종자 생산업,Hatching and seeding of aquatic animals and seaweeds,5
+0322,어업 관련 서비스업,Services incidental to fishing and aquaculture,4
+03220,어업 관련 서비스업,Services incidental to fishing and aquaculture,5
+05,"석탄, 원유 및 천연가스 광업","Mining of coal, crude petroleum and natural gas",2
+051,석탄 광업,Mining of coal and lignite,3
+0510,석탄 광업,Mining of coal and lignite,4
+05100,석탄 광업,Mining of coal and lignite,5
+052,원유 및 천연가스 채굴업,Extraction of crude petroleum and natural gas,3
+0520,원유 및 천연가스 채굴업,Extraction of crude petroleum and natural gas,4
+05200,원유 및 천연가스 채굴업,Extraction of crude petroleum and natural gas,5
+06,금속 광업,Mining of metal ores,2
+061,철 광업,Mining of iron ores,3
+0610,철 광업,Mining of iron ores,4
+06100,철 광업,Mining of iron ores,5
+062,비철금속 광업,Mining of non-ferrous metal ores,3
+0620,비철금속 광업,Mining of non-ferrous metal ores,4
+06200,비철금속 광업,Mining of non-ferrous metal ores,5
+07,비금속광물 광업; 연료용 제외,"Mining of non-metallic minerals, except fuel",2
+071,토사석 광업,"Quarrying of stone, sand and clay",3
+0711,석회석 및 점토 광업,"Quarrying of limestone, gypsum and clays",4
+07110,석회석 및 점토 광업,"Quarrying of limestone, gypsum and clays",5
+0712,"석재, 쇄석 및 모래, 자갈 채취업","Quarrying of stone, broken stone, sand and gravel",4
+07121,건설용 석재 채굴 및 쇄석 생산업,"Quarrying, crushing and breaking of stone for construction",5
+07122,모래 및 자갈 채취업,Quarrying of sand and gravel,5
+072,기타 비금속광물 광업,Mining of other non-metal ores,3
+0721,화학용 및 비료원료용 광물 광업,Mining of chemical and fertilizer minerals,4
+07210,화학용 및 비료원료용 광물 광업,Mining of chemical and fertilizer minerals,5
+0722,천일염 생산 및 암염 채취업,Extraction of salt,4
+07220,천일염 생산 및 암염 채취업,Extraction of salt,5
+0729,그 외 기타 비금속광물 광업,Mining of other non-metal ores n.e.c.,4
+07290,그 외 기타 비금속광물 광업,Mining of other non-metal ores n.e.c.,5
+08,광업 지원 서비스업,Mining support service activities,2
+080,광업 지원 서비스업,Mining support service activities,3
+0800,광업 지원 서비스업,Mining support service activities,4
+08000,광업 지원 서비스업,Mining support service activities,5
+10,식료품 제조업,Manufacture of food products,2
+101,"도축, 육류 가공 및 저장 처리업","Slaughtering of livestock, processing and preserving of meat and meat products",3
+1011,도축업,Slaughtering of livestock,4
+10111,육류 도축업(가금류 제외),Slaughtering of livestock(except poultry),5
+10112,가금류 도축업,Slaughtering of poultry,5
+1012,육류 가공 및 저장 처리업,"Processing, preserving of meat and meat products",4
+10121,가금류 가공 및 저장 처리업,"Processing, preserving of poultry products",5
+10122,육류 포장육 및 냉동육 가공업 (가금류 제외),"Cutting in individuals, freezing and packaging of meat(except poultry)",5
+10129,육류 기타 가공 및 저장처리업 (가금류 제외),Processing and preserving of other meat and meat products(except poultry),5
+102,수산물 가공 및 저장 처리업,"Processing and preserving of fish, crustaceans, molluscs and seaweeds",3
+1021,수산동물 가공 및 저장 처리업,Processing and preserving of aquatic animals,4
+10211,"수산동물 훈제, 조리 및 유사 조제식품 제조업","Manufacture of smoked, seasoned and similar prepared aquatic animal products",5
+10212,수산동물 건조 및 염장품 제조업,"Manufacture of dried, salted aquatic animal products",5
+10213,수산동물 냉동품 제조업,Manufacture of frozen aquatic animal products,5
+10219,기타 수산동물 가공 및 저장 처리업,Processing and preserving of other aquatic animals,5
+1022,수산식물 가공 및 저장 처리업,Processing and preserving of edible seaweeds,4
+10220,수산식물 가공 및 저장 처리업,Processing and preserving of edible seaweeds,5
+103,"과실, 채소 가공 및 저장 처리업",Processing and preserving of fruit and vegetables,3
+1030,"과실, 채소 가공 및 저장 처리업",Processing and preserving of fruit and vegetables,4
+10301,김치류 제조업,"Manufacture of kimchi, korean picked vegetables",5
+10302,과실 및 그 외 채소 절임식품 제조업,Manufacture of pickled fruit and other vegetables,5
+10309,기타 과실ㆍ채소 가공 및 저장 처리업,Processing and preserving of other fruits and vegetables,5
+104,동·식물성 유지 및 낙농제품 제조업,"Manufacture of vegetable and animal oils and fats, dairy products",3
+1041,동물성 및 식물성 유지 제조업,Manufacture of vegetable and animal oils and fats,4
+10411,동물성 유지 제조업,Manufacture of animal oils and fats,5
+10412,식물성 유지 제조업,Manufacture of vegetable oils and fats,5
+10413,식용 정제유 및 가공유 제조업,Manufacture of edible refined oils and processed oils,5
+1042,낙농제품 및 식용빙과류 제조업,Manufacture of dairy products and edible ice cakes,4
+10421,액상시유 및 기타 낙농제품 제조업,Manufacture of liquid milk and other dairy products,5
+10422,아이스크림 및 기타 식용빙과류 제조업,Manufacture of ice-cream and other edible ice cakes,5
+105,"곡물가공품, 전분 및 전분제품 제조업","Manufacture of grain mill products, starches and starch products",3
+1051,곡물 가공품 제조업,Manufacture of grain mill products,4
+10511,곡물 도정업,Polishing of cereals,5
+10512,곡물 제분업,Milling of cereals,5
+10513,곡물 혼합분말 및 반죽 제조업,Manufacture of cereal mixes and doughs,5
+10519,기타 곡물 가공품 제조업,Manufacture of other grain mill products,5
+1052,전분제품 및 당류 제조업,Manufacture of starches and starch products,4
+10520,전분제품 및 당류 제조업,Manufacture of starches and starch products,5
+106,"떡, 빵 및 과자류 제조업","Manufacture of rice cakes, bakery products and sugar confectioneries",3
+1060,"떡, 빵 및 과자류 제조업","Manufacture of rice cakes, bakery products and sugar confectioneries",4
+10601,떡류 제조업,Manufacture of rice cakes,5
+10602,빵류 제조업,Manufacture of bakery products,5
+10603,과자류 및 코코아 제품 제조업,Manufacture of sugar confectioneries and cocoa products,5
+107,도시락 및 식사용 조리식품 제조업,Manufacture of box lunches and prepared meals and dishes,3
+1070,도시락 및 식사용 조리식품 제조업,Manufacture of box lunches and prepared meals and dishes,4
+10701,도시락류 제조업,Manufacture of box lunches,5
+10709,기타 식사용 가공처리 조리식품 제조업,Manufacture of other prepared meals and dishes,5
+108,기타 식품 제조업,Manufacture of other food products,3
+1081,설탕 제조업,Manufacture of sugar,4
+10810,설탕 제조업,Manufacture of sugar,5
+1082,"면류, 마카로니 및 유사식품 제조업","Manufacture of noodles, macaroni and similar farinaceous products",4
+10820,"면류, 마카로니 및 유사식품 제조업","Manufacture of noodles, macaroni and similar farinaceous products",5
+1083,조미료 및 식품 첨가물 제조업,Manufacture of condiments and food additive products,4
+10831,"식초, 발효 및 화학 조미료 제조업","Manufacture of vinegar, fermentation and chemical seasonings",5
+10832,천연 및 혼합조제 조미료 제조업,Manufacture of natural processed spices and mixed condiments,5
+10833,장류 제조업,Manufacture of soy sauce and soy bean paste,5
+10839,기타 식품 첨가물 제조업,Manufacture of other food additive products,5
+1089,기타 식료품 제조업,Manufacture of other food products,4
+10891,커피 가공업,Processing of coffee,5
+10892,차류 가공업,Processing of tea,5
+10893,수프 및 균질화식품 제조업,Manufacture of soups and food containing homogenized ingredients,5
+10894,두부 및 유사식품 제조업,Manufacture of bean curd and similar products,5
+10895,인삼식품 제조업,Manufacture of ginseng products,5
+10896,건강보조용 액화식품 제조업,Manufacture of liquidized health additive foods,5
+10897,건강기능식품 제조업,Manufacture of health functional foods,5
+10899,그 외 기타 식료품 제조업,Manufacture of other food products n.e.c.,5
+109,동물용 사료 및 조제식품 제조업,Manufacture of prepared animal feeds and feed additives,3
+1090,동물용 사료 및 조제식품 제조업,Manufacture of livestock feeds and prepared animal feeds,4
+10901,반려동물용 사료 제조업,Manufacture of companion animal feeds,5
+10902,배합 사료 제조업,Manufacture of formula feeds,5
+10903,단미 사료 및 기타 사료 제조업,Manufacture of single ingredients and other prepared animal feeds,5
+11,음료 제조업,Manufacture of beverages,2
+111,알코올음료 제조업,Manufacture of alcoholic beverages,3
+1111,발효주 제조업,Manufacture of other fermented alcoholic beverages,4
+11111,탁주 및 약주 제조업,Manufacture of raw rice wines and refined rice wines,5
+11112,맥아 및 맥주 제조업,Manufacture of malt and malt liquors,5
+11119,기타 발효주 제조업,Manufacture of other fermented alcoholic beverages,5
+1112,증류주 및 합성주 제조업,Manufacture of distilled and compound liquors,4
+11121,주정 제조업,Manufacture of ethyl alcohol and neutral spirits,5
+11122,소주 제조업,Manufacture of blended and distilled soju,5
+11129,기타 증류주 및 합성주 제조업,Manufacture of other distilled and compound liquors,5
+112,비알코올음료 및 얼음 제조업,Manufacture of ice and non-alcoholic beverages; production of mineral waters,3
+1120,비알코올 음료 및 얼음 제조업,Manufacture of ice and non-alcoholic beverages; production of mineral waters,4
+11201,얼음 제조업,"Manufacture of ice, except dry ice",5
+11202,생수 생산업,Production of natural mineral waters and other bottled waters,5
+11209,기타 비알코올 음료 제조업,Manufacture of other non-alcoholic beverages,5
+12,담배 제조업,Manufacture of tobacco products,2
+120,담배 제조업,Manufacture of tobacco products,3
+1200,담배 제조업,Manufacture of tobacco products,4
+12000,담배제품 제조업,Manufacture of tobacco products,5
+13,섬유제품 제조업; 의복제외,"Manufacture of textiles, except apparel",2
+131,방적 및 가공사 제조업,Spinning of textiles and processing of threads and yarns,3
+1310,방적 및 가공사 제조업,Spinning of textiles and processing of threads and yarns,4
+13101,면 방적업,Spinning of cotton,5
+13102,모 방적업,Spinning of wool,5
+13103,화학섬유 방적업,Spinning of man-made fibers,5
+13104,연사 및 가공사 제조업,Manufacture of twisted threads and processing of threads and yarns,5
+13109,기타 방적업,Spinning of other textile fibers,5
+132,직물직조 및 직물제품 제조업,Weaving of textiles and manufacture of textile products,3
+1321,직물 직조업,Weaving of textiles,4
+13211,면직물 직조업,Weaving of cotton fabrics,5
+13212,모직물 직조업,Weaving of woolen fabrics,5
+13213,화학섬유직물 직조업,Weaving of man-made fiber fabrics,5
+13219,특수 직물 및 기타 직물 직조업,Weaving of special textiles and other fabrics,5
+1322,직물제품 제조업,Manufacture of textile products,4
+13221,침구 및 관련제품 제조업,Manufacture of bedding and related products,5
+13222,자수제품 및 자수용재료 제조업,Manufacture of embroidery products and related materials,5
+13223,커튼 및 유사제품 제조업,Manufacture of curtains and similar goods,5
+13224,"천막, 텐트 및 유사 제품 제조업","Manufacture of tarpaulin products, tents and similar goods",5
+13225,직물포대 제조업,Manufacture of textile bags,5
+13229,기타 직물제품 제조업,Manufacture of other household made-up textile articles,5
+133,편조원단 제조업,Manufacture of knitted and crocheted fabrics,3
+1330,편조원단 제조업,Manufacture of knitted and crocheted fabrics,4
+13300,편조원단 제조업,Manufacture of knitted and crocheted fabrics,5
+134,"섬유제품 염색, 정리 및 마무리 가공업",Dyeing and finishing of textiles and wearing apparel,3
+1340,"섬유제품 염색, 정리 및 마무리 가공업",Dyeing and finishing of textiles and wearing apparel,4
+13401,솜 및 실 염색가공업,Dyeing and finishing of cotton wools and yarns,5
+13402,"직물, 편조원단 및 의복류 염색 가공업","Dyeing and finishing of woven and knitted fabrics, including wearing apparel",5
+13403,날염 가공업,Printing of textiles,5
+13409,섬유제품 기타 정리 및 마무리 가공업,Other finishing of textiles and wearing apparel,5
+139,기타 섬유제품 제조업,"Manufacture of other made-up textile articles, except apparel",3
+1391,"카펫, 마루덮개 및 유사제품 제조업","Manufacture of carpets, rugs and similar products",4
+13910,"카펫, 마루덮개 및 유사제품 제조업","Manufacture of carpets, rugs and similar products",5
+1392,"끈, 로프, 망 및 끈 가공품 제조업","Manufacture of cordage, rope, twine and netting",4
+13921,끈 및 로프 제조업,Manufacture of cordage and rope,5
+13922,어망 및 기타 끈 가공품 제조업,Manufacture of fishing nets and other products of rope or netting,5
+1399,그 외 기타 섬유제품 제조업,Manufacture of other textiles n.e.c.,4
+13991,세폭직물 제조업,Manufacture of narrow woven fabrics,5
+13992,부직포 및 펠트 제조업,Manufacture of other non-woven and felt fabrics,5
+13993,특수사 및 코드직물 제조업,Manufacture of special yarns and tire cord fabrics,5
+13994,표면처리 및 적층 직물 제조업,"Manufacture of impregnated, coated, covered or laminated fabrics",5
+13999,그 외 기타 분류 안된 섬유제품 제조업,Manufacture of other textiles n.e.c.,5
+14,"의복, 의복 액세서리 및","Manufacture of wearing apparel, clothing accessories and fur articles",2
+141,봉제의복 제조업,"Manufacture of sewn wearing apparel, except fur apparel",3
+1411,겉옷 제조업,Manufacture of outerwear,4
+14111,남자용 겉옷 제조업,Manufacture of outerwear for men,5
+14112,여자용 겉옷 제조업,Manufacture of outerwear for women,5
+1412,속옷 및 잠옷 제조업,Manufacture of underwear and nightwear,4
+14120,속옷 및 잠옷 제조업,Manufacture of underwear and nightwear,5
+1413,한복 제조업,"Manufacture of hanbok, korean traditional clothes",4
+14130,한복 제조업,"Manufacture of hanbok, korean traditional clothes",5
+1419,기타 봉제의복 제조업,Manufacture of other sewn wearing apparel,4
+14191,셔츠 및 블라우스 제조업,Manufacture of shirts and blouses,5
+14192,"근무복, 작업복 및 유사의복 제조업",Manufacture of work wear and similar garments,5
+14193,가죽의복 제조업,Manufacture of leather garments,5
+14194,유아용 의복 제조업,Manufacture of babies' garments,5
+14199,그 외 기타 봉제의복 제조업,Manufacture of other sewn wearing apparel n.e.c.,5
+142,모피제품 제조업,Manufacture of articles of fur,3
+1420,모피제품 제조업,Manufacture of articles of fur,4
+14200,모피제품 제조업,Manufacture of articles of fur,5
+143,편조의복 제조업,Manufacture of knitted and crocheted apparel,3
+1430,편조의복 제조업,Manufacture of knitted and crocheted apparel,4
+14300,편조의복 제조업,Manufacture of knitted and crocheted apparel,5
+144,의복 액세서리 제조업,Manufacture of apparel accessories,3
+1441,편조의복 액세서리 제조업,Manufacture of knitted and crocheted apparel accessories,4
+14411,스타킹 및 기타 양말 제조업,Manufacture of stockings and other hosiery,5
+14419,기타 편조의복 액세서리 제조업,Manufacture of other knitted and crocheted apparel accessories,5
+1449,기타 의복 액세서리 제조업,Manufacture of other clothing accessories,4
+14491,모자 제조업,Manufacture of hats and caps,5
+14499,그 외 기타 의복액세서리 제조업,Manufacture of other clothing accessories n.e.c.,5
+15,"가죽, 가방 및 신발 제조업","Manufacture of leather, luggage and footwear",2
+151,"가죽, 가방 및 유사제품 제조업","Manufacture of leather, luggage and similar products",3
+1511,모피 및 가죽 제조업,Manufacture of furs and leathers,4
+15110,모피 및 가죽 제조업,Manufacture of furs and leathers,5
+1512,"핸드백, 가방 및 기타 보호용 케이스 제조업","Manufacture of handbags, luggage and other protective cases",4
+15121,핸드백 및 지갑 제조업,Manufacture of handbags and purses,5
+15129,가방 및 기타 보호용 케이스 제조업,Manufacture of luggage and other protective cases,5
+1519,기타 가죽제품 제조업,Manufacture of other leather articles,4
+15190,기타 가죽제품 제조업,Manufacture of other leather articles,5
+152,신발 및 신발 부분품 제조업,Manufacture of footwear and parts of footwear,3
+1521,신발 제조업,Manufacture of footwear,4
+15211,구두류 제조업,Manufacture of shoes,5
+15219,기타 신발 제조업,Manufacture of other footwear,5
+1522,신발 부분품 제조업,Manufacture of parts of footwear,4
+15220,신발 부분품 제조업,Manufacture of parts of footwear,5
+16,목재 및 나무제품 제조업; 가구 제외,Manufacture of wood and of products of wood and cork; except furniture,2
+161,제재 및 목재 가공업,Sawmilling and planing of wood,3
+1610,제재 및 목재 가공업,Sawmilling and planing of wood,4
+16101,일반 제재업,Sawmilling of wood,5
+16102,표면 가공 목재 및 특정 목적용 제재목 제조업,Manufacture of surface processing wood and woods for special purpose,5
+16103,"목재 보존, 방부처리, 도장 및 유사 처리업","Preservation, antisepsis, painting and similar processing of wood",5
+162,나무제품 제조업,Manufacture of wood products,3
+1621,"박판, 합판 및 강화 목제품 제조업","Manufacture of veneer sheets, plywood and densified wood",4
+16211,"박판, 합판 및 유사 적층판 제조업","Manufacture of veneer sheets, plywood and similar laminated wood boards",5
+16212,강화 및 재생 목재 제조업,Manufacture of densified and reconstituted wood,5
+1622,건축용 나무제품 제조업,Manufacture of wooden goods for construction industry,4
+16221,목재문 및 관련제품 제조업,Manufacture of wooden doors and related products,5
+16229,기타 건축용 나무제품 제조업,Manufacture of other wooden goods for construction industry,5
+1623,"목재 상자, 드럼 및 적재판 제조업","Manufacture of wooden containers, drums and load boards",4
+16231,목재 깔판류 및 기타 적재판 제조업,Manufacture of wooden pallets and other load boards,5
+16232,"목재 포장용 상자, 드럼 및 유사용기 제조업","Manufacture of wooden packing boxes, drums and similar containers",5
+1629,기타 나무제품 제조업,Manufacture of other wood products,4
+16291,목재 도구 및 주방용 나무제품 제조업,"Manufacture of wooden tools, appliances and household kitchenware",5
+16292,장식용 목제품 제조업,Manufacture of wooden statuettes and ornaments,5
+16299,그 외 기타 나무제품 제조업,Manufacture of other wood products n.e.c.,5
+163,코르크 및 조물 제품 제조업,"Manufacture of articles of cork, straw and plaiting materials",3
+1630,코르크 및 조물 제품 제조업,"Manufacture of articles of cork, straw and plaiting materials",4
+16300,코르크 및 조물제품 제조업,"Manufacture of articles of cork, straw and plaiting materials",5
+17,"펄프, 종이 및 종이제품 제조업","Manufacture of pulp, paper and paper products",2
+171,"펄프, 종이 및 판지 제조업","Manufacture of pulp, paper and paperboard",3
+1710,"펄프, 종이 및 판지 제조업","Manufacture of pulp, paper and paperboard",4
+17101,펄프 제조업,Manufacture of pulp,5
+17102,신문용지 제조업,Manufacture of newsprint,5
+17103,인쇄용 및 필기용 원지 제조업,Manufacture of printing and writing paper,5
+17104,골판지 원지 제조업,Manufacture of paper for corrugated paperboard,5
+17105,크라프트지 및 기타 상자용 판지 제조업,Manufacture of kraft paper and other paperboard,5
+17106,위생용 원지 제조업,Manufacture of paper for sanitary purpose,5
+17109,기타 종이 및 판지 제조업,Manufacture of other paper and paperboard,5
+172,"골판지, 종이 상자 및 종이 용기 제조업","Manufacture of corrugated paper, paper boxes and paper containers",3
+1721,골판지 및 골판지 가공제품 제조업,Manufacture of corrugated paper and related products,4
+17211,골판지 제조업,Manufacture of corrugated paper,5
+17212,골판지 상자 및 가공제품 제조업,Manufacture of corrugated boxes and related products,5
+1722,"종이포대, 판지상자 및 종이용기 제조업","Manufacture of paper sacks, paperboard boxes and containers",4
+17221,종이 포대 및 가방 제조업,Manufacture of paper sacks and paper bags,5
+17222,판지 상자 및 용기 제조업,Manufacture of paperboard boxes and containers,5
+17223,식품 위생용 종이 상자 및 용기 제조업,Manufacture of sanitary paper boxes and containers for food,5
+17229,기타 종이 상자 및 용기 제조업,Manufacture of other paper boxes and containers,5
+179,기타 종이 및 판지 제품 제조업,Manufacture of other paper and paperboard products,3
+1790,기타 종이 및 판지 제품 제조업,Manufacture of other paper and paperboard products,4
+17901,문구용 종이제품 제조업,Manufacture of stationery paper,5
+17902,위생용 종이제품 제조업,Manufacture of sanitary paper products,5
+17903,벽지 및 장판지 제조업,Manufacture of wallpaper and oilpaper,5
+17904,"적층, 합성 및 특수표면처리 종이 제조업","Manufacture of lamination, composition and specific surface processing paper",5
+17909,그 외 기타 종이 및 판지 제품 제조업,Manufacture of other articles of paper and paperboard n.e.c.,5
+18,인쇄 및 기록매체 복제업,Printing and reproduction of recorded media,2
+181,인쇄 및 인쇄관련 산업,Printing and service activities related to printing,3
+1811,인쇄업,Printing,4
+18111,경 인쇄업,Master printing by stencil plate and similar plates,5
+18112,스크린 인쇄업,Screen printing,5
+18113,오프셋 인쇄업,Offset printing,5
+18119,기타 인쇄업,Other printing,5
+1812,인쇄관련 산업,Service activities related to printing,4
+18121,제판 및 조판업,Plate-making and typesetting services,5
+18122,제책업,Bookbinding services,5
+18129,기타 인쇄관련 산업,Other service activities related to printing,5
+182,기록매체 복제업,Reproduction of recorded media,3
+1820,기록매체 복제업,Reproduction of recorded media,4
+18200,기록매체 복제업,Reproduction of recorded media,5
+19,"코크스, 연탄 및 석유정제품 제조업","Manufacture of coke, briquettes and refined petroleum products",2
+191,코크스 및 연탄 제조업,Manufacture of coke and briquettes,3
+1910,코크스 및 연탄 제조업,Manufacture of coke and briquettes,4
+19100,코크스 및 연탄 제조업,"Manufacture of coke, briquettes and related products",5
+192,석유 정제품 제조업,Manufacture of refined petroleum products,3
+1921,원유 정제처리업,Petroleum refineries,4
+19210,원유 정제처리업,Petroleum refineries,5
+1922,석유 정제물 재처리업,Reprocessing of fractionation in petroleum refinery,4
+19221,윤활유 및 그리스 제조업,Manufacture of lubricating oils and greases,5
+19229,기타 석유정제물 재처리업,Reprocessing of other fractionation in petroleum refinery,5
+20,화학물질 및 화학제품 제조업; 의약품 제외,Manufacture of chemicals and chemical products; except pharmaceuticals and medicinal chemicals,2
+201,기초 화학물질 제조업,Manufacture of basic chemicals,3
+2011,기초 유기 화학물질 제조업,Manufacture of basic organic chemicals,4
+20111,석유화학계 기초 화학물질 제조업,Manufacture of basic organic petrochemicals,5
+20112,바이오매스계 기초 화학물질 제조업,Manufacture of based on biomass basic chemicals,5
+20119,기타 기초 유기 화학물질 제조업,Manufacture of other basic organic chemicals,5
+2012,기초 무기 화학물질 제조업,Manufacture of basic inorganic chemicals,4
+20121,수소 제조업,Manufacture of hydrogen,5
+20122,"산소, 질소 및 기타 산업용 가스 제조업","Manufacture of oxygen, nitrogen and other industrial gases",5
+20129,기타 기초 무기 화학물질 제조업,Manufacture of other basic inorganic chemicals,5
+2013,"무기안료, 염료, 유연제 및 기타 착색제 제조업","Manufacture of inorganic dyes, pigments, tanning materials and other coloring agents",4
+20131,무기안료용 금속 산화물 및 관련 제품 제조업,Manufacture of metal oxides for inorganic pigments and related products,5
+20132,"염료, 조제 무기안료, 유연제 및 기타 착색제 제조업","Manufacture of dyes, synthetic inorganic pigments, tanning materials and other coloring agents",5
+202,합성고무 및 플라스틱 물질 제조업,Manufacture of plastics and synthetic rubber in primary forms,3
+2020,합성고무 및 플라스틱 물질 제조업,Manufacture of plastics and synthetic rubber in primary forms,4
+20201,합성고무 제조업,Manufacture of synthetic rubber,5
+20202,합성수지 및 기타 플라스틱 물질 제조업,Manufacture of synthetic resin and other plastic materials,5
+20203,혼성 및 재생 플라스틱 소재 물질 제조업,"Manufacture of mixed, blended and recycled plastic materials",5
+203,"비료, 농약 및 살균, 살충제 제조업","Manufacture of fertilizers, pesticides, germicides and insecticides",3
+2031,비료 및 질소화합물 제조업,Manufacture of fertilizers and nitrogen compounds,4
+20311,"질소화합물, 질소, 인산 및 칼리질 화학비료 제조업","Manufacture of nitrogen compounds and nitrogenous, phosphatic and potassic fertilizers",5
+20312,복합비료 및 기타 화학비료 제조업,Manufacture of composite and other chemical fertilizers,5
+20313,유기질 비료 및 상토 제조업,Manufacture of organic fertilizers and bed soils,5
+2032,살균․살충제 및 농약 제조업,"Manufacture of germicides, insecticides and pesticides",4
+20321,화학 살균․살충제 및 농업용 약제 제조업,"Manufacture of chemical germicides, insecticides and agrochemical products",5
+20322,생물 살균․살충제 및 식물보호제 제조업,"Manufacture of biotic germicides, insecticides and plant protectors",5
+204,기타 화학제품 제조업,Manufacture of other chemical products,3
+2041,"잉크, 페인트, 코팅제 및 유사제품 제조업","Manufacture of ink, paint, coating and similar products",4
+20411,일반용 도료 및 관련제품 제조업,Manufacture of general paints and similar products,5
+20412,요업용 도포제 및 관련제품 제조업,"Manufacture of enamels, glazes, engobes and similar preparations for ceramic",5
+20413,인쇄잉크 및 회화용 물감 제조업,Manufacture of printing ink and paints for pictures,5
+2042,"세제, 화장품 및 광택제 제조업","Manufacture of detergents, cosmetics and polishing preparations",4
+20421,계면활성제 제조업,Manufacture of surface-active agents,5
+20422,"치약, 비누 및 기타 세제 제조업","Manufacture of toothpastes, soaps and other detergents",5
+20423,화장품 제조업,Manufacture of perfumes and cosmetics,5
+20424,표면광택제 및 실내가향제 제조업,"Manufacture of wax, polish and preparations for perfuming or deodorizing room",5
+2049,그 외 기타 화학제품 제조업,Manufacture of other chemical products n.e.c.,4
+20491,감광재료 및 관련 화학제품 제조업,Manufacture of sensitized materials and related chemical preparations,5
+20492,가공 및 정제염 제조업,Manufacture of processed and refined salt,5
+20493,접착제 및 젤라틴 제조업,Manufacture of adhesives and gelatin,5
+20494,화약 및 불꽃제품 제조업,Manufacture of explosives and pyrotechnic products,5
+20495,바이오 연료 및 혼합물 제조업,Manufacture of biofuels and related mixture,5
+20499,그 외 기타 분류 안된 화학제품 제조업,Manufacture of other chemical products n.e.c.,5
+205,화학섬유 제조업,Manufacture of man-made fibers,3
+2050,화학섬유 제조업,Manufacture of man-made fibers,4
+20501,합성섬유 제조업,Manufacture of synthetic fibers,5
+20502,재생섬유 제조업,Manufacture of regenerated fibers,5
+21,의료용 물질 및 의약품 제조업,"Manufacture of pharmaceuticals, medicinal chemical and botanical products",2
+211,기초 의약 물질 제조업,Manufacture of medicinal chemicals,3
+2110,기초 의약 물질 제조업,Manufacture of medicinal chemicals,4
+21100,기초 의약 물질 제조업,Manufacture of medicinal chemicals,5
+212,의약품 제조업,Manufacture of medicaments,3
+2121,완제 의약품 제조업,Manufacture of finished medicaments,4
+21211,생물 의약품 제조업,Manufacture of biopharmaceutical products,5
+21212,합성의약품 및 기타 완제 의약품 제조업,Manufacture of synthetic drug and other finished medicaments,5
+2122,한의약품 제조업,Manufacture of herb medicaments,4
+21220,한의약품 제조업,Manufacture of herb medicaments,5
+2123,동물용 의약품 제조업,Manufacture of animal medicaments,4
+21230,동물용 의약품 제조업,Manufacture of animal medicaments,5
+213,의료용품 및 기타 의약 관련제품 제조업,Manufacture of medical supplies and related other medicaments,3
+2130,의료용품 및 기타 의약 관련제품 제조업,Manufacture of medical supplies and related other medicaments,4
+21301,체외 진단 시약 제조업,Manufacture of invitro diagnostic reagents,5
+21309,그 외 기타 의료용품 및 의약 관련제품 제조업,Manufacture of other medical supplies and related other medicaments,5
+22,고무 및 플라스틱제품 제조업,Manufacture of rubber and plastics products,2
+221,고무제품 제조업,Manufacture of rubber products,3
+2211,고무 타이어 및 튜브 제조업,Manufacture of rubber tires and tubes,4
+22110,고무 타이어 및 튜브 제조업,Manufacture of rubber tires and tubes,5
+2219,기타 고무제품 제조업,Manufacture of other rubber products,4
+22191,고무패킹류 제조업,Manufacture of rubber packing,5
+22192,산업용 그 외 비경화 고무제품 제조업,Manufacture of other industrial un-vulcanized rubber products,5
+22193,고무 의류 및 기타 위생용 비경화 고무제품 제조업,Manufacture of apparel and other hygienic articles of rubber,5
+22199,그 외 기타 고무제품 제조업,Manufacture of other rubber products n.e.c.,5
+222,플라스틱제품 제조업,Manufacture of plastics products,3
+2221,1차 플라스틱제품 제조업,Manufacture of basic plastics products,4
+22211,"플라스틱 선, 봉, 관 및 호스 제조업","Manufacture of plastic wires, bars, pipes, tubes and hoses",5
+22212,플라스틱 필름 제조업,Manufacture of plastic films,5
+22213,플라스틱 시트 및 판 제조업,Manufacture of plastic sheets and plates,5
+22214,플라스틱 합성피혁 제조업,Manufacture of plastic synthetic leather,5
+2222,건축용 플라스틱제품 제조업,Manufacture of builders’ ware of plastic,4
+22221,벽 및 바닥 피복용 플라스틱제품 제조업,Manufacture of plastic wall and floor coverings,5
+22222,설치용 및 위생용 플라스틱제품 제조업,Manufacture of plastic products for installation and sanitation,5
+22223,플라스틱 창호 제조업,Manufacture of plastic windows and doors,5
+22229,기타 건축용 플라스틱 조립제품 제조업,Manufacture of other fabricated structural plastic products,5
+2223,포장용 플라스틱제품 제조업,Manufacture of plastic articles for the packing of goods,4
+22231,"플라스틱 포대, 봉투 및 유사제품 제조업","Manufacture of plastic sacks, bags and similar products",5
+22232,포장용 플라스틱 성형용기 제조업,"Manufacture of plastic cases, boxes and containers",5
+2224,기계장비 조립용 플라스틱제품 제조업,Manufacture of plastic products for fabricating of machine,4
+22241,운송장비 조립용 플라스틱제품 제조업,Manufacture of plastic products for fabricating of transportation fixture,5
+22249,기타 기계․장비 조립용 플라스틱 제품 제조업,Manufacture of other plastic products for fabricating of machine,5
+2225,플라스틱 발포 성형제품 제조업,Manufacture of foamed plastic products,4
+22251,폴리스티렌 발포 성형제품 제조업,Manufacture of polystyrene foam products,5
+22259,기타 플라스틱 발포 성형제품 제조업,Manufacture of other foamed plastic products,5
+2229,기타 플라스틱제품 제조업,Manufacture of other plastic products,4
+22291,플라스틱 접착처리 제품 제조업,Manufacture of self-adhesive plastic products,5
+22292,"플라스틱 적층, 도포 및 기타 표면처리 제품 제조업","Manufacture of plastic laminating, coating and other surface processing products",5
+22299,그 외 기타 플라스틱 제품 제조업,Manufacture of other plastic products n.e.c.,5
+23,비금속 광물제품 제조업,Manufacture of other non-metallic mineral products,2
+231,유리 및 유리제품 제조업,Manufacture of glass and glass products,3
+2311,판유리 및 판유리 가공품 제조업,Manufacture of flat glass and related products,4
+23111,판유리 제조업,Manufacture of flat glass,5
+23112,안전유리 제조업,Manufacture of safety glass,5
+23119,기타 판유리 가공품 제조업,Manufacture of other products made of flat glass,5
+2312,산업용 유리 제조업,Manufacture of industrial glass,4
+23121,"1차 유리제품, 유리섬유 및 광학용 유리 제조업","Manufacture of basic glass products, glass fibers and optical glass",5
+23122,디스플레이 장치용 유리 제조업,Manufacture of glass products for displays,5
+23129,기타 산업용 유리제품 제조업,Manufacture of other industrial glass products,5
+2319,기타 유리제품 제조업,Manufacture of other glass products,4
+23191,가정용 유리제품 제조업,Manufacture of household glassware,5
+23192,포장용 유리용기 제조업,Manufacture of bottles and other containers made of glass,5
+23199,그 외 기타 유리제품 제조업,Manufacture of other glass products n.e.c.,5
+232,"내화, 비내화 요업제품 제조업",Manufacture of refractory and non-refractory ceramic products,3
+2321,내화 요업제품 제조업,Manufacture of refractory ceramic products,4
+23211,정형 내화 요업제품 제조업,Manufacture of shaped refractory ceramic products,5
+23212,부정형 내화 요업제품 제조업,Manufacture of unshaped refractory ceramic products,5
+2322,비내화 일반도자기 제조업,Manufacture of non-refractory porcelain and ceramic products,4
+23221,가정용 및 장식용 도자기 제조업,Manufacture of household or ornamental pottery and ceramic ware,5
+23222,위생용 및 산업용 도자기 제조업,Manufacture of sanitary and industrial ceramic ware,5
+23229,기타 일반 도자기 제조업,Manufacture of other non-refractory porcelain and ceramic products,5
+2323,건축용 비내화 요업제품 제조업,Manufacture of structural non-refractory clay and ceramic products,4
+23231,"점토 벽돌, 블록 및 유사 비내화 요업제품 제조업","Manufacture of non-refractory clay bricks, blocks and similar products",5
+23232,타일 및 유사 비내화 요업제품 제조업,Manufacture of non-refractory ceramic tiles and similar products,5
+23239,기타 건축용 비내화 요업제품 제조업,Manufacture of other structural non-refractory clay and ceramic products,5
+233,"시멘트, 석회, 플라스터 및 그 제품 제조업","Manufacture of cement, lime, plaster and its products",3
+2331,"시멘트, 석회 및 플라스터 제조업","Manufacture of cement, lime and plaster",4
+23311,시멘트 제조업,Manufacture of cement,5
+23312,석회 및 플라스터 제조업,Manufacture of lime and plaster,5
+2332,"콘크리트, 레미콘 및 기타 시멘트, 플라스터 제품 제조업","Manufacture of articles of concrete, ready-mixed concrete and other cement and plaster products",4
+23321,비내화 모르타르 제조업,Manufacture of non-refractory mortar,5
+23322,레미콘 제조업,Manufacture of ready-mixed concrete,5
+23323,플라스터 혼합제품 제조업,Manufacture of plaster products and related products,5
+23324,"콘크리트 타일, 기와, 벽돌 및 블록 제조업","Manufacture of concrete tiles, roofing tiles, bricks and blocks",5
+23325,콘크리트 관 및 기타 구조용 콘크리트 제품 제조업,Manufacture of concrete pipes and other structural concrete products,5
+23326,인조대리석 제품 제조업,Manufacture of artificial marble,5
+23329,그 외 기타 콘크리트 제품 및 유사제품 제조업,Manufacture of other concrete and similar products n.e.c.,5
+239,기타 비금속 광물제품 제조업,Manufacture of other non-metallic mineral products,3
+2391,석제품 제조업,"Cutting, shaping and finishing of stone",4
+23911,건설용 석제품 제조업,Manufacture of stone products for construction,5
+23919,기타 석제품 제조업,Manufacture of other stone products,5
+2399,그 외 기타 비금속 광물제품 제조업,Manufacture of other non-metallic mineral products n.e.c.,4
+23991,아스팔트 콘크리트 및 혼합제품 제조업,Manufacture of asphalt concrete and related products,5
+23992,연마재 제조업,Manufacture of abrasive articles,5
+23993,비금속광물 분쇄물 생산업,Manufacture of non-metallic crushed mineral products,5
+23994,암면 및 유사제품 제조업,Manufacture of mineral wools and other similar products,5
+23995,탄소섬유 제조업,Manufacture of carbon fibers,5
+23999,그 외 기타 분류 안된 비금속 광물제품 제조업,Manufacture of other non-metallic minerals n.e.c.,5
+24,1차 금속 제조업,Manufacture of basic metals,2
+241,1차 철강 제조업,Manufacture of basic iron and steel,3
+2411,"제철, 제강 및 합금철 제조업","Manufacture of basic iron, steel and ferro-alloys",4
+24111,제철업,Manufacture of basic iron,5
+24112,제강업,Manufacture of basic steel,5
+24113,합금철 제조업,Manufacture of ferro-alloys,5
+24119,기타 제철 및 제강업,Manufacture of other basic iron and steel,5
+2412,"철강 압연, 압출 및 연신제품 제조업","Manufacture of steel products by rolling, extrusion and drawing",4
+24121,열간 압연 및 압출 제품 제조업,"Manufacture of steel products by hot rolling, hot extrusion and hot drawing",5
+24122,냉간 압연 및 압출 제품 제조업,"Manufacture of steel products by cold rolling, cold extrusion and cold drawing",5
+24123,철강선 제조업,Manufacture of steel wire,5
+2413,철강관 제조업,"Manufacture of pipes, tubes and hollow profiles, of iron or steel",4
+24131,주철관 제조업,"Manufacture of tubes and pipes, of cast iron",5
+24132,강관 제조업,"Manufacture of pipes and tubes, of steel",5
+24133,강관 가공품 및 관 연결구류 제조업,"Manufacture of pipe and tube fittings and related products, of steel",5
+2419,기타 1차 철강 제조업,Manufacture of other basic iron and steel,4
+24191,"도금, 착색 및 기타 표면처리강재 제조업","Manufacture of coated, plated, coloured and other processed steel products",5
+24199,그 외 기타 1차 철강 제조업,Manufacture of other basic iron and steel n.e.c.,5
+242,1차 비철금속 제조업,Manufacture of basic precious and non-ferrous metals,3
+2421,"비철금속 제련, 정련 및 합금 제조업","Manufacture of smelting, refining and alloys of non-ferrous metals",4
+24211,"동 제련, 정련 및 합금 제조업","Manufacture of smelting, refining and alloys of copper",5
+24212,"알루미늄 제련, 정련 및 합금 제조업","Manufacture of smelting, refining and alloys of aluminum",5
+24213,"연 및 아연 제련, 정련 및 합금 제조업","Manufacture of smelting, refining and alloys of lead and zinc",5
+24219,"기타 비철금속 제련, 정련 및 합금 제조업","Manufacture of smelting, refining and alloys of other non-ferrous metals",5
+2422,"비철금속 압연, 압출 및 연신제품 제조업","Manufacture of non-ferrous metal products by rolling, extrusion and drawing",4
+24221,"동 압연, 압출 및 연신제품 제조업","Manufacture of copper products by rolling, extrusion and drawing",5
+24222,"알루미늄 압연, 압출 및 연신제품 제조업","Manufacture of aluminum products by rolling, extrusion and drawing",5
+24229,"기타 비철금속 압연, 압출 및 연신 제품 제조업","Manufacture of other non-ferrous metal products by rolling, extrusion and drawing",5
+2429,기타 1차 비철금속 제조업,Manufacture of other basic precious and non-ferrous metals,4
+24290,기타 1차 비철금속 제조업,Manufacture of other basic precious and non-ferrous metals,5
+243,금속 주조업,Casting of metals,3
+2431,철강 주조업,Casting of iron and steel,4
+24311,선철주물 주조업,Casting of pig iron,5
+24312,강주물 주조업,Casting of steel,5
+2432,비철금속 주조업,Casting of non-ferrous metals,4
+24321,알루미늄주물 주조업,Casting of aluminum,5
+24329,기타 비철금속 주조업,Casting of other non-ferrous metals,5
+25,금속가공제품 제조업; 기계 및 가구 제외,"Manufacture of fabricated metal products, except machinery and furniture",2
+251,"구조용 금속제품, 탱크 및 증기발생기 제조업","Manufacture of structural metal products, tanks, reservoirs and steam generators",3
+2511,구조용 금속제품 제조업,Manufacture of structural metal products,4
+25111,"금속 문, 창, 셔터 및 관련제품 제조업","Manufacture of metal doors, windows, shutters and related products",5
+25112,구조용 금속 판제품 및 공작물 제조업,Manufacture of structural metal sheet products and metal works used on building,5
+25113,육상 금속 골조 구조재 제조업,Manufacture of metal frameworks or skeletons for land structure and parts thereof,5
+25114,수상 금속 골조 구조재 제조업,Manufacture of metal frameworks or skeletons for marine structure and parts thereof,5
+25119,기타 구조용 금속제품 제조업,Manufacture of other structural metal products,5
+2512,"산업용 난방보일러, 금속탱크 및 유사 용기 제조업","Manufacture of industrial heating boilers, tanks, reservoirs and containers of metals",4
+25121,산업용 난방보일러 및 방열기 제조업,Manufacture of industrial heating boilers and radiators,5
+25122,금속탱크 및 저장용기 제조업,Manufacture of tanks and reservoirs,5
+25123,압축 및 액화 가스용기 제조업,Manufacture of metal containers for compressed or liquefied gas,5
+2513,핵반응기 및 증기 보일러 제조업,Manufacture of nuclear reactors and steam generators,4
+25130,핵반응기 및 증기보일러 제조업,Manufacture of nuclear reactors and steam generators,5
+252,무기 및 총포탄 제조업,Manufacture of weapons and ammunition,3
+2520,무기 및 총포탄 제조업,Manufacture of weapons and ammunition,4
+25200,무기 및 총포탄 제조업,Manufacture of weapons and ammunition,5
+259,기타 금속 가공제품 제조업,Manufacture of other fabricated metal products; metalworking service activities,3
+2591,"금속 단조, 압형 및 분말야금 제품 제조업","Forging, pressing, stamping and roll-forming of metal; powder metallurgy",4
+25911,분말 야금제품 제조업,Manufacture of powder metallurgic products,5
+25912,금속 단조제품 제조업,Manufacture of forging products,5
+25913,자동차용 금속 압형제품 제조업,Manufacture of pressing products for motor vehicles,5
+25914,그 외 금속 압형제품 제조업,Manufacture of other pressing products,5
+2592,"금속 열처리, 도금 및 기타 금속가공업",Treatment and coating of metals; machining,4
+25921,금속 열처리업,Heat treatment of metals,5
+25922,도금업,Plating of metals,5
+25923,도장 및 기타 피막처리업,Coating and similar treatment of metals,5
+25924,절삭가공 및 유사처리업,"Engraving, cutting and similar processing of metals",5
+25929,그 외 기타 금속가공업,Other metalworking n.e.c.,5
+2593,"날붙이, 수공구 및 일반철물 제조업","Manufacture of cutlery, hand tools and general hardware",4
+25931,날붙이 제조업,Manufacture of cutlery,5
+25932,일반철물 제조업,Manufacture of general hardware,5
+25933,비동력식 수공구 제조업,Manufacture of non-power-driven hand tools,5
+25934,톱 및 호환성 공구 제조업,"Manufacture of saws, saw blades and interchangeable tools",5
+2594,"금속파스너, 스프링 및 금속선 가공제품 제조업","Manufacture of metal fasteners, springs and articles made of metal wires",4
+25941,볼트 및 너트류 제조업,Manufacture of bolts and screws,5
+25942,그 외 금속파스너 및 나사제품 제조업,Manufacture of other metal fasteners and screw products,5
+25943,금속 스프링 제조업,Manufacture of metal springs,5
+25944,금속선 가공제품 제조업,Manufacture of articles made of metal wires,5
+2599,그 외 기타 금속가공제품 제조업,Manufacture of other fabricated metal products,4
+25991,금속 캔 및 기타 포장용기 제조업,Manufacture of metal cans and other containers,5
+25992,수동식 식품 가공기기 및 금속 주방용기 제조업,Manufacture of hand-operated kitchen appliances and metal ware,5
+25993,금속 위생용품 제조업,Manufacture of metal sanitary ware,5
+25994,금속 표시판 제조업,Manufacture of metal sign boards including road signs,5
+25995,피복 및 충전 용접봉 제조업,"Manufacture of coated rods and cored wire, of base metal for soldering or welding",5
+25999,그 외 기타 분류 안된 금속 가공 제품 제조업,Manufacture of other fabricated and processed metal products n.e.c,5
+26,"전자부품, 컴퓨터, 영상, 음향 및 통신장비 제조업","Manufacture of electronic components, computer; visual, sounding and communication equipment",2
+261,반도체 제조업,Manufacture of semiconductor,3
+2611,전자집적회로 제조업,Manufacture of electronic integrated circuits,4
+26111,메모리용 전자집적회로 제조업,Manufacture of memory electronic integrated circuits,5
+26112,비메모리용 및 기타 전자집적회로 제조업,Manufacture of non-memory electronic integrated circuits,5
+2612,"다이오드, 트랜지스터 및 유사 반도체소자 제조업","Manufacture of diodes, transistors and similar semi-conductor devices",4
+26121,발광 다이오드 제조업,Manufacture of light emitting diodes,5
+26129,기타 반도체소자 제조업,"Manufacture of other diodes, transistors and similar semi-conductor devices",5
+262,전자부품 제조업,Manufacture of electronic components,3
+2621,표시장치 제조업,Manufacture of flat display components,4
+26211,액정 표시장치 제조업,Manufacture of liquid crystal display components,5
+26212,유기발광 표시장치 제조업,Manufacture of organic light emitting diodes display components,5
+26219,기타 표시장치 제조업,Manufacture of other display component,5
+2622,인쇄회로기판 및 전자부품 실장기판 제조업,Manufacture of bare printed circuit boards and loading of electronic components onto pcb,4
+26221,인쇄회로기판용 적층판 제조업,Manufacture of laminated plates for printed circuit boards,5
+26222,경성 인쇄회로기판 제조업,Manufacture of rigid printed circuit boards,5
+26223,연성 및 기타 인쇄회로기판 제조업,Manufacture of flexible and other printed circuit boards,5
+26224,전자부품 실장기판 제조업,Manufacture of loading of electronic components onto PCB,5
+2629,기타 전자부품 제조업,"Manufacture of other electronic components, except semiconductor and electronic integrated circuits",4
+26291,전자축전기 제조업,Manufacture of electronic capacitors,5
+26292,전자저항기 및 전자카드 제조업,Manufacture of electronic resistors and smart cards with magnetic stripe or chip,5
+26293,"전자코일, 변성기 및 기타 전자 유도자 제조업","Manufacture of electronic coils, transformers and other inductors",5
+26294,전자감지장치 제조업,Manufacture of electronic perception sensors,5
+26299,그 외 기타 전자부품 제조업,"Manufacture of electronic tubes, interface cards and other electronic components n.e.c.",5
+263,컴퓨터 및 주변장치 제조업,Manufacture of computers and peripheral equipment,3
+2631,컴퓨터 제조업,Manufacture of computer,4
+26310,컴퓨터 제조업,Manufacture of computer,5
+2632,기억장치 및 주변기기 제조업,Manufacture of storage devices and peripheral equipment,4
+26321,기억장치 제조업,Manufacture of storage devices,5
+26322,컴퓨터 모니터 제조업,Manufacture of computer monitor,5
+26323,컴퓨터 프린터 제조업,Manufacture of computer printer,5
+26329,기타 주변기기 제조업,Manufacture of other peripheral apparatuses,5
+264,통신 및 방송 장비 제조업,Manufacture of communication and broadcasting apparatuses,3
+2641,유선 통신장비 제조업,Manufacture of wire communication apparatuses,4
+26410,유선 통신장비 제조업,Manufacture of wire telecommunication apparatuses,5
+2642,방송 및 무선 통신장비 제조업,Manufacture of broadcasting and wireless communication apparatuses,4
+26421,방송장비 제조업,Manufacture of broadcasting apparatuses,5
+26422,이동전화기 제조업,Manufacture of mobile phone,5
+26429,기타 무선 통신장비 제조업,Manufacture of other wireless communication apparatuses,5
+265,영상 및 음향기기 제조업,Manufacture of electronic video and audio equipment,3
+2651,"텔레비전, 비디오 및 기타 영상기기 제조업","Manufacture of television, video and other visual equipment",4
+26511,텔레비전 제조업,Manufacture of television,5
+26519,비디오 및 기타 영상기기 제조업,Manufacture of video and other visual equipment,5
+2652,"오디오, 스피커 및 기타 음향기기 제조업","Manufacture of audio, speaker and other sounding equipment",4
+26521,"라디오, 녹음 및 재생 기기 제조업","Manufacture of radio, recorder and reproducing apparatuses",5
+26529,기타 음향기기 제조업,Manufacture of other sounding equipment,5
+266,마그네틱 및 광학 매체 제조업,Manufacture of magnetic and optical medium,3
+2660,마그네틱 및 광학 매체 제조업,Manufacture of magnetic and optical medium,4
+26600,마그네틱 및 광학 매체 제조업,Manufacture of magnetic and optical medium,5
+27,"의료, 정밀, 광학기기 및 시계 제조업","Manufacture of medical, precision and optical instruments, watches and clocks",2
+271,의료용 기기 제조업,Manufacture of medical and dental instruments and supplies,3
+2711,방사선 장치 및 전기식 진단 기기 제조업,Manufacture of irradiation and electro-diagnostic apparatuses,4
+27111,방사선 장치 제조업,Manufacture of irradiation apparatuses,5
+27112,전기식 진단 및 요법 기기 제조업,Manufacture of electro-diagnostic and electro-therapeutic apparatuses,5
+2719,기타 의료용 기기 제조업,Manufacture of other medical and surgical equipment and orthopedic appliances,4
+27191,치과용 기기 제조업,Manufacture of dental instruments and appliances,5
+27192,치과기공물 제조업,Manufacture of dental prosthesis,5
+27193,치과용 임플란트 제조업,Manufacture of dental implant,5
+27194,정형외과용 및 신체보정용 기기 제조업,"Manufacture of orthopedic, orthodontic, prosthetic appliances and supplies for disability",5
+27195,안경 및 안경렌즈 제조업,Manufacture of eyeglasses and optical lenses,5
+27196,의료용 가구 제조업,"Manufacture of medical, surgical, dental or veterinary furniture",5
+27199,그 외 기타 의료용 기기 제조업,Manufacture of other medical and surgical equipment and orthopedic appliances n.e.c.,5
+272,"측정, 시험, 항해, 제어 및 기타 정밀기기 제조업; 광학기기 제외","Manufacture of measuring, testing, navigating and control equipment; except optical instruments",3
+2721,"측정, 시험, 항해, 제어 및 기타 정밀기기 제조업","Manufacture of measuring, testing, navigating, control and other precision instrumensts",4
+27211,"레이더, 항행용 무선기기 및 측량기구 제조업","Manufacture of radar, navigation, aeronautical, nautical equipment; measuring and recording equipment",5
+27212,"전자기 측정, 시험 및 분석기구 제조업",Manufacture of instruments for measuring and testing electricity and electrical signals,5
+27213,"물질 검사, 측정 및 분석기구 제조업","Manufacture of physical properties testing, measuring and inspection equipment",5
+27214,속도계 및 적산계기 제조업,Manufacture of speedometers and integrating meters,5
+27215,기기용 자동측정 및 제어장치 제조업,Manufacture of environmental controls and automatic controls for appliances,5
+27216,산업처리공정 제어장비 제조업,Manufacture of industrial process control equipment,5
+27219,"기타 측정, 시험, 항해, 제어 및 정밀기기 제조업","Manufacture of other measuring, testing, navigating, control instrumensts n.e.c.",5
+2722,시계 및 시계부품 제조업,"Manufacture of watches, clocks and its parts",4
+27220,시계 및 시계부품 제조업,"Manufacture of watches, clocks and its parts",5
+273,사진장비 및 광학기기 제조업,Manufacture of photographic equipment and optical instruments,3
+2730,사진장비 및 광학기기 제조업,Manufacture of photographic equipment and optical instruments,4
+27301,광학렌즈 및 광학요소 제조업,Manufacture of optical lens and elements,5
+27309,기타 광학기기 및 사진기 제조업,"Manufacture of cameras, other optical instruments and photographic equipment",5
+28,전기장비 제조업,Manufacture of electrical equipment,2
+281,"전동기, 발전기 및 전기 변환ㆍ 공급ㆍ제어 장치 제조업","Manufacture of electric motors, generators, transformers and electricity distribution and control apparatus",3
+2811,"전동기, 발전기 및 전기 변환장치 제조업","Manufacture of electric motors, generators and transformers",4
+28111,전동기 및 발전기 제조업,Manufacture of electric motors and generators,5
+28112,변압기 제조업,Manufacture of transformers,5
+28113,에너지 저장장치 제조업,Manufacture of energy storage system,5
+28119,기타 전기 변환장치 제조업,"Manufacture of other electric motors, generators and transformers",5
+2812,전기 공급 및 제어장치 제조업,Manufacture of electricity distribution and control apparatuses,4
+28121,"전기회로 개폐, 보호장치 제조업","Manufacture of apparatuses for switching, protecting electrical circuits used in power distribution systems",5
+28122,전기회로 접속장치 제조업,Manufacture of apparatuses for connecting electrical circuits used in power distribution systems,5
+28123,배전반 및 전기 자동제어반 제조업,Manufacture of boards for electric control or distribution,5
+282,일차전지 및 이차전지 제조업,Manufacture of primary battery and secondary battery,3
+2820,일차전지 및 이차전지 제조업,Manufacture of primary battery and secondary battery,4
+28201,일차전지 제조업,Manufacture of primary battery,5
+28202,운송장비용 이차전지 제조업,Manufacture of secondary battery for transport equipment,5
+28209,기타 이차전지 제조업,Manufacture of other secondary battery,5
+283,절연선 및 케이블 제조업,Manufacture of insulated wires and cables,3
+2830,절연선 및 케이블 제조업,Manufacture of insulated wires and cables,4
+28301,광섬유 케이블 제조업,Manufacture of optical fiber cables,5
+28302,기타 절연선 및 케이블 제조업,Manufacture of other insulated wires and cables,5
+28303,절연 코드세트 및 기타 도체 제조업,Manufacture of insulated codes sets and other conductors for electricity,5
+284,전구 및 조명장치 제조업,Manufacture of electric tubes and bulbs and lighting equipment,3
+2841,전구 및 램프 제조업,Manufacture of electric lamps and bulbs,4
+28410,전구 및 램프 제조업,Manufacture of electric lamps and bulbs,5
+2842,조명장치 제조업,Manufacture of lighting fixtures,4
+28421,운송장비용 조명장치 제조업,Manufacture of electric lighting fixtures for transportation equipment,5
+28422,일반용 전기 조명장치 제조업,Manufacture of general electric lighting fixtures,5
+28423,전시 및 광고용 조명장치 제조업,Manufacture of electric lighting fixtures for exhibition and advertisement,5
+28429,기타 조명장치 제조업,Manufacture of other lighting fixtures,5
+285,가정용 기기 제조업,Manufacture of domestic appliances,3
+2851,가정용 전기기기 제조업,Manufacture of domestic electric appliances,4
+28511,주방용 전기기기 제조업,Manufacture of electric appliances for kitchen,5
+28512,가정용 전기 난방기기 제조업,Manufacture of domestic electrothermic appliances,5
+28519,기타 가정용 전기기기 제조업,Manufacture of other domestic electric appliances,5
+2852,가정용 비전기식 조리 및 난방 기구 제조업,Manufacture of domestic non-electric cooking and heating appliances,4
+28520,가정용 비전기식 조리 및 난방 기구 제조업,Manufacture of domestic non-electric cooking and heating appliances,5
+289,기타 전기장비 제조업,Manufacture of other electrical equipment,3
+2890,기타 전기장비 제조업,Manufacture of other electrical equipment,4
+28901,전기경보 및 신호장치 제조업,Manufacture of electric alarm and signaling equipment,5
+28902,전기용 탄소제품 및 절연제품 제조업,Manufacture of electrical carbon products and insulators,5
+28903,교통 신호장치 제조업,Manufacture of traffic signaling equipment,5
+28909,그 외 기타 전기장비 제조업,Manufacture of other electrical equipment n.e.c.,5
+29,기타 기계 및 장비 제조업,Manufacture of other machinery and equipment,2
+291,일반 목적용 기계 제조업,Manufacture of general purpose machinery,3
+2911,내연기관 및 터빈 제조업; 항공기용 및 차량용 제외,"Manufacture of internal combustion piston engines and turbines, except aircraft, vehicle and cycle propulsion engines",4
+29111,내연기관 제조업,Manufacture of internal combustion piston engines,5
+29119,기타 기관 및 터빈 제조업,Manufacture of other engines and turbines,5
+2912,유압기기 제조업,Manufacture of fluid power equipment,4
+29120,유압기기 제조업,Manufacture of fluid power equipment,5
+2913,"펌프 및 압축기 제조업; 탭, 밸브 및 유사장치 제조 포함","Manufacture of pumps and compressors including taps, valves and similar products",4
+29131,액체 펌프 제조업,Manufacture of pumps for liquids,5
+29132,기체 펌프 및 압축기 제조업,Manufacture of air or vacuum pumps and compressors,5
+29133,"탭, 밸브 및 유사장치 제조업","Manufacture of taps, valves and similar products",5
+2914,"베어링, 기어 및 동력전달장치 제조업","Manufacture of bearings, gears and driving elements",4
+29141,구름베어링 제조업,Manufacture of ball and roller bearings,5
+29142,기어 및 동력전달장치 제조업,Manufacture of gears and driving elements,5
+2915,"산업용 오븐, 노 및 노용 버너 제조업","Manufacture of industrial ovens, furnaces and furnace burners",4
+29150,"산업용 오븐, 노 및 노용 버너 제조업","Manufacture of industrial ovens, furnaces and furnace burners",5
+2916,"산업용 트럭, 승강기 및 물품취급장비 제조업","Manufacture of work trucks, lifting and handling equipment",4
+29161,산업용 트럭 및 적재기 제조업,Manufacture of work trucks and loading or unloading machinery,5
+29162,승강기 제조업,Manufacture of lifting equipment,5
+29163,컨베이어장치 제조업,Manufacture of conveyors,5
+29169,기타 물품 취급장비 제조업,Manufacture of other lifting and handling equipment,5
+2917,"냉각, 공기조화, 여과, 증류 및 가스발생기 제조업","Manufacture of refrigerating, air conditioning, filtering, distilling equipment and gas generators",4
+29171,산업용 냉장 및 냉동 장비 제조업,Manufacture of refrigerating or freezing industrial equipment,5
+29172,가정용 및 산업용 공기 조화장치 제조업,"Manufacture of household and industrial air conditioning, control machines",5
+29173,운송장비용 공기 조화장치 제조업,"Manufacture of air conditioning, control machines for transport equipment",5
+29174,산업용 송풍기 및 배기장치 제조업,Manufacture of non-domestic fans and ventilators,5
+29175,기체 여과기 제조업,Manufacture of filtering or purifying machinery for air or gases,5
+29176,액체 여과기 제조업,Manufacture of filtering or purifying machinery for liquids or oils,5
+29177,"증류기, 열교환기 및 가스발생기 제조업","Manufacture of distilling machinery, heat exchangers and gas generators",5
+2918,사무용 기계 및 장비 제조업,Manufacture of office machinery and equipment,4
+29180,사무용 기계 및 장비 제조업,Manufacture of office machinery and equipment,5
+2919,기타 일반 목적용 기계 제조업,Manufacture of other general-purpose machinery,4
+29191,"용기 세척, 포장 및 충전기 제조업","Manufacture of machinery for cleaning, packing and charging",5
+29192,분사기 및 소화기 제조업,"Manufacture of equipment for projecting, dispersing or spraying liquids or powders",5
+29193,동력식 수지공구 제조업,Manufacture of power-driven hand tools,5
+29199,그 외 기타 일반목적용 기계 제조업,Manufacture of other general-purpose machinery n.e.c.,5
+292,특수 목적용 기계 제조업,Manufacture of special-purpose machinery,3
+2921,농업 및 임업용 기계 제조업,Manufacture of agricultural and forestry machinery,4
+29210,농업 및 임업용 기계 제조업,Manufacture of agricultural and forestry machinery,5
+2922,가공 공작기계 제조업,Manufacture of metal forming machinery and machine tools,4
+29221,전자 응용 절삭기계 제조업,"Manufacture of cutting machinery using a laser beam, ultrasonic waves",5
+29222,디지털 적층 성형기계 제조업,Manufacture of forming machinery for digital additive manufacturing,5
+29223,금속 절삭기계 제조업,Manufacture of metal cutting machinery,5
+29224,금속 성형기계 제조업,Manufacture of metal shaping machinery,5
+29229,기타 가공 공작기계 제조업,Manufacture of other forming machinery and machine tools,5
+2923,금속 주조 및 기타 야금용 기계 제조업,Manufacture of machinery for metal casting and other metallurgy,4
+29230,금속 주조 및 기타 야금용 기계 제조업,Manufacture of machinery for metal casting and other metallurgy,5
+2924,건설 및 광업용 기계장비 제조업,"Manufacture of machinery for mining, quarrying and construction",4
+29241,건설 및 채광용 기계장비 제조업,"Manufacture of machinery for mining, quarrying and construction",5
+29242,광물처리 및 취급장비 제조업,Manufacture of machinery for treating minerals,5
+2925,음ㆍ식료품 및 담배 가공기계 제조업,"Manufacture of machinery for food, beverage and tobacco processing",4
+29250,음ㆍ식료품 및 담배 가공기계 제조업,"Manufacture of machinery for food, beverage and tobacco processing",5
+2926,"섬유, 의복 및 가죽 가공기계 제조업","Manufacture of machinery for textile, apparel and leather production",4
+29261,"산업용 섬유 세척, 염색, 정리 및 가공 기계 제조업","Manufacture of industrial machinery for washing, dyeing, finishing and processing of textile",5
+29269,"기타 섬유, 의복 및 가죽 가공 기계 제조업","Manufacture of other machinery for textiles, apparel and leather processing",5
+2927,반도체 및 디스플레이 제조용 기계 제조업,Manufacture of semi-conductor and display component manufacturing machinery,4
+29271,반도체 제조용 기계 제조업,Manufacture of semi-conductor manufacturing machinery,5
+29272,디스플레이 제조용 기계 제조업,Manufacture of display component manufacturing machinery,5
+2928,산업용 로봇 제조업,Manufacture of industrial robots,4
+29280,산업용 로봇 제조업,Manufacture of industrial robots,5
+2929,기타 특수 목적용 기계 제조업,Manufacture of other special purpose machinery,4
+29291,"고무, 화학섬유 및 플라스틱 성형기 제조업","Manufacture of machinery for rubber, man-made fiber and plastics processing",5
+29292,인쇄 및 제책용 기계 제조업,Manufacture of machinery for printing and bookbinding,5
+29293,주형 및 금형 제조업,Manufacture of mould and metallic patterns,5
+29299,그 외 기타 특수목적용 기계 제조업,"Manufacture of other special purpose machinery, n.e.c.",5
+30,자동차 및 트레일러 제조업,"Manufacture of motor vehicles, trailers and semitrailers",2
+301,자동차용 엔진 및 자동차 제조업,Manufacture of motor vehicles and engines for motor vehicles,3
+3011,자동차용 엔진 제조업,Manufacture of engines for motor vehicles,4
+30110,자동차용 엔진 제조업,Manufacture of engines for motor vehicles,5
+3012,자동차 제조업,Manufacture of motor vehicles,4
+30121,내연기관 승용차 및 기타 여객용 자동차 제조업,Manufacture of internal combustion engine vehicle for passenger,5
+30122,전기 승용차 및 기타 여객용 전기 자동차 제조업,Manufacture of electric vehicle for passenger,5
+30123,내연기관 화물자동차 및 특수목적용 자동차 제조업,Manufacture of internal combustion engine vehicle for freight and special purpose,5
+30124,전기 화물자동차 및 특수목적용 전기 자동차 제조업,Manufacture of electric vehicle for freight and special purpose,5
+302,자동차 차체 및 트레일러 제조업,Manufacture of bodies for motor vehicles; manufacture of trailers and semi-trailers,3
+3020,자동차 차체 및 트레일러 제조업,Manufacture of bodies for motor vehicles; manufacture of trailers and semi-trailers,4
+30201,차체 및 특장차 제조업,Manufacture of motor vehicle bodies and motor vehicles assembled on purchased chassis,5
+30202,자동차 구조 및 장치 변경업,Modification of structure and devices of a motor vehicles,5
+30203,트레일러 및 세미 트레일러 제조업,Manufacture of trailers and semi-trailers,5
+303,자동차 신품 부품 제조업,Manufacture of parts and accessories for motor vehicles(new products),3
+3031,자동차 엔진용 신품 부품 제조업,Manufacture of parts and accessories for motor engines(new products),4
+30310,자동차 엔진용 신품 부품 제조업,Manufacture of parts and accessories for motor engines(new products),5
+3032,자동차 차체용 신품 부품 제조업,Manufacture of parts and accessories for motor vehicle body(new products),4
+30320,자동차 차체용 신품 부품 제조업,Manufacture of parts and accessories for motor vehicle body(new products),5
+3033,자동차용 신품 동력전달장치 및 전기장치 제조업,Manufacture of power transmission devices and electrical and electronic equipment for motor vehicles(new products),4
+30331,자동차용 신품 동력전달장치 제조업,Manufacture of power transmission devices for motor vehicles(new products),5
+30332,자동차용 신품 전기장치 제조업,Manufacture of electronic equipment for motor vehicles(new products),5
+3039,자동차용 기타 신품 부품 제조업,Manufacture of other parts and accessories for motor vehicles(new products),4
+30391,자동차용 신품 조향장치 및 현가장치 제조업,Manufacture of steering and suspension devices for motor vehicles(new products),5
+30392,자동차용 신품 제동장치 제조업,Manufacture of damping devices for motor vehicles(new products),5
+30393,자동차용 신품 의자 제조업,Manufacture of seats for motor vehicles(new products),5
+30399,그 외 자동차용 신품 부품 제조업,Manufacture of other new parts and accessories for motor vehicles n.e.c.,5
+304,자동차 재제조 부품 제조업,Manufacture of parts and accessories for motor vehicles(re manufacturing products),3
+3040,자동차 재제조 부품 제조업,Manufacture of parts and accessories for motor vehicles(re manufacturing products),4
+30400,자동차 재제조 부품 제조업,Manufacture of parts and accessories for motor vehicles(re manufacturing products),5
+31,기타 운송장비 제조업,Manufacture of other transport equipment,2
+311,선박 및 보트 건조업,Building of ships and boats,3
+3111,선박 및 수상 부유 구조물 건조업,Building of ships and floating structures,4
+31111,강선 건조업,Building of steel ships,5
+31112,합성수지선 건조업,Building of synthetic resin ships,5
+31113,기타 선박 건조업,Building of non-ferrous metal ships and other ships,5
+31114,선박 구성 부분품 제조업,Manufacture of sections for ships,5
+3112,오락 및 스포츠용 보트 건조업,Building of pleasure and sporting boats,4
+31120,오락 및 스포츠용 보트 건조업,Building of pleasure and sporting boats,5
+312,철도장비 제조업,Manufacture of railway locomotives and rolling stock,3
+3120,철도장비 제조업,Manufacture of railway locomotives and rolling stock,4
+31201,기관차 및 기타 철도차량 제조업,Manufacture of rail locomotives and rolling stock,5
+31202,철도차량 부품 및 관련 장치물 제조업,Manufacture of specialized parts of railway or tramway locomotives or of rolling stock,5
+313,"항공기, 우주선 및 부품 제조업","Manufacture of aircraft, spacecraft and its parts",3
+3131,"항공기, 우주선 및 보조장치 제조업","Manufacture of aircraft, spacecraft and its assistant equipment",4
+31311,"유인 항공기, 항공우주선 및 보조장치 제조업","Manufacture of manned aircraft, spacecraft and its assistant equipment",5
+31312,무인 항공기 및 무인 비행장치 제조업,Manufacture of unmanned aircraft and its assistant equipment,5
+3132,항공기용 엔진 및 부품 제조업,Manufacture of engines and parts for aircraft,4
+31321,항공기용 엔진 제조업,Manufacture of engines for aircraft,5
+31322,항공기용 부품 제조업,Manufacture of aircraft parts and accessories,5
+319,그 외 기타 운송장비 제조업,Manufacture of other transport equipment,3
+3191,전투용 차량 제조업,Manufacture of military fighting vehicles,4
+31910,전투용 차량 제조업,Manufacture of military fighting vehicles,5
+3192,모터사이클 및 개인용 전기식 이동수단 제조업,Manufacture of motorcycles and electric personal mobility device,4
+31921,모터사이클 제조업,Manufacture of motorcycles,5
+31922,개인용 전기식 이동수단 제조업,Manufacture of electric personal mobility device,5
+3199,그 외 기타 분류 안된 운송장비 제조업,Manufacture of other transport equipment n.e.c.,4
+31991,자전거 및 환자용 차량 제조업,Manufacture of bicycles and invalid carriages,5
+31999,그 외 기타 달리 분류되지 않은 운송장비 제조업,Manufacture of other transport equipment n.e.c.,5
+32,가구 제조업,Manufacture of furniture,2
+320,가구 제조업,Manufacture of furniture,3
+3201,침대 및 내장가구 제조업,Manufacture of beds and upholstered furniture,4
+32011,매트리스 및 침대 제조업,Manufacture of mattresses and beds,5
+32019,소파 및 기타 내장가구 제조업,Manufacture of sofas and other upholstered furniture,5
+3202,목재가구 제조업,Manufacture of wood furniture,4
+32021,주방용 및 음식점용 목재가구 제조업,Manufacture of wood furniture for kitchen and restaurant,5
+32029,기타 목재가구 제조업,Manufacture of other wood furniture,5
+3209,기타 가구 제조업,Manufacture of other furniture,4
+32091,금속 가구 제조업,Manufacture of metal furniture,5
+32099,그 외 기타 가구 제조업,Manufacture of other furniture n.e.c.,5
+33,기타 제품 제조업,Other manufacturing,2
+331,귀금속 및 장신용품 제조업,"Manufacture of jewellery, bijouterie and related articles",3
+3311,귀금속 및 관련제품 제조업,Manufacture of jewellery and related articles,4
+33110,귀금속 및 관련제품 제조업,Manufacture of jewellery and related articles,5
+3312,모조 귀금속 및 모조 장신용품 제조업,Manufacture of imitation jewellery and costume jewellery,4
+33120,모조 귀금속 및 모조 장신용품 제조업,Manufacture of imitation jewellery and costume jewellery,5
+332,악기 제조업,Manufacture of musical instruments,3
+3320,악기 제조업,Manufacture of musical instruments,4
+33201,건반 악기 제조업,Manufacture of keyboard instruments,5
+33209,기타 악기 및 전자 악기 제조업,Manufacture of other musical and electronic instruments,5
+333,운동 및 경기용구 제조업,Manufacture of sports and athletic goods,3
+3330,운동 및 경기용구 제조업,Manufacture of sports and athletic goods,4
+33301,"체조, 육상 및 체력단련용 장비 제조업","Manufacture of athletics, gymnastics, fitness equipment",5
+33302,놀이터용 장비 제조업,Manufacture of playground equipment,5
+33303,낚시 및 수렵용구 제조업,Manufacture of fishing and hunting equipment,5
+33309,기타 운동 및 경기용구 제조업,Manufacture of other sports and athletic goods,5
+334,"인형, 장난감 및 오락용품 제조업","Manufacture of dolls, toys and amusement goods",3
+3340,"인형, 장난감 및 오락용품 제조업","Manufacture of dolls, toys and amusement goods",4
+33401,인형 및 장난감 제조업,Manufacture of dolls and toys,5
+33402,영상게임기 제조업,Manufacture of video game machines,5
+33409,기타 오락용품 제조업,Manufacture of other amusement goods,5
+339,그 외 기타 제품 제조업,Other manufacturing n.e.c.,3
+3391,간판 및 광고물 제조업,Manufacture of signs and advertisements,4
+33910,간판 및 광고물 제조업,Manufacture of signs and advertisements,5
+3392,사무 및 회화용품 제조업,Manufacture of stationery and artists' goods,4
+33920,사무 및 회화용품 제조업,Manufacture of stationery and artists' goods,5
+3393,"가발, 장식용품 및 전시용 모형 제조업","Manufacture of wigs, ornaments and mockups",4
+33931,가발 및 유사 제품 제조업,Manufacture of wigs and similar articles,5
+33932,전시용 모형 제조업,Manufacture of exhibiting models,5
+33933,표구처리업,Mounting pictures and other arts,5
+3399,그 외 기타 분류 안된 제품 제조업,Other manufacturing n.e.c.,4
+33991,단추 및 유사 파스너 제조업,"Manufacture of buttons and snaps, slides and similar fasteners",5
+33992,"라이터, 연소물 및 흡연용품 제조업","Manufacture of lighters, combustible materials and smoking supplies",5
+33993,비 및 솔 제조업,Manufacture of brushes and brooms,5
+33999,그 외 기타 달리 분류되지 않은 제품 제조업,Other manufacturing n.e.c.,5
+34,산업용 기계 및 장비 수리업,Maintenance and repair services of industrial machinery and equipment,2
+340,산업용 기계 및 장비 수리업,Maintenance and repair services of industrial machinery and equipment,3
+3401,일반 기계류 수리업,Maintenance and repair services of general machinery and equipment,4
+34011,건설․광업용 기계 및 장비 수리업,Maintenance and repair services of machinery and equipment for mining and construction,5
+34019,기타 일반 기계 및 장비 수리업,Maintenance and repair services of other general machinery,5
+3402,전기․전자 및 정밀기기 수리업,"Maintenance and repair services of electrical, electronic and precision equipment",4
+34020,전기․전자 및 정밀기기 수리업,"Maintenance and repair services of electrical, electronic and precision equipment",5
+35,"전기, 가스, 증기 및 공기조절 공급업","Electricity, gas, steam and air conditioning supply",2
+351,전기업,"Electric power generation, transmission and distribution",3
+3511,발전업,Electric power generation,4
+35111,원자력 발전업,Nuclear power generation,5
+35112,수력 발전업,Hydroelectric power generation,5
+35113,화력 발전업,Thermal power generation,5
+35114,태양력 발전업,Solar and sunlight power generation,5
+35115,풍력 발전업,Wind power generation,5
+35119,기타 발전업,Other power generation,5
+3512,송전 및 배전업,Electric power transmission and distribution,4
+35120,송전 및 배전업,Electric power transmission and distribution,5
+3513,전기 판매업,Trade of electricity,4
+35130,전기 판매업,Trade of electricity,5
+352,연료용 가스 제조 및 배관공급업,Manufacture of gas; distribution of gaseous fuel through mains,3
+3520,연료용 가스 제조 및 배관공급업,Manufacture of gas; distribution of gaseous fuel through mains,4
+35200,연료용 가스 제조 및 배관공급업,Manufacture of gas; distribution of gaseous fuel through mains,5
+353,"증기, 냉․온수 및 공기조절 공급업","Steam, chilled or hot water and air conditioning supply",3
+3530,"증기, 냉․온수 및 공기조절 공급업","Steam, chilled or hot water and air conditioning supply",4
+35300,"증기, 냉․온수 및 공기조절 공급업","Steam, chilled or hot water and air conditioning supply",5
+36,수도업,Water supply,2
+360,수도업,Water supply,3
+3601,생활용수 공급업,"Water collection, treatment and distribution activities for domestic needs",4
+36010,생활용수 공급업,"Water collection, treatment and distribution activities for domestic needs",5
+3602,산업용수 공급업,"Water collection, treatment and distribution activities for industrial needs",4
+36020,산업용수 공급업,"Water collection, treatment and distribution activities for industrial needs",5
+37,"하수, 폐수 및 분뇨 처리업","Sewage, wastewater, human and animal waste treatment services",2
+370,"하수, 폐수 및 분뇨 처리업","Sewage, wastewater, human and animal waste treatment services",3
+3701,하수 및 폐수 처리업,"Sewage, wastewater treatment services",4
+37011,하수 처리업,Sewage treatment services,5
+37012,폐수 처리업,Wastewater treatment services,5
+3702,분뇨 처리업,Human and animal waste treatment services,4
+37021,사람 분뇨 처리업,Human waste treatment services,5
+37022,축산 분뇨 처리업,Animal waste treatment services,5
+38,"폐기물 수집, 운반, 처리 및","Waste collection, treatment and disposal activities; materials recovery",2
+381,"폐기물 수집, 운반업",Waste collection,3
+3811,"지정 외 폐기물 수집, 운반업",Non-hazardous waste collection,4
+38110,"지정 외 폐기물 수집, 운반업",Non-hazardous waste collection,5
+3812,"지정 폐기물 수집, 운반업",Hazardous waste collection,4
+38120,"지정 폐기물 수집, 운반업",Hazardous waste collection,5
+3813,"건설 폐기물 수집, 운반업",Construction and demolition waste collection,4
+38130,"건설 폐기물 수집, 운반업",Construction and demolition waste collection,5
+382,폐기물 처리업,Waste treatment and disposal services,3
+3821,지정 외 폐기물 처리업,Treatment and disposal of non-hazardous waste,4
+38210,지정 외 폐기물 처리업,Treatment and disposal of non-hazardous waste,5
+3822,지정 폐기물 처리업,Treatment and disposal of hazardous waste,4
+38220,지정 폐기물 처리업,Treatment and disposal of hazardous waste,5
+3823,건설 폐기물 처리업,Treatment and disposal of construction and demolition waste,4
+38230,건설 폐기물 처리업,Treatment and disposal of construction and demolition waste,5
+3824,"방사성 폐기물 수집, 운반 및 처리업","Collection, treatment and disposal of radioactive nuclear waste",4
+38240,"방사성 폐기물 수집, 운반 및 처리업","Collection, treatment and disposal of radioactive nuclear waste",5
+383,"해체, 선별 및 원료 재생업",Dismantling and sorting recoverable materials; materials recovery,3
+3831,"금속류 해체, 선별 및 원료 재생업","Dismantling, sorting and recovering metal waste",4
+38311,금속류 해체 및 선별업,Dismantling and sorting metal waste,5
+38312,금속류 원료 재생업,Recovery of metal waste,5
+3832,"비금속류 해체, 선별 및 원료 재생업","Dismantling, sorting and recovering non-metal waste",4
+38321,비금속류 해체 및 선별업,Dismantling and sorting non-metal waste,5
+38322,비금속류 원료 재생업,Recovery of non-metal waste,5
+39,환경 정화 및 복원업,Remediation activities and other waste management services,2
+390,환경 정화 및 복원업,Remediation activities and other waste management services,3
+3900,환경 정화 및 복원업,Remediation activities and other waste management services,4
+39001,토양 및 지하수 정화업,Decontamination of soils and groundwater,5
+39009,기타 환경 정화 및 복원업,Other remediation activities and waste management services,5
+41,종합 건설업,General construction,2
+411,건물 건설업,Building construction,3
+4111,주거용 건물 건설업,Residential building construction,4
+41111,단독 주택 건설업,Detached dwelling house and multi-dwelling house construction,5
+41112,아파트 건설업,Apartment building construction,5
+41119,기타 공동 주택 건설업,Other multi-unit house construction including apartment unit in a house,5
+4112,비주거용 건물 건설업,Non-residential building construction,4
+41121,사무․상업용 및 공공기관용 건물 건설업,"Office, commercial and institutional building construction",5
+41122,제조업 및 유사 산업용 건물 건설업,Factory and similar industrial building construction,5
+41129,기타 비주거용 건물 건설업,Other non-residential building construction,5
+412,토목 건설업,Heavy and civil engineering construction,3
+4121,지반조성 건설업,Land subdivision with land improvement,4
+41210,지반조성 건설업,Land subdivision with land improvement,5
+4122,토목시설물 건설업,Construction of civil engineering projects,4
+41221,도로 건설업,"Construction of highways, streets and roads",5
+41222,"교량, 터널 및 철도 건설업","Construction of bridges, tunnels and railways",5
+41223,"항만, 수로, 댐 및 유사 구조물 건설업","Construction of harbor and river works, waterways, dams and other water works",5
+41224,환경설비 건설업,Construction of environmental facilities,5
+41225,산업생산시설 종합건설업,Construction of industrial plants,5
+41226,조경 건설업,Construction of landscaping works,5
+41229,기타 토목시설물 건설업,Other construction of civil engineering projects,5
+42,전문직별 공사업,Specialized construction activities,2
+421,기반조성 및 시설물 축조관련 전문공사업,Site preparation and construction of foundation works and structures,3
+4211,건물 및 구축물 해체 공사업,Wrecking and demolition of buildings and other structures,4
+42110,건물 및 구축물 해체 공사업,Wrecking and demolition of buildings and other structures,5
+4212,기반조성 관련 전문공사업,Site preparation and related construction,4
+42121,토공사업,Earth works,5
+42122,"보링, 그라우팅 및 관정 공사업","Boring, grouting and water well drilling works",5
+42123,파일공사 및 축조관련 기초 공사업,Pile driving and related construction of foundation works,5
+42129,기타 기반조성 관련 전문공사업,Other site preparation and related construction,5
+4213,"철골, 철근 및 콘크리트 공사업","Steel frame, concrete and reinforcement works",4
+42131,철골 및 관련 구조물 공사업,Steel frame works,5
+42132,콘크리트 및 철근 공사업,Concrete and reinforcement works,5
+4219,기타 시설물 축조 관련 전문공사업,"Other erecting, assembling and framing structural parts and masonry works",4
+42191,조적 및 석공사업,Brick laying and stone setting works,5
+42192,포장 공사업,Pavement works,5
+42193,철도궤도 전문공사업,Special railway laying works,5
+42194,수중 공사업,Underwater works,5
+42195,비계 및 형틀 공사업,Scaffolding and form works,5
+42196,"지붕, 내․외벽 축조 관련 전문 공사업",Roofing and siding works,5
+42199,기타 옥외 시설물 축조 관련 전문공사업,Installing other outdoor facility works,5
+422,건물설비 설치 공사업,Construction of installing building equipment,3
+4220,건물설비 설치 공사업,Construction of installing building equipment,4
+42201,배관 및 냉ㆍ난방 공사업,"Plumbing, heating, air conditioning works",5
+42202,건물용 기계ㆍ장비 설치 공사업,Installation of machinery equipment for building,5
+42203,승강설비 설치 공사업,Installation of lifting equipment,5
+42204,"방음, 방진 및 내화 공사업","Soundproofing, isolating vibration and fireproofing works",5
+42205,소방시설 공사업,Fire fighting installation,5
+42209,기타 건물 관련설비 설치 공사업,Construction of installing other building equipment,5
+423,전기 및 통신 공사업,Electrical and communication works,3
+4231,전기 공사업,Electrical works,4
+42311,일반전기 공사업,Electrical works for heavy and civil engineering structures,5
+42312,내부 전기배선 공사업,Electrical works for buildings,5
+4232,통신 공사업,Communication works,4
+42321,일반 통신 공사업,Communication works for heavy and civil engineering structures,5
+42322,내부 통신배선 공사업,Communication works for buildings,5
+424,실내건축 및 건축마무리 공사업,Building completion and finishing,3
+4241,"도장, 도배 및 내장 공사업","Painting, papering and finishing carpentry works",4
+42411,도장 공사업,Painting works,5
+42412,"도배, 실내장식 및 내장 목공사업","Papering, decorating and finishing carpentry works",5
+4242,유리 및 창호 공사업,Glazing works and joinery installation,4
+42420,유리 및 창호 공사업,Glazing works and joinery installation,5
+4249,기타 건축마무리 공사업,Other building completion and finishing,4
+42491,"미장, 타일 및 방수 공사업","Plastering, installing tile and waterproofing works",5
+42492,건물용 금속공작물 설치 공사업,Installation of metal works used on building,5
+42499,그 외 기타 건축 마무리 공사업,Building completion and finishing n.e.c.,5
+425,시설물 유지관리 공사업,Repair and maintenance works for construction works and supplementary facilities,3
+4250,시설물 유지관리 공사업,Repair and maintenance works for construction works and supplementary facilities,4
+42500,시설물 유지관리 공사업,Repair and maintenance works for construction works and supplementary facilities,5
+426,건설장비 운영업,Renting of construction machinery and equipment with operator,3
+4260,건설장비 운영업,Renting of construction machinery and equipment with operator,4
+42600,건설장비 운영업,Renting of construction machinery and equipment with operator,5
+45,자동차 및 부품 판매업,Sale of motor vehicles and parts,2
+451,자동차 판매업,Sale of motor vehicles,3
+4511,자동차 신품 판매업,Sale of new motor vehicles,4
+45110,자동차 신품 판매업,Sale of new motor vehicles,5
+4512,중고 자동차 판매업,Sale of used motor vehicles,4
+45120,중고 자동차 판매업,Sale of used motor vehicles,5
+452,자동차 부품 및 내장품 판매업,Sale of motor vehicle parts and accessories,3
+4521,자동차 신품 부품 및 내장품 판매업,Sale of motor vehicle new parts and accessories,4
+45211,자동차 신품 타이어 및 튜브 판매업,Sale of motor vehicle new tires and tubes,5
+45212,자동차용 전용 신품 부품 판매업,Sale of new parts and accessories specialized for motor vehicles,5
+45213,자동차 내장용 신품 전기․전자․ 정밀 기기 판매업,"Sale of new electrical, electronic and precision equipment for motor vehicles",5
+45219,기타 자동차 신품 부품 및 내장품 판매업,Sale of other new parts and accessories for motor vehicle,5
+4522,자동차 중고 부품 및 내장품 판매업,Sale of motor vehicle used parts and accessories,4
+45220,자동차 중고 부품 및 내장품 판매업,Sale of motor vehicle used parts and accessories,5
+453,모터사이클 및 부품 판매업,Sale of motorcycles and related parts and accessories,3
+4530,모터사이클 및 부품 판매업,Sale of motorcycles and related parts and accessories,4
+45301,모터사이클 및 부품 도매업,Wholesale of motorcycles and related parts and accessories,5
+45302,모터사이클 및 부품 소매업,Retail sale of motorcycles and related parts and accessories,5
+46,도매 및 상품 중개업,Wholesale trade on own account or on a fee or contract basis,2
+461,상품 중개업,Wholesale on a fee or contract basis,3
+4610,상품 중개업,Wholesale on a fee or contract basis,4
+46101,"산업용 농․축산물, 섬유 원료 및 동물 중개업","Agents involved in the sale of industrial agricultural raw materials, textile raw materials, live animals",5
+46102,음ㆍ식료품 및 담배 중개업,"Agents involved in the sale of food, beverages and tobacco",5
+46103,"섬유, 의복, 신발 및 가죽제품 중개업","Agents involved in the sale of textiles, clothing, footwear and leather goods",5
+46104,목재 및 건축자재 중개업,Agents involved in the sale of timber and building materials,5
+46105,"연료, 광물, 1차 금속, 비료 및 화학제품 중개업","Agents involved in the sale of fuels, ores, metals and industrial chemicals including fertilizers",5
+46106,기계 및 장비 중개업,Agents involved in the sale of machinery and equipment,5
+46107,그 외 기타 특정 상품 중개업,Agents specialized in the sale of other particular products,5
+46109,상품 종합 중개업,Agents involved in the sale of a variety of goods,5
+462,산업용 농․축산물 및 동․식물 도매업,Wholesale of agricultural raw materials and live animals and plants,3
+4620,산업용 농․축산물 및 동․식물 도매업,Wholesale of agricultural raw materials and live animals and plants,4
+46201,곡물 및 유지작물 도매업,Wholesale of grains and oilseed crops,5
+46202,종자 및 묘목 도매업,Wholesale of seeds and seedlings,5
+46203,사료 도매업,Wholesale of animal feeds,5
+46204,화훼류 및 식물 도매업,Wholesale of flowers and plants,5
+46205,육지동물 및 반려동물 도매업,Wholesale of live animals and companion animals,5
+46209,기타 산업용 농산물 도매업,Wholesale of other agricultural raw materials and live animals and plants,5
+463,음ㆍ식료품 및 담배 도매업,"Wholesale of food, beverages and tobaccos",3
+4631,신선식품 및 단순 가공식품 도매업,"Wholesale of fresh food and dried, salted and frozen food",4
+46311,과실류 도매업,Wholesale of fruit,5
+46312,"채소류, 서류 및 향신작물류 도매업","Wholesale of vegetables, root and tube crops and spice crops",5
+46313,육류 도매업,Wholesale of meat,5
+46314,건어물 및 젓갈류 도매업,Wholesale of dried and salted fishery products,5
+46315,"신선, 냉동 및 기타 수산물 도매업","Wholesale of fresh, frozen and other fishery products",5
+46319,기타 신선식품 및 단순 가공식품 도매업,"Wholesale of other fresh food and dried, salted and frozen food",5
+4632,가공식품 도매업,Wholesale of processed food,4
+46321,육류 가공식품 도매업,Wholesale of meat processed food,5
+46322,수산물 가공식품 도매업,Wholesale of fishery processed food,5
+46323,"빵류, 과자류, 당류, 초콜릿 도매업","Wholesale of bakery, flour confectionery, sugar and chocolate products",5
+46324,낙농품 및 동․식물성 유지 도매업,Wholesale of dairy products and edible oils and fats,5
+46325,커피 및 차류 도매업,Wholesale of coffee and tea,5
+46326,조미료 도매업,Wholesale of condiments and food additive products,5
+46329,기타 가공식품 도매업,Wholesale of other processed food,5
+4633,음료 및 담배 도매업,Wholesale of beverages and tobaccos,4
+46331,주류 도매업,Wholesale of alcoholic beverages,5
+46332,비알코올음료 도매업,Wholesale of non-alcoholic beverages,5
+46333,담배 도매업,Wholesale of tobaccos,5
+464,생활용품 도매업,Wholesale of household goods,3
+4641,"생활용 섬유제품, 의복, 의복 액세 서리 및 모피제품 도매업","Wholesale of household textiles, apparels, accessories and fur products",4
+46411,생활용 섬유 및 실 도매업,Wholesale of textiles and threads,5
+46412,커튼 및 침구용품 도매업,Wholesale of curtains and bedding,5
+46413,남녀용 겉옷 및 셔츠 도매업,Wholesale of outerwear and shirts,5
+46414,유아용 의류 도매업,Wholesale of babies' garments,5
+46415,속옷 및 잠옷 도매업,Wholesale of underwear and nightwear,5
+46416,가죽 및 모피제품 도매업,Wholesale of leather and fur products,5
+46417,의복 액세서리 및 모조 장신구 도매업,Wholesale of wear accessories and costume jewelry,5
+46419,기타 생활용 섬유 및 직물제품 도매업,Wholesale of other household textiles and textile goods,5
+4642,신발 도매업,Wholesale of footwear,4
+46420,신발 도매업,Wholesale of footwear,5
+4643,"생활용 가구, 조명기구 및 비전기식 생활용 기기 도매업","Wholesale of household furniture, lighting equipment and non-electric appliances",4
+46431,생활용 가구 도매업,Wholesale of household furniture,5
+46432,"전구, 램프 및 조명장치 도매업",Wholesale of electric lamps and bulbs and lighting equipment,5
+46433,생활용 유리ㆍ요업ㆍ목재ㆍ금속 제품 및 날붙이 도매업,"Wholesale of cutlery and housewares made of glass, ceramic, wood, metal",5
+46439,기타 비전기식 생활용 기기 및 기구 도매업,Wholesale of other household non-electric appliances,5
+4644,"의약품, 의료용품 및 화장품 도매업",Wholesale of pharmaceutical and medical goods and cosmetics,4
+46441,의약품 도매업,Wholesale of pharmaceuticals,5
+46442,의료용품 도매업,Wholesale of medical goods,5
+46443,화장품 및 화장용품 도매업,Wholesale of cosmetics and related products,5
+46444,비누 및 세정제 도매업,Wholesale of soaps and detergents,5
+4645,"생활용 포장ㆍ위생용품, 문구용품 및 출판 인쇄물 도매업","Wholesale of household wrapping, hygienic goods, stationery and printed publications",4
+46451,"생활용 포장 및 위생용품, 봉투 및 유사 제품 도매업","Wholesale of household wrapping, hygienic goods, bags and similar goods",5
+46452,"문구용품, 회화용품, 사무용품 도매업","Wholesale of stationery, artists' goods and office supplies",5
+46453,"서적, 잡지 및 기타 인쇄물 도매업","Wholesale of books, magazines and other printed publications",5
+4646,"음반 및 비디오물, 악기, 오락 및 경기용품 도매업","Wholesale of music and video recordings, musical instruments, amusement and athletic goods",4
+46461,음반 및 비디오물 도매업,Wholesale of music and video recordings,5
+46462,악기 도매업,Wholesale of musical instruments,5
+46463,"장난감 및 취미, 오락용품 도매업","Wholesale of toys, hobby supplies and game and playthings",5
+46464,운동 및 경기용품 도매업,Wholesale of sports and athletic goods,5
+46465,자전거 및 기타 운송장비 도매업,Wholesale of bicycles and other transportation equipment,5
+4649,"가방, 시계, 안경 및 기타 생활용품 도매업","Wholesale of luggage, watches, eyeglasses and other household goods",4
+46491,가방 및 보호용 케이스 도매업,Wholesale of luggage and protective cases,5
+46492,시계 및 귀금속제품 도매업,Wholesale of watches and jewelry,5
+46493,"안경, 사진장비 및 광학용품 도매업","Wholesale of eyeglasses, photographic equipments and optical goods",5
+46499,그 외 기타 생활용품 도매업,Wholesale of other household goods n.e.c.,5
+465,기계장비 및 관련 물품 도매업,"Wholesale of machinery, equipment and supplies",3
+4651,"컴퓨터 및 주변장치, 소프트웨어 도매업","Wholesale of computers, computer peripheral equipment and software",4
+46510,"컴퓨터 및 주변장치, 소프트웨어 도매업","Wholesale of computers, computer peripheral equipment and software",5
+4652,"가전제품, 통신장비 및 부품 도매업",Wholesale of electronic and communications equipment and parts,4
+46521,가전제품 및 부품 도매업,Wholesale of electronic equipment and parts,5
+46522,통신․방송장비 및 부품 도매업,Wholesale of communication and broadcasting apparatuses and parts,5
+4653,산업용 기계 및 장비 도매업,Wholesale of industrial machinery and equipment,4
+46531,농림업용 기계 및 장비 도매업,Wholesale of agricultural and forestry machinery and equipment,5
+46532,건설ㆍ광업용 기계 및 장비 도매업,Wholesale of construction and mining machinery and equipment,5
+46533,공작용 기계 및 장비 도매업,Wholesale of machine tools and related equipment,5
+46539,기타 산업용 기계 및 장비 도매업,Wholesale of other industrial machinery and equipment,5
+4659,기타 기계 및 장비 도매업,Wholesale of other machinery and equipment,4
+46591,사무용 가구 및 기기 도매업,Wholesale of office furniture and appliances,5
+46592,의료기기 도매업,Wholesale of medical appliances,5
+46593,정밀기기 및 과학기기 도매업,Wholesale of precision and scientific instruments and equipment,5
+46594,수송용 운송장비 도매업,Wholesale of transport equipment,5
+46595,전기용 기계․장비 및 관련 기자재 도매업,Wholesale of electrical machinery and related materials,5
+46596,전지 및 케이블 도매업,Wholesale of batteries and cables,5
+46599,그 외 기타 기계 및 장비 도매업,Wholesale of other machinery and equipment n.e.c.,5
+466,"건축자재, 철물 및 난방장치 도매업","Wholesale of construction materials, hardware and heating and air conditioning equipment",3
+4661,일반 건축자재 도매업,Wholesale of construction materials,4
+46611,원목 및 건축관련 목제품 도매업,Wholesale of wood and wooden goods for construction industry,5
+46612,"골재, 벽돌 및 시멘트 도매업","Wholesale of gravel, bricks and cement",5
+46613,유리 및 창호 도매업,"Wholesale of glass, windows and doors",5
+4662,"냉․난방장치 및 철물, 수공구 도매업","Wholesale of hardware, handtools and heating and air conditioning equipment",4
+46621,배관 및 냉ㆍ난방장치 도매업,Wholesale of plumbing and heating and air conditioning equipment,5
+46622,"철물, 금속 파스너 및 수공구 도매업","Wholesale of hardware, metal fastener and handtools",5
+4669,기타 건축자재 도매업,Wholesale of other construction materials,4
+46691,도료 도매업,Wholesale of paint,5
+46692,벽지 및 장판류 도매업,Wholesale of wallpaper and floor coverings,5
+46699,그 외 기타 건축자재 도매업,Wholesale of other construction materials n.e.c.,5
+467,기타 전문 도매업,Other specialized wholesale,3
+4671,"연료, 연료용 광물 및 관련제품 도매업","Wholesale of solid, liquid and gaseous fuels and related products",4
+46711,고체연료 및 관련제품 도매업,Wholesale of solid fuels and related products,5
+46712,액체연료 및 관련제품 도매업,Wholesale of liquid fuels and related products,5
+46713,기체연료 및 관련제품 도매업,Wholesale of gaseous fuels and related products,5
+4672,1차 금속제품 및 금속광물 도매업,Wholesale of basic metals and metal ores,4
+46721,1차 금속제품 도매업,Wholesale of basic metals,5
+46722,금속광물 도매업,Wholesale of metal ores,5
+4673,화학물질 및 화학제품 도매업,Wholesale of chemical materials and products,4
+46731,"염료, 안료 및 관련제품 도매업","Wholesale of dyes, pigments and related products",5
+46732,비료 및 농약 도매업,Wholesale of fertilizers and agricultural chemicals,5
+46733,플라스틱물질 및 합성고무 도매업,Wholesale of plastics and synthetic rubber in primary forms,5
+46739,기타 화학물질 및 화학제품 도매업,Wholesale of other chemical materials and products,5
+4674,"방직용 섬유, 실 및 직물 도매업","Wholesale of fibers, yarns and textiles",4
+46741,방직용 섬유 및 실 도매업,Wholesale of fibers and yarns for spinning and weaving,5
+46742,직물 도매업,Wholesale of textiles,5
+4675,"종이 원지, 판지, 종이상자 도매업","Wholesale of paper, paperboard and paper box",4
+46750,"종이 원지, 판지, 종이상자 도매업","Wholesale of paper, paperboard and paper box",5
+4679,재생용 재료 및 기타 상품 전문 도매업,Wholesale of materials for recycling and other specialized goods,4
+46791,재생용 재료 수집 및 판매업,Wholesale of materials for recycling,5
+46799,그 외 기타 상품 전문 도매업,Wholesale of other specialized goods n.e.c.,5
+468,상품 종합 도매업,Non-specialized wholesale trade,3
+4680,상품 종합 도매업,Non-specialized wholesale trade,4
+46800,상품 종합 도매업,Non-specialized wholesale trade,5
+47,소매업; 자동차 제외,"Retail trade, except motor vehicles and motorcycles",2
+471,종합 소매업,Retail sale in non-specialized stores,3
+4711,대형 종합 소매업,Retail sale in non-specialized superstores with sales space of at least three thousand square meters,4
+47111,백화점,Department stores,5
+47112,대형 마트,Discount department stores,5
+47119,기타 대형 종합 소매업,Other superstores with sales space of at least three thousand square meters,5
+4712,음ㆍ식료품 위주 종합 소매업,"Retail sale in non-specialized stores with food, beverages predominating",4
+47121,슈퍼마켓,Supermarkets,5
+47122,체인화 편의점,Convenience stores,5
+47129,기타 음ㆍ식료품 위주 종합 소매업,"Retail sale in other non-specialized stores with food, beverages predominating",5
+4713,면세점,Duty-free shops,4
+47130,면세점,Duty-free shops,5
+4719,그 외 기타 종합 소매업,Other retail sale in non-specialized stores,4
+47190,그 외 기타 종합 소매업,Other retail sale in non-specialized stores,5
+472,음ㆍ식료품 및 담배 소매업,"Retail sale of foods, beverages and tobacco in specialized stores",3
+4721,신선식품 및 단순 가공식품 소매업,"Retail sale of fresh food and dried, salted and frozen food",4
+47211,"곡물, 곡분 및 가축 사료 소매업","Retail sale of grains, grain flour and animal feeds",5
+47212,육류 소매업,Retail sale of meat,5
+47213,건어물 및 젓갈류 소매업,Retail sale of dried and salted fishery products,5
+47214,"신선, 냉동 및 기타 수산물 소매업","Retail sale of fresh, frozen and other fishery products",5
+47215,"채소, 과실 및 뿌리작물 소매업","Retail sale of vegetables, fruit and root crops",5
+47219,기타 신선식품 및 단순 가공식품 소매업,"Retail sale of other fresh food and dried, salted and frozen food",5
+4722,가공식품 소매업,Retail sale of processed foods,4
+47221,"빵류, 과자류 및 당류 소매업","Retail sale of bakery, flour confectionery and sugar products",5
+47222,건강보조식품 소매업,Retail sale of health additive foods,5
+47223,조리 반찬류 소매업,Retail sale of side dishes,5
+47229,기타 가공식품 소매업,Retail sale of other processed food,5
+4723,음료 및 담배 소매업,Retail sale of beverages and tobacco products,4
+47231,음료 소매업,Retail sale of beverages,5
+47232,담배 소매업,Retail sale of tobacco products,5
+473,가전제품 및 정보통신장비 소매업,Retail sale of household electrical appliances and information and communication equipment,3
+4731,"컴퓨터 및 주변장치, 소프트웨어 및 통신기기 소매업","Retail sale of computers, computer peripheral equipment, software and communication equipment",4
+47311,"컴퓨터 및 주변장치, 소프트웨어 소매업","Retail sale of computers, computer peripheral equipment and software",5
+47312,통신기기 소매업,Retail sale of communication equipment,5
+4732,가전제품 소매업,Retail sale of household electrical appliances,4
+47320,가전제품 소매업,Retail sale of household electrical appliances,5
+474,"섬유, 의복, 신발 및 가죽제품 소매업","Retail sale of textiles, clothing, footwear and leather goods",3
+4741,의복 소매업,Retail sale of clothing,4
+47411,남자용 겉옷 소매업,Retail sale of outerwear for men,5
+47412,여자용 겉옷 소매업,Retail sale of outerwear for women,5
+47413,속옷 및 잠옷 소매업,Retail sale of underwear and nightwear,5
+47414,셔츠 및 블라우스 소매업,Retail sale of shirts and blouse,5
+47415,한복 소매업,"Retail sale of hanbok, korean traditional clothes",5
+47416,가죽 및 모피의복 소매업,Retail sale of leather and fur garments,5
+47417,유아용 의류 소매업,Retail sale of babies' garments,5
+47419,기타 의복 소매업,Retail sale of other clothing,5
+4742,"섬유, 직물 및 의복액세서리 소매업","Retail sale of textiles, textile goods and clothing accessories",4
+47421,가정용 직물제품 소매업,Retail sale of household textile articles,5
+47422,의복 액세서리 및 모조 장신구 소매업,Retail sale of wear accessaries and costume jewelry,5
+47429,"섬유 원단, 실 및 기타 섬유제품 소매업","Retail sale of fabrics, threads and other textile goods",5
+4743,신발 소매업,Retail sale of footwear,4
+47430,신발 소매업,Retail sale of footwear,5
+4744,가방 및 기타 가죽제품 소매업,Retail sale of luggage and other leather products,4
+47440,가방 및 기타 가죽제품 소매업,Retail sale of luggage and other leather products,5
+475,기타 생활용품 소매업,Retail sale of other household equipment,3
+4751,"철물, 공구, 창호 및 건설자재 소매업","Retail sale of hardware, tools, windows and doors and construction materials",4
+47511,철물 및 난방용구 소매업,Retail sale of hardware and heating equipment,5
+47512,공구 소매업,Retail sale of tools,5
+47513,"벽지, 마루덮개 및 장판류 소매업",Retail sale of wallpaper and floor coverings,5
+47519,"페인트, 창호 및 기타 건설자재 소매업","Retail sale of paints, windows and doors and other construction materials",5
+4752,가구 소매업,Retail sale of furniture,4
+47520,가구 소매업,Retail sale of furniture,5
+4759,그 외 기타 가정용품 소매업,Retail sale of other household equipment n.e.c.,4
+47591,전기용품 및 조명장치 소매업,"Retail sale of electrical appliances, lighting equipment",5
+47592,"주방용품 및 가정용 유리, 요업 제품 소매업","Retail sale of kitchenware, glass and ceramics household equipment",5
+47593,악기 소매업,Retail sale of musical instruments,5
+47599,그 외 기타 분류 안된 가정용품 소매업,Retail sale of other household appliances n.e.c.,5
+476,"문화, 오락 및 여가 용품 소매업","Retail sale of cultural, amusement and recreation goods",3
+4761,서적 및 문구용품 소매업,Retail sale of books and stationery,4
+47611,"서적, 신문 및 잡지류 소매업","Retail sale of books, newspapers and magazines",5
+47612,문구용품 및 회화용품 소매업,Retail sale of stationery and artists' goods,5
+4762,음반 및 비디오물 소매업,Retail sale of music and video recordings,4
+47620,음반 및 비디오물 소매업,Retail sale of music and video recordings,5
+4763,운동용품 및 자전거 소매업,Retail sale of sporting equipment and bicycles,4
+47631,운동 및 경기용품 소매업,Retail sale of sports and athletic goods,5
+47632,자전거 및 기타 운송장비 소매업,Retail sale of bicycles and other transportation equipment,5
+4764,"게임용구, 인형 및 장난감 소매업","Retail sale of amusement goods, dolls and toys",4
+47640,"게임용구, 인형 및 장난감 소매업","Retail sale of amusement goods, dolls and toys",5
+477,연료 소매업,Retail sale of fuels,3
+4771,운송장비용 연료 소매업,Retail sale of fuels for transportation equipment,4
+47711,운송장비용 주유소 운영업,Oil stations for transportation equipment,5
+47712,운송장비용 수소 충전업,Hydrogen stations for transport equipment,5
+47713,운송장비용 기타 가스 충전업,Other gas stations for transport equipment,5
+4772,가정용 연료 소매업,Retail sale of fuels for household,4
+47721,가정용 고체연료 소매업,Retail sale of solid fuels for household,5
+47722,가정용 액체연료 소매업,Retail sale of liquid fuels for household,5
+47723,가정용 가스연료 소매업,Retail sale of gaseous fuels for household,5
+478,기타 상품 전문 소매업,Retail sale in other goods in specialized stores,3
+4781,"의약품, 의료용 기구, 화장품 및 방향제 소매업","Retail sale of pharmaceuticals, medical equipment, cosmetics and perfumery",4
+47811,의약품 및 의료용품 소매업,Retail sale of pharmaceutical and medical goods,5
+47812,의료용 기구 소매업,Retail sale of medical and orthopedic equipment,5
+47813,"화장품, 비누 및 방향제 소매업","Retail sale of cosmetics, soaps and perfumery",5
+4782,"사무용 기기, 안경, 사진장비 및 정밀기기 소매업","Retail sale of office appliances, eyeglasses, photographic and precision equipment",4
+47821,사무용 기기 소매업,Retail sale of office appliances,5
+47822,안경 및 렌즈 소매업,Retail sale of eyeglasses and lens,5
+47823,사진기 및 사진용품 소매업,Retail sale of photographic equipment and related goods,5
+47829,기타 광학 및 정밀 기기 소매업,Retail sale of other optical and precision equipment,5
+4783,시계 및 귀금속 소매업,Retail sale of watches and jewelry,4
+47830,시계 및 귀금속 소매업,Retail sale of watches and jewelry,5
+4784,"예술품, 기념품 및 장식용품 소매업","Retail sale of works of arts, souvenirs and ornaments",4
+47841,예술품 및 골동품 소매업,Retail sale of works of arts and antiques,5
+47842,"기념품, 관광 민예품 및 장식용품 소매업","Retail sale of souvenirs, folk art articles and ornaments",5
+4785,그 외 기타 상품 전문 소매업,Retail sale in other goods in specialized stores n.e.c.,4
+47851,화초 및 식물 소매업,Retail sale of flowers and plants,5
+47852,반려용 동물 및 관련용품 소매업,Retail sale of companion animals and companion animal supplies,5
+47859,그 외 기타 분류 안된 상품 전문 소매업,Retail sale of other goods n.e.c.,5
+4786,중고 상품 소매업,Retail sale of second-hand goods,4
+47861,중고 가구 소매업,Retail sale of second-hand furniture,5
+47862,중고 가전제품 및 통신장비 소매업,Retail sale of electronic and communication equipment,5
+47869,기타 중고 상품 소매업,Retail sale of other second-hand goods,5
+479,무점포 소매업,Retail sale not in stores,3
+4791,통신 판매업,Retail sale via mail order houses or via internet,4
+47911,전자상거래 소매 중개업,Electronic commerce on a fee or contract basis via internet,5
+47912,전자상거래 소매업,Electronic commerce via internet,5
+47919,기타 통신 판매업,Retail sale via mail order houses,5
+4792,노점 및 유사이동 소매업,Sale via stalls and markets of other goods,4
+47920,노점 및 유사이동 소매업,Sale via stalls and markets of other goods,5
+4799,기타 무점포 소매업,"Other retail sale not in stores, stalls or markets",4
+47991,자동판매기 운영업,Retail sale through vending machine,5
+47992,계약배달 판매업,Direct selling of goods delivered directly to the customers premises,5
+47993,방문 판매업,Retail sale through door-to-door sales,5
+47999,그 외 기타 무점포 소매업,"Other retail sale not in stores, stalls or markets n.e.c.",5
+49,육상운송 및 파이프라인 운송업,Land transport and transport via pipelines,2
+491,철도 운송업,Transport via railways,3
+4910,철도 운송업,Transport via railways,4
+49101,철도 여객 운송업,"Passenger rail transport, interurban",5
+49102,철도 화물 운송업,Freight rail transport,5
+492,육상 여객 운송업,"Passenger land transport, except transport via railways",3
+4921,도시 정기 육상 여객 운송업,Urban and suburban passenger land transport,4
+49211,도시철도 운송업,Urban railway transport,5
+49212,시내버스 운송업,Intra-city bus transport,5
+49219,기타 도시 정기 육상 여객 운송업,Other urban and suburban passenger land transport,5
+4922,시외버스 운송업,Intercity bus transport,4
+49220,시외버스 운송업,Intercity bus transport,5
+4923,부정기 육상 여객 운송업,Non-scheduled passenger land transport,4
+49231,택시 운송업,Taxi transport,5
+49232,전세버스 운송업,Chartered bus transport,5
+49233,특수여객자동차 운송업,Hearse transport,5
+49239,기타 부정기 여객 육상 운송업,Other non-scheduled passenger land transport,5
+493,도로 화물 운송업,Freight transport by road,3
+4930,도로 화물 운송업,Freight transport by road,4
+49301,일반 화물자동차 운송업,Freight transport by two or more trucks,5
+49302,개인 화물자동차 운송업,Freight transport by one truck,5
+49309,기타 도로화물 운송업,Other freight transport by road,5
+494,소화물 전문 운송업,Couriers and messengers activities,3
+4940,소화물 전문 운송업,Couriers and messengers activities,4
+49401,택배업,Courier activities,5
+49402,늘찬 배달업,Local delivery and messenger services,5
+495,파이프라인 운송업,Transport via pipeline,3
+4950,파이프라인 운송업,Transport via pipeline,4
+49500,파이프라인 운송업,Transport via pipeline,5
+50,수상 운송업,Water transport,2
+501,해상 운송업,Sea and coastal water transport,3
+5011,외항 운송업,Sea water transport,4
+50111,외항 여객 운송업,Sea passenger water transport,5
+50112,외항 화물 운송업,Sea freight water transport,5
+5012,내항 운송업,Coastal water transport,4
+50121,내항 여객 운송업,Coastal passenger water transport,5
+50122,내항 화물 운송업,Coastal freight water transport,5
+5013,기타 해상 운송업,Other sea and coastal water transport,4
+50130,기타 해상 운송업,Other sea and coastal water transport,5
+502,내륙 수상 및 항만 내 운송업,Inland water transport,3
+5020,내륙 수상 및 항만 내 운송업,Inland water transport,4
+50201,항만 내 여객 운송업,Harbor passenger transport,5
+50209,기타 내륙 수상 여객 및 화물 운송업,Other inland passenger and freight water transport,5
+51,항공 운송업,Air transport,2
+511,항공 여객 운송업,Passenger air transport,3
+5110,항공 여객 운송업,Passenger air transport,4
+51100,항공 여객 운송업,Passenger air transport,5
+512,항공 화물 운송업,Freight air transport,3
+5120,항공 화물 운송업,Freight air transport,4
+51200,항공 화물 운송업,Freight air transport,5
+52,창고 및 운송관련 서비스업,Warehousing and support activities for transportation,2
+521,보관 및 창고업,Warehousing and storage,3
+5210,보관 및 창고업,Warehousing and storage,4
+52101,일반 창고업,General warehousing,5
+52102,냉장 및 냉동 창고업,Refrigerated and frozen warehousing,5
+52103,농산물 창고업,Farm products warehousing,5
+52104,위험물품 보관업,Dangerous goods warehousing,5
+52109,기타 보관 및 창고업,Other warehousing and storage,5
+529,기타 운송관련 서비스업,Support activities for transportation,3
+5291,육상 운송지원 서비스업,Service activities incidental to land transportation,4
+52911,철도 운송지원 서비스업,Service activities incidental to rail transportation,5
+52912,여객 자동차 터미널 운영업,Operation of passenger bus terminal facilities,5
+52913,물류 터미널 운영업,Operation of logistics terminal facilities,5
+52914,도로 및 관련시설 운영업,Operation of roads and related facilities,5
+52915,주차장 운영업,Operation of car park or garage facilities,5
+52919,기타 육상 운송지원 서비스업,Other service activities incidental to land transportation,5
+5292,수상 운송지원 서비스업,Service activities incidental to water transportation,4
+52921,항구 및 기타 해상 터미널 운영업,Operation of harbor and marine terminal facilities,5
+52922,선박관리업,Ship management,5
+52929,기타 수상 운송지원 서비스업,Other service activities incidental to water transportation,5
+5293,항공 운송지원 서비스업,Service activities incidental to air transportation,4
+52931,공항 운영업,Operation of airport,5
+52939,기타 항공 운송지원 서비스업,Other service activities incidental to air transportation,5
+5294,화물 취급업,Cargo handling,4
+52941,항공 및 육상 화물 취급업,Air and land cargo handling,5
+52942,수상 화물 취급업,Marine cargo handling,5
+5299,그 외 기타 운송관련 서비스업,Other support activities for transportation n.e.c.,4
+52991,통관 대리 및 관련서비스업,Activities of customs agents and related services,5
+52992,"화물운송 중개, 대리 및 관련 서비스업",Activities of freight forwarders and cargo agents and related services,5
+52993,"화물 포장, 검수 및 계량 서비스업","Activities of cargo packing, checking and weighing services",5
+52999,그 외 기타 분류 안된 운송 관련 서비스업,Other supporting transport services n.e.c.,5
+55,숙박업,Accommodation,2
+551,일반 및 생활 숙박시설 운영업,General accommodation and accommodation with cooking facilities,3
+5510,일반 및 생활 숙박시설 운영업,General accommodation and accommodation with cooking facilities,4
+55101,호텔업,Hotels,5
+55102,여관업,Inns,5
+55103,휴양콘도 운영업,Resort condominium,5
+55104,민박업,Tourist home,5
+55105,야영장업,Camping grounds,5
+55109,기타 일반 및 생활 숙박시설 운영업,Other general accommodation and provision of accommodation with cooking facilities,5
+559,기타 숙박업,Other accommodation,3
+5590,기타 숙박업,Other accommodation,4
+55901,기숙사 및 고시원 운영업,Dormitory and accommodation for examinee,5
+55909,그 외 기타 숙박업,Other accommodation n.e.c.,5
+56,음식점 및 주점업,Food and beverage service activities,2
+561,음식점업,Restaurants and mobile food service activities,3
+5611,한식 음식점업,Korean food restaurants,4
+56111,한식 일반 음식점업,General korean food restaurants,5
+56112,한식 면요리 전문점,Korean food restaurants specializing in noodle dishes,5
+56113,한식 육류요리 전문점,Korean food restaurants specializing in meat dishes,5
+56114,한식 해산물요리 전문점,Korean food restaurants specializing in seafood dishes,5
+5612,외국식 음식점업,Foreign food restaurants,4
+56121,중식 음식점업,Chinese food restaurants,5
+56122,일식 음식점업,Japanese food restaurants,5
+56123,서양식 음식점업,Western food restaurants,5
+56129,기타 외국식 음식점업,Other foreign food restaurants,5
+5613,기관 구내식당업,Industrial restaurants,4
+56130,기관 구내식당업,Industrial restaurants,5
+5614,출장 및 이동 음식점업,Event catering and mobile food service activities,4
+56141,출장 음식 서비스업,Event catering,5
+56142,이동 음식점업,Mobile food services activities,5
+5615,제과점업,Bakeries,4
+56150,제과점업,Bakeries,5
+5616,"피자, 햄버거 및 치킨 전문점","Pizza, hamburger, chicken and similar food services activities",4
+56161,"피자, 햄버거, 샌드위치 및 유사 음식점업","Pizza, hamburger and sandwich eating places and similar food services activities",5
+56162,치킨 전문점,Chicken restaurants,5
+5619,김밥 및 기타 간이 음식점업,Dried seaweed rolls and other light food restaurants,4
+56191,김밥 및 기타 간이 음식점업,Dried seaweed rolls and other light food restaurants,5
+56199,간이음식 포장 판매 전문점,Take-out light food restaurants,5
+562,주점 및 비알코올 음료점업,Drinking places and non-alcoholic beverages places,3
+5621,주점업,Drinking places,4
+56211,일반 유흥주점업,General amusement and drinking places,5
+56212,무도 유흥주점업,Dancing and drinking halls,5
+56213,생맥주 전문점,Taphouses,5
+56219,기타 주점업,Other drinking places,5
+5622,비알코올 음료점업,Non-alcoholic beverages places,4
+56221,커피 전문점,Coffee shops,5
+56229,기타 비알코올 음료점업,Other non-alcoholic beverages places,5
+58,출판업,Publishing activities,2
+581,"서적, 잡지 및 기타 인쇄물 출판업","Publishing of books, magazines and other publishing activities",3
+5811,서적 출판업,Book publishing,4
+58111,교과서 및 학습서적 출판업,Textbook and study book publishing,5
+58112,만화 출판업,Comic book publishing,5
+58113,일반 서적 출판업,Other book publishing,5
+5812,"신문, 잡지 및 정기간행물 출판업","Publishing of newspapers, magazines and periodicals",4
+58121,신문 발행업,Publishing of newspapers,5
+58122,잡지 및 정기간행물 발행업,Publishing of magazines and periodicals,5
+58123,정기 광고간행물 발행업,Publishing of advertising periodicals,5
+5819,기타 인쇄물 출판업,Other publishing activities,4
+58190,기타 인쇄물 출판업,Other publishing activities,5
+582,소프트웨어 개발 및 공급업,Software publishing,3
+5821,게임 소프트웨어 개발 및 공급업,Game software publishing,4
+58211,유선 온라인 게임 소프트웨어 개발 및 공급업,Online game software publishing,5
+58212,모바일 게임 소프트웨어 개발 및 공급업,Mobile game software publishing,5
+58219,기타 게임 소프트웨어 개발 및 공급업,Other game software publishing,5
+5822,시스템ㆍ응용 소프트웨어 개발 및 공급업,System and application software publishing,4
+58221,시스템 소프트웨어 개발 및 공급업,System software publishing,5
+58222,응용 소프트웨어 개발 및 공급업,Application software publishing,5
+59,영상ㆍ오디오 기록물 제작 및 배급업,"Motion picture, video and television programme production, sound recording and music publishing activities",2
+591,"영화, 비디오물, 방송프로그램 제작 및 배급업","Motion picture, video and broadcast programme activities",3
+5911,"영화, 비디오물 및 방송프로그램 제작업","Motion picture, video, broadcast programme production activities",4
+59111,일반 영화 및 비디오물 제작업,General motion picture and video production activities,5
+59112,애니메이션 영화 및 비디오물 제작업,Animated cartoon and video production,5
+59113,광고 영화 및 비디오물 제작업,Advertising motion picture and video production,5
+59114,방송 프로그램 제작업,Broadcasting programme production,5
+5912,"영화, 비디오물 및 방송프로그램 제작 관련 서비스업","Motion picture, video and broadcasting programme post-production activities",4
+59120,"영화, 비디오물 및 방송프로그램 제작 관련 서비스업","Motion picture, video and broadcasting programme post-production activities",5
+5913,"영화, 비디오물 및 방송프로그램 배급업","Motion picture, video and broadcasting programme distribution activities",4
+59130,"영화, 비디오물 및 방송프로그램 배급업","Motion picture, video and broadcasting programme distribution activities",5
+5914,영화 및 비디오물 상영업,Motion picture and video projection activities,4
+59141,영화관 운영업,Motion picture theaters,5
+59142,비디오물 감상실 운영업,Video projection activities,5
+592,오디오물 출판 및 원판 녹음업,Sound recording and music publishing activities,3
+5920,오디오물 출판 및 원판 녹음업,Sound recording and music publishing activities,4
+59201,음악 및 기타 오디오물 출판업,Music and sound recordings publishing,5
+59202,녹음시설 운영업,Sound recording service activities,5
+60,방송 및 영상·오디오물 제공 서비스업,"Broadcasting, Video and audio distribution activities",2
+601,라디오 방송업,Radio broadcasting,3
+6010,라디오 방송업,Radio broadcasting,4
+60100,라디오 방송업,Radio broadcasting,5
+602,텔레비전 방송업,Television broadcasting,3
+6021,지상파 방송업,Terrestrial broadcasting,4
+60210,지상파 방송업,Terrestrial broadcasting,5
+6022,"유선, 위성 및 기타 방송업","Cable, satellite and other broadcasting",4
+60221,프로그램 공급업,Broadcasting programme provider,5
+60222,유선 방송업,Cable broadcasting,5
+60229,위성 및 기타 방송업,Satellite and other broadcasting,5
+603,영상·오디오물 제공 서비스업,Video and audio distribution activities,3
+6031,영상물 제공 서비스업,Video distribution activities,4
+60310,영상물 제공 서비스업,Video distribution activities,5
+6032,오디오물 제공 서비스업,Audio distribution activities,4
+60320,오디오물 제공 서비스업,Audio distribution activities,5
+61,우편 및 통신업,Postal activities and telecommunications,2
+611,공영 우편업,Postal activities,3
+6110,공영 우편업,Postal activities,4
+61100,공영 우편업,Postal activities,5
+612,전기 통신업,Telecommunications,3
+6121,유선 통신업,Wired telecommunications,4
+61210,유선 통신업,Wired telecommunications,5
+6122,무선 및 위성 통신업,Wireless and satellite telecommunications,4
+61220,무선 및 위성 통신업,Wireless and satellite telecommunications,5
+6129,기타 전기 통신업,Other telecommunications,4
+61291,통신 재판매업,Telecommunications resellers,5
+61299,그 외 기타 전기 통신업,Other telecommunications n.e.c.,5
+62,"컴퓨터 프로그래밍, 시스템 통합 및 관리업","Computer programming, consultancy and related activities",2
+620,"컴퓨터 프로그래밍, 시스템 통합 및 관리업","Computer programming, consultancy and related activities",3
+6201,컴퓨터 프로그래밍 서비스업,Computer programming services,4
+62010,컴퓨터 프로그래밍 서비스업,Computer programming services,5
+6202,"컴퓨터시스템 통합 자문, 구축 및 관리업",Computer system consultancy and computer facilities management activities,4
+62021,컴퓨터시스템 통합 자문 및 구축 서비스업,Computer system consultancy activities,5
+62022,컴퓨터시설 관리업,Computer facilities management services,5
+6209,기타 정보기술 및 컴퓨터운영 관련 서비스업,Other information technology and computer service activities,4
+62090,기타 정보기술 및 컴퓨터운영 관련 서비스업,Other information technology and computer service activities,5
+63,정보서비스업,Information service activities,2
+631,"자료처리, 호스팅, 포털 및 기타 인터넷 정보매개 서비스업","Data processing, hosting and related activities; web portals",3
+6311,"자료처리, 호스팅 및 관련 서비스업","Data processing, hosting and related activities",4
+63111,자료 처리업,Data processing,5
+63112,호스팅 및 관련 서비스업,Hosting and related service activities,5
+6312,포털 및 기타 인터넷 정보매개 서비스업,Portals and other internet information media service activities,4
+63120,포털 및 기타 인터넷 정보매개 서비스업,Portals and other internet information media service activities,5
+639,기타 정보 서비스업,Other information service activities,3
+6391,뉴스 제공업,News agency activities,4
+63910,뉴스 제공업,News agency activities,5
+6399,그 외 기타 정보 서비스업,Other information service activities n.e.c.,4
+63991,데이터베이스 및 온라인정보 제공업,Data base activities and on-line information provision services,5
+63992,가상자산 매매 및 중개업,Virtual assets dealing and brokering,5
+63999,그 외 기타 정보 서비스업,Other information service activities n.e.c.,5
+64,금융업,"Financial service activities, except insurance and pension funding",2
+641,은행 및 저축기관,Banking and savings institutions,3
+6411,중앙은행,Central bank,4
+64110,중앙은행,Central bank,5
+6412,일반은행,Commercial banks,4
+64121,국내은행,Domestic commercial banks,5
+64122,외국은행,Foreign banks,5
+6413,신용조합 및 저축기관,Credit unions and savings institutions,4
+64131,신용조합,Credit unions,5
+64132,상호저축은행 및 기타 저축기관,Mutual savings bank and other savings institutions,5
+642,신탁업 및 집합투자업,Trust and collective investment businesses,3
+6420,신탁업 및 집합투자업,Trust and collective investment businesses,4
+64201,신탁업 및 집합투자업,Trust and collective investment businesses,5
+64209,기타 금융 투자업,Other financial investment businesses,5
+649,기타 금융업,Other financial service activities,3
+6491,여신금융업,Credit granting,4
+64911,금융리스업,Financial leasing,5
+64912,개발금융기관,Development financial institutions,5
+64913,신용카드 및 할부금융업,Credit card and installment financial business,5
+64919,그 외 기타 여신금융업,Other credit granting n.e.c.,5
+6499,그 외 기타 금융업,Other financial service activities n.e.c.,4
+64991,기금 운영업,Public fund management business,5
+64992,지주회사,Activities of holding companies,5
+64999,그 외 기타 분류 안된 금융업,Other financial service activities n.e.c.,5
+65,보험업,Insurance,2
+651,보험업,Insurance,3
+6511,생명 보험업,Life insurance,4
+65110,생명 보험업,Life insurance,5
+6512,손해 및 보증 보험업,Non-life and guarantee insurance,4
+65121,손해 보험업,Non-life insurance,5
+65122,보증 보험업,Guarantee insurance,5
+652,재 보험업,Reinsurance,3
+6520,재 보험업,Reinsurance,4
+65200,재 보험업,Reinsurance,5
+653,공제업,Mutual aid organizations,3
+6530,공제업,Mutual aid organizations,4
+65301,개인 공제업,Individual mutual aid organizations,5
+65302,사업 공제업,Business mutual aid organizations,5
+66,금융 및 보험 관련 서비스업,Activities auxiliary to financial service and insurance activities,2
+661,금융 지원 서비스업,Activities auxiliary to financial service activities,3
+6611,금융시장 관리업,Administration of financial markets,4
+66110,금융시장 관리업,Administration of financial markets,5
+6612,증권 및 선물 중개업,Securities and commodity contracts brokerage,4
+66121,증권 중개업,Securities brokerage,5
+66122,선물 중개업,Futures mediation,5
+6619,기타 금융 지원 서비스업,Other activities auxiliary to financial service activities,4
+66191,"증권 발행, 관리, 보관 및 거래 지원 서비스업","Securities issuance, management, deposit and settlement services",5
+66192,투자 자문업 및 투자 일임업,Investment advisory businesses and discretionary investment businesses,5
+66199,그 외 기타 금융 지원 서비스업,Other activities auxiliary to financial service activities n.e.c.,5
+662,보험 및 연금관련 서비스업,Activities auxiliary to insurance and pension funding,3
+6620,보험 및 연금관련 서비스업,Activities auxiliary to insurance and pension funding,4
+66201,손해 사정업,Risk and damage evaluation,5
+66202,보험 대리 및 중개업,Insurance agents and brokers,5
+66209,기타 보험 및 연금관련 서비스업,Other activities auxiliary to insurance and pension funding,5
+68,부동산업,Real estate activities,2
+681,부동산 임대 및 공급업,Real estate activities with own or leased property,3
+6811,부동산 임대업,Renting of real estate,4
+68111,주거용 건물 임대업,Renting of residential buildings,5
+68112,비주거용 건물 임대업,Renting of non-residential buildings,5
+68119,기타 부동산 임대업,Renting of other real estate,5
+6812,부동산 개발 및 공급업,Development and subdividing of real estate,4
+68121,주거용 건물 개발 및 공급업,Development and subdividing of residential buildings,5
+68122,비주거용 건물 개발 및 공급업,Development and subdividing of non-residential buildings,5
+68129,기타 부동산 개발 및 공급업,Development and subdividing of other real estate,5
+682,부동산 관련 서비스업,Real estate activities on a fee or contract basis,3
+6821,부동산 관리업,Management of real estate,4
+68211,주거용 부동산 관리업,Management of residential real estate,5
+68212,비주거용 부동산 관리업,Management of nonresidential real estate,5
+6822,"부동산 중개, 자문 및 감정평가업","Real estate brokerage, consultancy and appraisal",4
+68221,부동산 중개 및 대리업,Real estate agents and brokers,5
+68222,부동산 투자자문업,Real estate investment consultancy,5
+68223,부동산 감정평가업,Real estate appraisal,5
+68224,부동산 분양 대행업,Real estate marketing,5
+70,연구개발업,Research and development,2
+701,자연과학 및 공학 연구개발업,Research and experimental development on natural sciences and engineering,3
+7011,자연과학 연구개발업,Research and experimental development on natural sciences,4
+70111,"물리, 화학 및 생물학 연구개발업","Research and experimental development on physics, chemistry and biology",5
+70112,농림수산학 및 수의학 연구개발업,"Research and experimental development on agriculture, forestry, fishery and veterinary science",5
+70113,의학 및 약학 연구개발업,Research and experimental development on medical sciences and pharmacy,5
+70119,기타 자연과학 연구개발업,Research and experimental development on other natural sciences,5
+7012,공학 연구개발업,Research and experimental development on engineering,4
+70121,전기ㆍ전자공학 연구개발업,Research and experimental development on electrical and electronic engineering,5
+70129,기타 공학 연구개발업,Research and experimental development on other engineering,5
+7013,자연과학 및 공학 융합 연구개발업,Interdisciplinary convergence research and experimental development on natural sciences and engineering,4
+70130,자연과학 및 공학 융합 연구개발업,Interdisciplinary convergence research and experimental development on natural sciences and engineering,5
+702,인문 및 사회과학 연구개발업,Research and experimental development on social sciences and humanities,3
+7020,인문 및 사회과학 연구개발업,Research and experimental development on social sciences and humanities,4
+70201,경제 및 경영학 연구개발업,Research and experimental development on economics and business administration,5
+70209,기타 인문 및 사회과학 연구개발업,Research and experimental development on other social sciences and humanities,5
+71,전문 서비스업,Professional services,2
+711,법무관련 서비스업,Legal services,3
+7110,법무관련 서비스업,Legal services,4
+71101,변호사업,Offices of lawyers,5
+71102,변리사업,Offices of patent attorney,5
+71103,법무사업,Offices of judicial scrivener,5
+71109,기타 법무관련 서비스업,Other legal services,5
+712,회계 및 세무관련 서비스업,"Accounting, bookkeeping and auditing activities; tax consultancy",3
+7120,회계 및 세무관련 서비스업,"Accounting, bookkeeping and auditing activities; tax consultancy",4
+71201,공인회계사업,Offices of accountants,5
+71202,세무사업,Offices of tax accountants,5
+71209,기타 회계 관련 서비스업,"Other accounting, bookkeeping and auditing activities",5
+713,광고업,Advertising,3
+7131,광고 대행업,Advertising agencies,4
+71310,광고 대행업,Advertising agencies,5
+7139,기타 광고업,Other advertising,4
+71391,옥외 광고업,Outdoor advertising,5
+71392,"광고물 문안, 도안, 설계 등 작성업",Advertising preparation,5
+71399,그 외 기타 광고 관련 서비스업,Other advertising related services n.e.c.,5
+714,시장조사 및 여론조사업,Market research and public opinion polling,3
+7140,시장조사 및 여론조사업,Market research and public opinion polling,4
+71400,시장조사 및 여론조사업,Market research and public opinion polling,5
+715,회사 본부 및 경영 컨설팅 서비스업,"Activities of head offices, management consultancy activities",3
+7151,회사 본부,Activities of head offices,4
+71511,제조업 회사 본부,Activities of head offices for manufacturing,5
+71519,기타 산업 회사 본부,Activities of head offices for other industries,5
+7153,경영 컨설팅 및 공공 관계 서비스업,Activities of management consultancy and public relation services,4
+71531,경영 컨설팅업,Activities of management consultancy,5
+71532,공공관계 서비스업,Public relation services,5
+716,기타 전문 서비스업,Other professional services,3
+7160,기타 전문 서비스업,Other professional services,4
+71600,기타 전문 서비스업,Other professional services,5
+72,"건축기술, 엔지니어링 및 기타 과학기술 서비스업","Architectural, engineering and other scientific technical services",2
+721,"건축기술, 엔지니어링 및 관련 기술 서비스업","Architectural, engineering and related technical services",3
+7211,건축 및 조경 설계 서비스업,Architectural and landscape architectural services,4
+72111,건축설계 및 관련 서비스업,Architectural services,5
+72112,도시계획 및 조경설계 서비스업,Urban planning landscape architectural services,5
+7212,엔지니어링 서비스업,Engineering services,4
+72121,건물 및 토목 엔지니어링 서비스업,Building and civil engineering projects related engineering services,5
+72122,환경 관련 엔지니어링 서비스업,Environmental consulting and related engineering services,5
+72129,기타 엔지니어링 서비스업,Other engineering services,5
+729,기타 과학기술 서비스업,Other scientific and technical services,3
+7291,"기술 시험, 검사 및 분석업",Technical testing and analysis,4
+72911,물질성분 검사 및 분석업,Testing and analysis services of composition and purity of materials,5
+72919,"기타 기술 시험, 검사 및 분석업",Other technical testing and analysis,5
+7292,"측량, 지질조사 및 지도제작업","Surface and geological surveying, cartographic activities",4
+72921,측량업,Surface surveying,5
+72922,제도업,Drafting services,5
+72923,지질 조사·탐사 및 지도 제작업,"Geological surveying, prospecting services and cartography activities",5
+73,"기타 전문, 과학 및 기술 서비스업","Other professional, scientific and technical services",2
+731,수의업,Veterinary activities,3
+7310,수의업,Veterinary activities,4
+73100,수의업,Veterinary activities,5
+732,전문 디자인업,Specialized design activities,3
+7320,전문 디자인업,Specialized design activities,4
+73201,인테리어 디자인업,Interior design services,5
+73202,제품 디자인업,Products design services,5
+73203,시각 디자인업,Graphic design services,5
+73209,"패션, 섬유류 및 기타 전문 디자인업",Other specialized design services,5
+733,사진 촬영 및 처리업,Photographic activities,3
+7330,사진 촬영 및 처리업,Photographic activities,4
+73301,인물사진 및 행사용 영상 촬영업,Portrait photography and videotaping of events services,5
+73302,상업용 사진 촬영업,Commercial photography services,5
+73303,사진 처리업,Photograph processing,5
+739,"그 외 기타 전문, 과학 및 기술 서비스업","Other professional, scientific and technical services n.e.c.",3
+7390,"그 외 기타 전문, 과학 및 기술 서비스업","Other professional, scientific and technical services n.e.c.",4
+73901,매니저업,Managers,5
+73902,번역 및 통역 서비스업,Translation and interpretation services,5
+73903,사업 및 무형 재산권 중개업,Business and intangible rights brokerages,5
+73904,"물품 감정, 계량 및 견본 추출업","Appraisal, weighing and sampling services of goods",5
+73905,고고유산 조사연구 서비스업,Archaeological heritage surveying,5
+73909,"그 외 기타 분류 안된 전문, 과학 및 기술 서비스업","Other professional, scientific and technical services n.e.c.",5
+74,사업시설 관리 및 조경 서비스업,Business facilities management and landscape services,2
+741,사업시설 유지․관리 서비스업,Combined facilities support activities,3
+7410,사업시설 유지․관리 서비스업,Combined facilities support activities,4
+74100,사업시설 유지․관리 서비스업,Combined facilities support activities,5
+742,건물ㆍ산업설비 청소 및 방제 서비스업,Cleaning and pest control services of building and industrial facilities,3
+7421,건물 및 산업설비 청소업,Cleaning of building and industrial facilities,4
+74211,건축물 일반 청소업,General cleaning of buildings,5
+74212,"산업설비, 운송장비 및 공공장소 청소업","Cleaning of industrial facilities, transportation equipments and public places",5
+7422,"소독, 구충 및 방제 서비스업","Disinfecting, exterminating and pest control services",4
+74220,"소독, 구충 및 방제 서비스업","Disinfecting, exterminating and pest control services",5
+743,조경 관리 및 유지 서비스업,Landscape care and maintenance service activities,3
+7430,조경 관리 및 유지 서비스업,Landscape care and maintenance service activities,4
+74300,조경 관리 및 유지 서비스업,Landscape care and maintenance service activities,5
+75,사업지원 서비스업,Business support services,2
+751,고용알선 및 인력공급업,Activities of employment placement agencies and provision of human resources,3
+7511,고용 알선업,Activities of employment placement agencies,4
+75110,고용 알선업,Activities of employment placement agencies,5
+7512,인력 공급업,Provision of human resources,4
+75121,임시 및 일용 인력 공급업,Provision of temporary workers and day laborers,5
+75122,상용 인력 공급 및 인사관리 서비스업,Provision of regular workers and human resources functions,5
+752,여행사 및 기타 여행보조 서비스업,Activities of travel agencies and tour operators and tourist assistance activities,3
+7521,여행사업,Travel agency activities,4
+75210,여행사업,Travel agency activities,5
+7529,기타 여행보조 및 예약 서비스업,Other tourist assistance and reservation services,4
+75290,기타 여행 보조 및 예약 서비스업,Other tourist assistance and reservation services,5
+753,"경비, 경호 및 탐정업","Security, guard and detective services",3
+7531,경비 및 경호 서비스업,Security and guard services,4
+75310,경비 및 경호 서비스업,Security and guard services,5
+7532,보안시스템 서비스업,Security systems service activities,4
+75320,보안시스템 서비스업,Security systems crevice activities,5
+7533,탐정 및 조사 서비스업,Detective and investigation services,4
+75330,탐정 및 조사 서비스업,Detective and investigation services,5
+759,기타 사업지원 서비스업,Other business support services,3
+7591,사무지원 서비스업,Office support services,4
+75911,문서 작성 및 복사업,Document preparation and duplicating services,5
+75919,기타 사무지원 서비스업,Other office support service activities,5
+7599,그 외 기타 사업지원 서비스업,Other business support service activities n.e.c.,4
+75991,콜센터 및 텔레마케팅 서비스업,Activities of call centers and telemarketing services,5
+75992,"전시, 컨벤션 및 행사 대행업","Exhibition, convention and trade fair organization agencies",5
+75993,신용 조사 및 추심 대행업,Activities of collection agencies and credit bureaus,5
+75994,포장 및 충전업,Packaging and filling activities,5
+75995,온라인 활용 마케팅 및 관련 사업지원 서비스업,Marketing and related business support services via online,5
+75999,그 외 기타 분류 안된 사업지원 서비스업,All other business support services n.e.c.,5
+76,임대업; 부동산 제외,Rental and leasing activities; except real estate,2
+761,운송장비 임대업,Renting of transport equipment,3
+7611,자동차 임대업,Renting of motor vehicles,4
+76110,자동차 임대업,Renting of motor vehicles,5
+7619,기타 운송장비 임대업,Renting of other transport equipment,4
+76190,기타 운송장비 임대업,Renting of other transport equipment,5
+762,개인 및 가정용품 임대업,Renting of personal and household goods,3
+7621,스포츠 및 레크리에이션 용품 임대업,Renting of sports and recreational goods,4
+76210,스포츠 및 레크리에이션 용품 임대업,Renting of sports and recreational goods,5
+7622,음반 및 비디오물 임대업,Renting of discs and video tapes,4
+76220,음반 및 비디오물 임대업,Renting of discs and video tapes,5
+7629,기타 개인 및 가정용품 임대업,Renting of other personal and household goods,4
+76291,서적 임대업,Renting of books,5
+76292,의류 임대업,Renting of wearing apparel,5
+76299,그 외 기타 개인 및 가정용품 임대업,Renting of other personal and household goods n.e.c.,5
+763,산업용 기계 및 장비 임대업,Renting of industrial machinery and equipment,3
+7631,건설 및 토목공사용 기계․장비 임대업,Renting of construction(including civil engineering and construction) machinery and equipment,4
+76310,건설 및 토목공사용 기계․장비 임대업,Renting of construction(including civil engineering and construction) machinery and equipment,5
+7632,컴퓨터 및 사무용 기계․장비 임대업,Renting of computers and office equipment,4
+76320,컴퓨터 및 사무용 기계․장비 임대업,Renting of computers and office equipment,5
+7639,기타 산업용 기계 및 장비 임대업,Renting of other industries machinery and equipment,4
+76390,기타 산업용 기계 및 장비 임대업,Renting of other industries machinery and equipment,5
+764,무형재산권 임대업,Leasing of intangible property,3
+7640,무형재산권 임대업,Leasing of intangible property,4
+76400,무형재산권 임대업,Leasing of intangible property,5
+84,"공공행정, 국방 및 사회보장 행정",Public administration and defence; compulsory social security,2
+841,입법 및 일반 정부 행정,"Executive, legislative and general government support",3
+8411,일반 공공 행정,General public administration activities,4
+84111,입법기관,Legislative administration,5
+84112,중앙 최고 집행기관,Executive administration of central bodies,5
+84113,지방행정 집행기관,Executive administration of regional and local bodies,5
+84114,재정 및 경제정책 행정,Administration of financial and economic policy,5
+84119,기타 일반 공공 행정,Other general public administration activities,5
+8412,정부기관 일반 보조 행정,Ancillary service activities for government,4
+84120,정부기관 일반 보조 행정,Ancillary service activities for government,5
+842,사회 및 산업정책 행정,Administration of industrial and social policy of community,3
+8421,사회서비스 관리 행정,"Regulation of the activities of providing health care, education, cultural services and other social services, excluding social security",4
+84211,교육 행정,Regulation of the activities of education affairs,5
+84212,문화 및 관광 행정,Regulation of the activities of cultural and tourism affairs,5
+84213,환경 행정,Regulation of the activities of environment affairs,5
+84214,보건 및 복지 행정,Regulation of the activities of health care and welfare affairs,5
+84219,기타 사회서비스 관리 행정,"Other regulation of the activities of providing health care, education, cultural services and other social services, excluding social security",5
+8422,노동 및 산업진흥 행정,Regulation of and contribution to more efficient operation of businesses,4
+84221,노동 행정,Administration of general labor affairs,5
+84222,농림수산 행정,"Administration of agricultural, forestry, fishing affairs",5
+84223,건설 및 운송 행정,Administration of construction and transportation programs,5
+84224,우편 및 통신행정,Administration of communications,5
+84229,기타 산업진흥 행정,Other regulation and contribution to more efficient operation of businesses,5
+843,외무 및 국방 행정,Foreign affairs and defence activities,3
+8431,외무 행정,Foreign affairs,4
+84310,외무 행정,Foreign affairs,5
+8432,국방 행정,Defence activities,4
+84320,국방 행정,Defence activities,5
+844,사법 및 공공질서 행정,Public order and safety activities,3
+8440,사법 및 공공질서 행정,Public order and safety activities,4
+84401,법원,Courts,5
+84402,검찰,Prosecutor's offices,5
+84403,교도기관,Correctional institutions,5
+84404,경찰,Police protection,5
+84405,소방서,Fire protection,5
+84409,기타 사법 및 공공질서 행정,Other public order and safety activities,5
+845,사회보장 행정,Compulsory social security activities,3
+8450,사회보장 행정,Compulsory social security activities,4
+84500,사회보장 행정,Compulsory social security activities,5
+846,사회보장보험업 및 연금업,Pension funding,3
+8461,사회보장 보험업,Social security insurance,4
+84611,건강보험업,Health insurance,5
+84619,산업재해 및 기타 사회보장 보험업,Industrial accident compensation insurance and other social security insurance,5
+8462,연금업,Pension funding,4
+84620,연금업,Pension funding,5
+85,교육 서비스업,Education,2
+851,초등 교육기관,Pre-primary and primary education,3
+8511,유아 교육기관,Pre-primary education,4
+85110,유아 교육기관,Pre-primary education,5
+8512,초등학교,Elementary schools,4
+85120,초등학교,Elementary schools,5
+852,중등 교육기관,Secondary education,3
+8521,일반 중등 교육기관,General secondary education,4
+85211,중학교,Middle schools,5
+85212,일반 고등학교,Academic high schools,5
+8522,특성화 고등학교,Technical and vocational secondary education,4
+85221,상업 및 정보산업 특성화 고등학교,Commercial and information industry high schools,5
+85222,공업 특성화 고등학교,Technical high schools,5
+85229,기타 특성화 고등학교,Other technical and vocational secondary education,5
+853,고등 교육기관,Higher education,3
+8530,고등 교육기관,Higher education,4
+85301,전문대학,Junior technical and vocational colleges,5
+85302,대학교,Universities,5
+85303,대학원,Graduate schools,5
+854,"특수학교, 외국인학교 및 대안학교","Special schools, foreign schools, alternative schools",3
+8541,특수학교,Schools for the handicapped,4
+85410,특수학교,Schools for the handicapped,5
+8542,외국인 학교,Schools for the foreigners,4
+85420,외국인 학교,Schools for the foreigners,5
+8543,대안학교,Alternative schools,4
+85430,대안학교,Alternative schools,5
+855,일반 교습 학원,General educational institutes,3
+8550,일반 교습 학원,General educational institutes,4
+85501,일반 교과 학원,General subject educational institutes,5
+85502,방문 교육 학원,Home visiting educational institutes,5
+85503,온라인 교육 학원,On-line educational institutes,5
+856,기타 교육기관,Other educational institutes,3
+8561,스포츠 및 레크리에이션 교육기관,Sports and recreation education,4
+85611,태권도 및 무술 교육기관,Taekwondo and martial arts education,5
+85612,기타 스포츠 교육기관,Other sports education,5
+85613,레크리에이션 교육기관,Recreation education,5
+85614,청소년 수련시설 운영업,Teenagers training facilities,5
+8562,예술학원,Cultural education,4
+85621,음악학원,Music education,5
+85622,미술학원,Fine arts education,5
+85629,기타 예술학원,Other cultural education,5
+8563,외국어학원 및 기타 교습학원,Foreign language institutes and other educational institutes,4
+85631,외국어학원,Foreign language institutes,5
+85632,기타 교습학원,Other educational institutes,5
+8564,사회교육시설,Facilities for social education,4
+85640,사회교육시설,Facilities for social education,5
+8565,직원훈련기관,Employee training institutes,4
+85650,직원훈련기관,Employee training institutes,5
+8566,기술 및 직업훈련학원,Technical and trade schools,4
+85661,운전학원,Driving schools,5
+85669,기타 기술 및 직업훈련학원,Other technical and trade schools,5
+8569,그 외 기타 교육기관,Other training institutes,4
+85691,컴퓨터 학원,Computer training institutes,5
+85699,그 외 기타 분류 안된 교육기관,Other training institutes n.e.c.,5
+857,교육지원 서비스업,Educational support activities,3
+8570,교육지원 서비스업,Educational support activities,4
+85701,교육관련 자문 및 평가업,Educational consulting and evaluation activities,5
+85709,기타 교육지원 서비스업,Other educational support activities,5
+86,보건업,Human health activities,2
+861,병원,Hospital activities,3
+8610,병원,Hospital activities,4
+86101,종합 병원,General hospitals,5
+86102,일반 병원,Specialized hospitals,5
+86103,치과 병원,Dental hospitals,5
+86104,한방 병원,Oriental medical hospitals,5
+86105,요양 병원,Intermediate care hospital,5
+862,의원,Medical and dental practice activities,3
+8620,의원,Medical and dental practice activities,4
+86201,일반 의원,General clinics,5
+86202,치과 의원,Dental clinics,5
+86203,한의원,Oriental medical clinics,5
+86204,방사선 진단 및 병리 검사 의원,Medical and diagnostic clinics,5
+863,공중 보건 의료업,Public health centers,3
+8630,공중 보건 의료업,Public health centers,4
+86300,공중 보건 의료업,Public health centers,5
+869,기타 보건업,Other human health activities,3
+8690,기타 보건업,Other human health activities,4
+86901,앰뷸런스 서비스업,Ambulance services,5
+86902,유사 의료업,Quasi-medical services,5
+86909,그 외 기타 보건업,Other human health activities n.e.c.,5
+87,사회복지 서비스업,Social work activities,2
+871,거주 복지시설 운영업,Residential welfare facilities,3
+8711,노인 거주 복지시설 운영업,Residential welfare facilities for the elderly,4
+87111,노인 요양 복지시설 운영업,Sanatorium for the elderly with nursing care,5
+87112,노인 양로 복지시설 운영업,Nursing homes for the elderly,5
+8712,심신장애인 거주 복지시설 운영업,Residential welfare facilities for the mental retardation and the disabled,4
+87121,신체 부자유자 거주 복지시설 운영업,Residential welfare facilities for the disabled,5
+87122,"정신질환, 정신지체 및 약물 중독자 거주 복지시설 운영업","Residential welfare facilities for the mental disorder, mental retardation and substance abuse",5
+8713,기타 거주 복지시설 운영업,Other residential welfare facilities,4
+87131,아동 및 부녀자 거주 복지시설 운영업,Residential welfare facilities for the young and women,5
+87139,그 외 기타 거주 복지시설 운영업,Other residential welfare facilities n.e.c.,5
+872,비거주 복지시설 운영업,Non-residential welfare facilities,3
+8721,보육시설 운영업,Child day-care activities,4
+87210,보육시설 운영업,Child day-care activities,5
+8729,기타 비거주 복지 서비스업,Other non-residential welfare facilities,4
+87291,직업재활원 운영업,Vocational rehabilitation facilities,5
+87292,종합복지관 운영업,Welfare service center,5
+87293,방문 복지서비스 제공업,Domiciliary care activities,5
+87294,사회복지 상담서비스 제공업,Welfare counseling service activities,5
+87299,그 외 기타 비거주 복지 서비스업,Other non-residential welfare facilities n.e.c.,5
+90,"창작, 예술 및 여가관련 서비스업","Creative, arts and recreation related services",2
+901,창작 및 예술관련 서비스업,Creative and arts related services,3
+9011,공연시설 운영업,Operation of public performance facilities,4
+90110,공연시설 운영업,Operation of public performance facilities,5
+9012,공연단체,Operation of public performance companies,4
+90121,연극단체,Operation of dramatic companies,5
+90122,무용 및 음악단체,Musical groups and dance companies,5
+90123,기타 공연단체,Other performing arts companies,5
+9013,자영 예술가,Independent artists,4
+90131,공연 예술가,Independent performing artists,5
+90132,비공연 예술가,Independent non-performing artists,5
+9019,기타 창작 및 예술관련 서비스업,Other creative and arts related services,4
+90191,공연 기획업,Performing arts event promotion and organization,5
+90199,그 외 기타 창작 및 예술관련 서비스업,Other creative and arts related services n.e.c.,5
+902,"도서관, 사적지 및 유사 여가관련 서비스업","Library, historical sites and buildings and similar recreation related services",3
+9021,"도서관, 기록보존소 및 독서실 운영업","Operation of library, archives and reading room",4
+90211,도서관 및 기록보존소 운영업,Library and archives activities,5
+90212,독서실 운영업,Reading room operation,5
+9022,박물관 및 사적지 관리 운영업,Museums activities and operation of historical sites and buildings,4
+90221,박물관 운영업,Museum activities,5
+90222,사적지 관리 운영업,Operation of historical sites and buildings,5
+9023,"식물원, 동물원 및 자연공원 운영업",Botanical and zoological gardens and nature reserves activities,4
+90231,식물원 및 동물원 운영업,Operation of botanical and zoological gardens,5
+90232,자연공원 운영업,Operation of nature reserves,5
+9029,기타 유사 여가관련 서비스업,Other recreation activities n.e.c.,4
+90290,기타 유사 여가관련 서비스업,Other recreation activities n.e.c.,5
+91,스포츠 및 오락관련 서비스업,Sports activities and amusement activities,2
+911,스포츠 서비스업,Sports services,3
+9111,경기장 운영업,Arena and stadium operation,4
+91111,실내 경기장 운영업,Indoor arena and stadium operation,5
+91112,실외 경기장 운영업,Outdoor arena and stadium operation,5
+91113,경주장 및 동물 경기장 운영업,Racetrack operation,5
+9112,골프장 및 스키장 운영업,Golf course and skiing facility operation,4
+91121,골프장 운영업,Golf course operation,5
+91122,스키장 운영업,Skiing facility operation,5
+9113,기타 스포츠시설 운영업,Other sports facility operation,4
+91131,종합 스포츠시설 운영업,Other complex sports facility operation,5
+91132,체력단련시설 운영업,Physical fitness facility operation,5
+91133,수영장 운영업,Swimming pool operation,5
+91134,볼링장 운영업,Bowling alley operation,5
+91135,당구장 운영업,Billiard room operation,5
+91136,골프연습장 운영업,Golf practice range operation,5
+91139,그 외 기타 스포츠시설 운영업,Other sports facility operation n.e.c.,5
+9119,기타 스포츠 서비스업,Other sports services,4
+91191,스포츠 클럽 운영업,Sports club operation,5
+91199,그 외 기타 스포츠 서비스업,Other sports services n.e.c.,5
+912,유원지 및 기타 오락관련 서비스업,Amusement parks and other recreation activities,3
+9121,유원지 및 테마파크 운영업,Amusement and theme park operation,4
+91210,유원지 및 테마파크 운영업,Amusement and theme park operation,5
+9122,오락장 운영업,Entertainment facility operation,4
+91221,전자 게임장 운영업,Amusement arcade operation,5
+91222,컴퓨터 게임방 운영업,Computer game room operation,5
+91223,노래연습장 운영업,Singing room operation,5
+91229,기타 오락장 운영업,Other entertainment facility operation,5
+9123,수상오락 서비스업,Water recreation services,4
+91231,낚시장 운영업,Operation of indoor and outdoor fishing place,5
+91239,기타 수상오락 서비스업,Other water recreation services,5
+9124,사행시설 관리 및 운영업,Gambling and betting activities,4
+91241,복권발행 및 판매업,Publication and sale of lottery,5
+91242,카지노 운영업,Operation of casino,5
+91249,기타 사행시설 관리 및 운영업,Other gambling and betting activities,5
+9129,그 외 기타 오락관련 서비스업,Other amusement and recreation activities,4
+91291,무도장 운영업,Ballroom operation,5
+91292,체육공원 및 유사 공원 운영업,Operation of recreational and sports park including similar activities,5
+91293,기원 운영업,Baduk room operation,5
+91299,그 외 기타 분류 안된 오락관련 서비스업,Other amusement and recreation activities n.e.c.,5
+94,협회 및 단체,Membership organizations,2
+941,산업 및 전문가 단체,"Business, employers and professional membership organizations",3
+9411,산업 단체,Business and employers membership organizations,4
+94110,산업 단체,Business and employers membership organizations,5
+9412,전문가 단체,Professional membership organizations,4
+94120,전문가 단체,Professional membership organizations,5
+942,노동조합,Trade unions,3
+9420,노동조합,Trade unions,4
+94200,노동조합,Trade unions,5
+949,기타 협회 및 단체,Other membership organizations,3
+9491,종교 단체,Religious organizations,4
+94911,불교 단체,Buddhism organizations,5
+94912,기독교 단체,Christianity organizations,5
+94913,천주교 단체,Catholicism organizations,5
+94914,민족종교 단체,Korean religious organizations,5
+94919,기타 종교 단체,Other religious organizations,5
+9492,정치 단체,Political organizations,4
+94920,정치 단체,Political organizations,5
+9493,시민운동 단체,Social advocacy organizations,4
+94931,환경운동 단체,Environmental advocacy organizations,5
+94939,기타 시민운동 단체,Other social advocacy organizations,5
+9499,그 외 기타 협회 및 단체,Other membership organizations,4
+94990,그 외 기타 협회 및 단체,Other membership organizations n.e.c.,5
+95,개인 및 소비용품 수리업,Maintenance and repair services of personal and household goods,2
+951,컴퓨터 및 통신장비 수리업,Maintenance and repair services of computers and communication equipment,3
+9511,컴퓨터 및 주변 기기 수리업,Maintenance and repair services of computers and peripheral equipment,4
+95110,컴퓨터 및 주변 기기 수리업,Maintenance and repair services of computers and peripheral equipment,5
+9512,통신장비 수리업,Maintenance and repair services of communication equipment,4
+95120,통신장비 수리업,Maintenance and repair services of communication equipment,5
+952,자동차 및 모터사이클 수리업,Maintenance and repair services of motor vehicles and motorcycles,3
+9521,자동차 수리 및 세차업,"Maintenance, repair and washing services of motor vehicles",4
+95211,자동차 종합 수리업,General repair services of motor vehicles,5
+95212,자동차 전문 수리업,Repair services of motor vehicles specializing in parts,5
+95213,자동차 세차업,Motor vehicle washing services,5
+9522,모터사이클 수리업,Maintenance and repair services of motorcycles,4
+95220,모터사이클 수리업,Repair services of motorcycles,5
+953,개인 및 가정용품 수리업,Repair services of personal and household goods,3
+9531,가전제품 수리업,Repair services of electrical household machinery and appliances,4
+95310,가전제품 수리업,Repair services of electrical household machinery and appliances,5
+9539,기타 개인 및 가정용품 수리업,Repair services of other personal and household goods,4
+95391,의복 및 기타 가정용 직물제품 수리업,Repair services of clothing and other household textile goods,5
+95392,"가죽, 가방 및 신발 수리업","Repair services of leather goods, luggage, footwear",5
+95393,"시계, 귀금속 및 악기 수리업","Repair services of watches, jewelry and musical instruments",5
+95399,그 외 기타 개인 및 가정용품 수리업,Repair services of other personal and household goods n.e.c.,5
+96,기타 개인 서비스업,Other personal services activities,2
+961,"미용, 욕탕 및 유사 서비스업",Personal care services,3
+9611,이용 및 미용업,"Hairs, nails and skin cares",4
+96111,이용업,Barber shops,5
+96112,두발 미용업,Hair beauty shops,5
+96113,피부 미용업,Skin beauty shops,5
+96119,기타 미용업,Other beauty shops,5
+9612,"욕탕, 마사지 및 기타 신체관리 서비스업","Saunas, massages and other physical well-being services",4
+96121,욕탕업,"Turkish baths, sauna and steam baths, solariums",5
+96122,마사지업,Massage salons,5
+96129,체형 등 기타 신체관리 서비스업,Other physical well-being services,5
+969,그 외 기타 개인 서비스업,Other personal service activities n.e.c.,3
+9691,세탁업,Washing and dry cleaning services,4
+96911,산업용 세탁업,Industrial laundry services,5
+96912,가정용 세탁업,Household laundry services,5
+96913,세탁물 공급업,Laundry supplies,5
+9692,장례식장 및 관련 서비스업,Funeral homes and related services,4
+96921,장례식장 및 장의관련 서비스업,Funeral homes and funeral related services,5
+96922,"화장터 운영, 묘지 분양 및 관리업","Cremation, graveyard subdivision and management",5
+9699,그 외 기타 분류 안된 개인 서비스업,All other personal service activities n.e.c.,4
+96991,예식장업,Wedding chapel services,5
+96992,점술 및 유사 서비스업,Fortune-telling and the similar services,5
+96993,개인 간병 및 유사 서비스업,Private nursing and similar services,5
+96994,결혼 상담 및 준비 서비스업,Marriage consulting and planning service,5
+96995,반려동물 장묘 및 보호 서비스업,Companion animal funeral and care services,5
+96999,그 외 기타 달리 분류되지 않은 개인 서비스업,All other personal service activities n.e.c.,5
+97,가구 내 고용활동,Activities of households as employers of domestic personnel,2
+970,가구 내 고용활동,Activities of households as employers of domestic personnel,3
+9700,가구 내 고용활동,Activities of households as employers of domestic personnel,4
+97000,가구 내 고용활동,Activities of households as employers of domestic personnel,5
+98,달리 분류되지 않은 자가소비를 위한 가구의 재화 및 서비스 생산활동,Undifferentiated goods-and services-producing activities of private households for own use,2
+981,자가 소비를 위한 가사 생산 활동,Differentiated goods-producing activities of private households for own use,3
+9810,자가 소비를 위한 가사 생산 활동,Differentiated goods-producing activities of private households for own use,4
+98100,자가 소비를 위한 가사 생산 활동,Differentiated goods-producing activities of private households for own use,5
+982,자가 소비를 위한 가사 서비스 활동,Differentiated service-producing activities of private households for own use,3
+9820,자가 소비를 위한 가사 서비스 활동,Differentiated service-producing activities of private households for own use,4
+98200,자가 소비를 위한 가사 서비스 활동,Differentiated service-producing activities of private households for own use,5
+99,국제 및 외국기관,Activities of extraterritorial organizations and bodies,2
+990,국제 및 외국기관,Activities of extraterritorial organizations and bodies,3
+9900,국제 및 외국기관,Activities of extraterritorial organizations and bodies,4
+99001,주한 외국공관,Foreign official residence,5
+99009,기타 국제 및 외국기관,Other extraterritorial organizations and bodies n.e.c.,5

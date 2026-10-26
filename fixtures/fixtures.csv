@@ -1,0 +1,12 @@
+rcept_no,stratum,form_version,form_kind,is_amendment,joint_filing
+20110103000117,2.x short,2.5,short,0,0
+20110103000118,burnin,2.5,short,0,0
+20110105000298,2.x standard,2.5,standard,0,0
+20130614000144,3.x short,3.0,short,0,0
+20130702000065,3.x standard,3.0,standard,0,0
+20160104000507,joint,3.2,standard,0,1
+20160105000330,amend,3.4,short,1,1
+20200218000193,4.x short,4.0,short,0,1
+20220913000314,4.x standard,4.0,standard,0,1
+20250210000562,6.x short,6.0,short,0,0
+20250210000612,6.x standard,6.0,standard,0,0

@@ -1,0 +1,9 @@
+KOBEP-Core: Korean blockholder entry and payout ledger, KOSPI 2011-2025
+Copyright (c) 2026 Sungsoo Choi
+
+The data files in this package are licensed under the Creative Commons
+Attribution 4.0 International licence (CC BY 4.0).
+Legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+
+The underlying disclosures are published by the Financial Supervisory
+Service of Korea through DART (https://dart.fss.or.kr).

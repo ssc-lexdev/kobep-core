@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+title: "KOBEP-Core: Korean blockholder entry and payout ledger, KOSPI 2011-2025"
+version: "1.0"
+doi: "10.5281/zenodo.23663204"
+license: CC-BY-4.0
+type: dataset
+authors:
+  - family-names: "Choi"
+    given-names: "Sungsoo"
+    orcid: "https://orcid.org/0009-0000-4010-3272"
+    affiliation: "Seoul AI School, aSSIST University; Korean Bar Association"
+  - family-names: "Oh"
+    given-names: "Taeyeon"
+    orcid: "https://orcid.org/0000-0002-1867-5554"
+    affiliation: "Seoul AI School, aSSIST University; Dong-A University"
+keywords:
+  - beneficial ownership
+  - blockholders
+  - shareholder activism
+  - dividends
+  - share repurchases
+  - Korea

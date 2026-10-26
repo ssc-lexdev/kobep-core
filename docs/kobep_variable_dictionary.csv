@@ -1,0 +1,249 @@
+file,variable,label_en,unit,type,source_origin,n_rows,n_blank,codes,note
+kobep_blockholder_entity.csv,reporter_id,KOBEP blockholder entity identifier,,string,derived,1698,0,,see blockholder_entity
+kobep_blockholder_entity.csv,id_kind,Kind of identifier the entity is keyed on,code,string,derived,1698,0,BRN=1407; FOREIGN_REG=253; ID_WITHHELD=37; NAME_ONLY=1,"BRN business registration number; FOREIGN_REG foreign registration; NAME_ONLY no identifier filed; ID_WITHHELD an organisation filed under a person's birth date, which is not released"
+kobep_blockholder_entity.csv,id_value,Business registration or foreign registration number,,string,DART,1698,40,,
+kobep_blockholder_entity.csv,name,Entity name as filed on its most recent filing,text,string,DART,1698,0,,trade names change; one registration number throughout
+kobep_blockholder_entity.csv,name_first_filed,Entity name as filed on its earliest filing,text,string,DART,1698,0,,
+kobep_blockholder_entity.csv,name_variants_json,Names filed in the filing text,JSON list,string,DART,1698,0,,person names removed
+kobep_blockholder_entity.csv,index_names_json,Names shown on the DART filing index,JSON list,string,DART,1698,0,,person names removed
+kobep_blockholder_entity.csv,entity_type,Filer type as declared (CRP_TP),text,string,DART,1698,0,,
+kobep_blockholder_entity.csv,entity_type_code,Filer type code (CRP_TP),code,string,DART,1698,0,A=7; C=47; I=1007; K=175; N=185; O=249; U=1; W=20; Y=7,I domestic corporation; K financial institution; Y pension fund or professional investor; A investment company etc.; N other organisation (domestic); U other organisation (foreign); O foreign corporation; C civil-code partnership; W statutory partnership
+kobep_blockholder_entity.csv,entity_type_mixed,1 if the entity filed under more than one type,0/1,integer,derived,1698,0,0=1637; 1=61,
+kobep_blockholder_entity.csv,nationality,"Domestic or foreign, from the declared type",code,string,derived,1698,0,DOMESTIC=1448; FOREIGN=250,
+kobep_blockholder_entity.csv,is_nps,1 for the National Pension Service,0/1,integer,derived,1698,0,0=1697; 1=1,
+kobep_blockholder_entity.csv,needs_review,1 if entity resolution is flagged for review,0/1,integer,derived,1698,0,0=1372; 1=326,
+kobep_blockholder_entity.csv,review_reason,Why the entity is flagged,text,string,derived,1698,1372,,
+kobep_event_ledger.csv,event_id,"Event identifier, one per (issuer, blockholder) relationship",,string,derived,3267,0,,
+kobep_event_ledger.csv,corp_code,DART issuer identifier (8 digits),,string,DART,3267,0,,join key across files
+kobep_event_ledger.csv,reporter_id,KOBEP blockholder entity identifier,,string,derived,3267,0,,see blockholder_entity
+kobep_event_ledger.csv,n_filings,Filings in the relationship,count,integer,derived,3267,0,,
+kobep_event_ledger.csv,entry_rcept_no,Receipt number of the entry filing,,string,DART,3267,0,,
+kobep_event_ledger.csv,entry_obligation_date,Obligation date of the entry filing,date,string,DART,3267,0,,
+kobep_event_ledger.csv,entry_base_date,As-of date of the entry filing,date,string,DART,3267,0,,
+kobep_event_ledger.csv,entry_receipt_date,Receipt date of the entry filing,date,string,DART,3267,0,,
+kobep_event_ledger.csv,entry_fy,Year of entry_obligation_date,year,integer,derived,3267,0,,see entry_filed_late
+kobep_event_ledger.csv,entry_ratio,Holding ratio at entry,%,number,DART,3267,0,,stock-equivalent
+kobep_event_ledger.csv,prev_ratio,Prior ratio stated on the entry filing,%,number,DART,3267,2484,,
+kobep_event_ledger.csv,entry_report_type,Report type of the entry filing,,string,DART,3267,0,,
+kobep_event_ledger.csv,prior_index_filings,Earlier index filings by the pair whose text was never parsed,count,integer,derived,3267,0,,
+kobep_event_ledger.csv,entry_prev_ratio_ge5,1 if the entry filing's prior ratio is already >= 5 %,0/1,integer,derived,3267,0,0=2761; 1=506,
+kobep_event_ledger.csv,entry_left_truncated,1 if an earlier holding is evident,0/1,integer,derived,3267,0,0=2760; 1=507,prior_index_filings > 0 or entry_prev_ratio_ge5 = 1
+kobep_event_ledger.csv,is_first_ever,1 if a new report with no sign of earlier holding,0/1,integer,derived,3267,0,0=515; 1=2752,
+kobep_event_ledger.csv,is_marginal_entry,1 if entry ratio is 5.0-5.3 %,0/1,integer,derived,3267,32,0=2252; 1=983,exit least observable: a fall below 5 % may need no report
+kobep_event_ledger.csv,peak_ratio,Highest ratio in the relationship,%,number,derived,3267,0,,
+kobep_event_ledger.csv,peak_date,Obligation date of the peak,date,string,derived,3267,0,,
+kobep_event_ledger.csv,last_observed_ratio,Ratio on the last filing,%,number,derived,3267,0,,
+kobep_event_ledger.csv,last_obligation_date,Obligation date of the last filing,date,string,derived,3267,0,,
+kobep_event_ledger.csv,exit_date,Obligation date of the first filing in the final run below 5 %,date,string,derived,3267,1194,,blank when exit_censored = 1
+kobep_event_ledger.csv,exit_type,OBSERVED_BELOW_THRESHOLD or CENSORED_NO_FILING,code,string,derived,3267,0,CENSORED_NO_FILING=1194; OBSERVED_BELOW_THRESHOLD=2073,a sub-1pp slide below 5 % is never filed
+kobep_event_ledger.csv,exit_censored,1 if no exit is observed,0/1,integer,derived,3267,0,0=2073; 1=1194,"observed through 2025-12-31, the last receipt date in the ledger"
+kobep_event_ledger.csv,censoring_kind,STILL_HOLDING / DORMANT / LAPSE_CANDIDATE,code,string,derived,3267,2073,DORMANT=506; LAPSE_CANDIDATE=36; STILL_HOLDING=652,
+kobep_event_ledger.csv,duration_days,Days from entry to exit or last filing,days,integer,derived,3267,0,,
+kobep_event_ledger.csv,n_reentries,Times the holder crossed back above 5 %,count,integer,derived,3267,0,,
+kobep_event_ledger.csv,purpose_at_entry,Holding-purpose code on the entry filing,code,integer,DART,3267,2405,01=156; 02=683; 03=23,short form 3.9+ / standard form 4.0+
+kobep_event_ledger.csv,purpose_changed,1 if the purpose code changed,0/1,integer,derived,3267,1287,0=1791; 1=189,
+kobep_event_ledger.csv,class_at_entry,Outsider class at entry,code,string,derived,3267,0,INSIDER=618; OUTSIDER=1754; UNCERTAIN=895,rule-based; no human verdicts
+kobep_event_ledger.csv,class_last,Outsider class on the last filing,code,string,derived,3267,0,INSIDER=619; OUTSIDER=1835; UNCERTAIN=813,
+kobep_event_ledger.csv,class_changed,1 if the class changed,0/1,integer,derived,3267,0,0=2916; 1=351,
+kobep_event_ledger.csv,transition_date,Obligation date of the first class change,date,string,derived,3267,2841,,
+kobep_event_ledger.csv,is_related_party,"1 insider, 0 outsider at entry",0/1,integer,derived,3267,895,0=1754; 1=618,
+kobep_event_ledger.csv,joint_at_entry,1 if the entry filing was joint,0/1,integer,DART,3267,0,0=1719; 1=1548,
+kobep_event_ledger.csv,unattributable,1 if the filer block never parsed,0/1,integer,derived,3267,0,0=3267,
+kobep_event_ledger.csv,entry_before_window,1 if the entry was received before 2016,0/1,integer,derived,3267,0,0=2094; 1=1173,
+kobep_event_ledger.csv,entry_filing_lag_days,Receipt date minus obligation date of the entry,days,integer,derived,3267,0,,
+kobep_event_ledger.csv,entry_filed_late,1 if entry_filing_lag_days > 120,0/1,integer,derived,3267,0,0=3237; 1=30,"conservative data-quality flag, not a legal determination of late filing"
+kobep_event_ledger.csv,entry_rep_change,1 if the entry filing reports a change of the joint group's representative filer,0/1,integer,derived,3267,0,0=3135; 1=132,"read from the filing's report reason; the group held the shares before, so the entry is not a new holding. Blank if the filing has no reason cell"
+kobep_event_ledger.csv,entry_left_truncated_broad,1 if entry_left_truncated = 1 or entry_rep_change = 1,0/1,integer,derived,3267,0,0=2638; 1=629,entry_left_truncated and is_first_ever keep the narrow definition
+kobep_event_ledger.csv,purpose_at_entry_derived,"Holding purpose at entry, coded or derived",code,integer,derived,3267,30,01=996; 02=2218; 03=23,as holding_purpose_code_derived on the entry filing
+kobep_event_ledger.csv,purpose_at_entry_basis,How purpose_at_entry_derived was obtained,code,string,derived,3267,0,CODED=862; FORM_COVER=4; FORM_ELIGIBILITY=1532; TEXT_RULE=839; UNCLASSIFIED=30,
+kobep_filing_entity.csv,rcept_no,DART receipt number of the 5 % filing,,string,DART,33238,0,,opens the original at dart.fss.or.kr/dsaf001/main.do?rcpNo=
+kobep_filing_entity.csv,reporter_id,KOBEP blockholder entity identifier,,string,derived,33238,0,,see blockholder_entity
+kobep_filing_index.csv,rcept_no,DART receipt number of the 5 % filing,,string,DART,33508,0,,opens the original at dart.fss.or.kr/dsaf001/main.do?rcpNo=
+kobep_filing_index.csv,corp_code,DART issuer identifier (8 digits),,string,DART,33508,0,,join key across files
+kobep_filing_index.csv,receipt_date,Date DART received the filing,date,string,DART,33508,0,,
+kobep_filing_index.csv,in_core_window,1 if received 2016-01-01 to 2025-12-31,0/1,integer,derived,33508,0,0=10543; 1=22965,0 = pre-window history 2011-2015 of panel firms
+kobep_filing_index.csv,form_kind,"standard or short (약식, professional investors) form",,string,DART,33508,0,,
+kobep_filing_index.csv,is_amendment,1 if the filing is itself an amendment (title carries 정정),0/1,integer,derived,33508,0,0=32483; 1=1025,an original that was later corrected is 0
+kobep_filing_index.csv,parsed,1 if the filing text was retrieved and parsed,0/1,integer,derived,33508,0,0=270; 1=33238,0 = DART did not serve the text (status 014)
+kobep_filing_index.csv,report_name_ko,Report title as listed by DART,text (ko),string,DART,33508,0,,
+kobep_filing_index.csv,report_name_en,English rendering of report_name_ko,text,string,derived,33508,0,,standard or short form; [Amendment] for 기재정정
+kobep_firm_master.csv,corp_code,DART issuer identifier (8 digits),,string,DART,11837,0,,join key across files
+kobep_firm_master.csv,fiscal_year,Fiscal year of the annual report,year,integer,DART,11837,0,,
+kobep_firm_master.csv,stock_code,KRX stock code in that year,,string,DART,11837,0,,
+kobep_firm_master.csv,corp_name_ko,Company name (Korean),text (ko),string,DART,11837,0,,
+kobep_firm_master.csv,corp_name_en,"Company name (English, as registered with DART)",text,string,DART,11837,0,,
+kobep_firm_master.csv,market,Market,code,string,DART,11837,0,KOSPI=11837,KOSPI
+kobep_firm_master.csv,is_listed,1 if listed in that year,0/1,integer,derived,11837,0,1=11837,annual-report basis
+kobep_firm_master.csv,is_spv,1 for special-purpose vehicles,0/1,integer,derived,11837,0,0=11837,
+kobep_firm_master.csv,is_financial,1 for financial firms,0/1,integer,derived,11837,0,0=11051; 1=786,see firm_flag_basis
+kobep_firm_master.csv,is_holding,1 for holding companies,0/1,integer,derived,11837,0,0=10913; 1=924,see firm_flag_basis
+kobep_firm_master.csv,delisting_date,Delisting date,date,string,DART,11837,10955,,
+kobep_firm_master.csv,is_partial_year,1 if listed for part of the year,0/1,integer,derived,11837,0,0=11797; 1=40,
+kobep_firm_master.csv,ksic_code,Korean Standard Industrial Classification code,code,string,DART,11837,0,,
+kobep_firm_master.csv,industry_name_ko,KSIC 11th-revision title of ksic_code (Korean),text (ko),string,DART,11837,0,,Statistics Korea classification; code reported in DART company.json
+kobep_firm_master.csv,industry_name_en,KSIC 11th-revision title of ksic_code (English),text,string,DART,11837,0,,official English title
+kobep_firm_master.csv,fiscal_month,Fiscal year-end month,month,integer,DART,11837,0,,
+kobep_firm_master.csv,listing_date,Listing date,date,string,DART,11837,882,,
+kobep_firm_master.csv,established_date,Date of incorporation,date,string,DART,11837,0,,
+kobep_firm_master.csv,origin_kind,LONG_LISTED / IPO / SPINOFF / UNKNOWN,code,string,derived,11837,0,IPO=192; LONG_LISTED=11238; SPINOFF=252; UNKNOWN=155,
+kobep_firm_master.csv,firm_flag_basis,Source of is_financial and is_holding,code,string,derived,11837,0,KSIC_RULE=882; ROSTER=10955,ROSTER exchange roster; KSIC_RULE from ksic_code for firms delisted before the roster (holding: 64992; financial: divisions 64-66 other than holding)
+kobep_firmyear_financial.csv,corp_code,DART issuer identifier (8 digits),,string,DART,7653,0,,join key across files
+kobep_firmyear_financial.csv,fiscal_year,Fiscal year of the annual report,year,integer,DART,7653,0,,
+kobep_firmyear_financial.csv,fs_basis,"CFS consolidated or OFS separate, chosen per firm-year",code,string,DART,7653,0,CFS=6580; OFS=1073,consolidated first
+kobep_firmyear_financial.csv,fs_basis_changed,1 if the basis differs from the prior year,0/1,integer,derived,7653,0,0=7485; 1=168,
+kobep_firmyear_financial.csv,n_items,Core accounts resolved (of 33),count,integer,derived,7653,0,,
+kobep_firmyear_financial.csv,currency,Reporting currency,code,string,DART,7653,0,HKD=1; KRW=7627; USD=25,USD/HKD for 5 firms - filter before pooling
+kobep_firmyear_financial.csv,unit_suspect,"1 if assets jump ~1,000-fold from the prior year",0/1,integer,derived,7653,0,0=7653,"flagged, not corrected"
+kobep_firmyear_financial.csv,signed_magnitudes,Magnitude accounts filed with a sign,count,integer,derived,7653,0,,absolute values used
+kobep_firmyear_financial.csv,assets,"assets (annual statements, fs_basis)",KRW (or `currency`),integer,DART,7653,9,,
+kobep_firmyear_financial.csv,liabilities,"liabilities (annual statements, fs_basis)",KRW (or `currency`),integer,DART,7653,4,,
+kobep_firmyear_financial.csv,equity,"equity (annual statements, fs_basis)",KRW (or `currency`),integer,DART,7653,43,,
+kobep_firmyear_financial.csv,equity_parent,"equity parent (annual statements, fs_basis)",KRW (or `currency`),integer,DART,7653,1380,,
+kobep_firmyear_financial.csv,current_assets,"current assets (annual statements, fs_basis)",KRW (or `currency`),integer,DART,7653,171,,
+kobep_firmyear_financial.csv,noncurrent_assets,"noncurrent assets (annual statements, fs_basis)",KRW (or `currency`),integer,DART,7653,172,,
+kobep_firmyear_financial.csv,current_liabilities,"current liabilities (annual statements, fs_basis)",KRW (or `currency`),integer,DART,7653,172,,
+kobep_firmyear_financial.csv,noncurrent_liabilities,"noncurrent liabilities (annual statements, fs_basis)",KRW (or `currency`),integer,DART,7653,174,,
+kobep_firmyear_financial.csv,cash,"cash (annual statements, fs_basis)",KRW (or `currency`),integer,DART,7653,101,,
+kobep_firmyear_financial.csv,retained_earnings,"retained earnings (annual statements, fs_basis)",KRW (or `currency`),integer,DART,7653,353,,
+kobep_firmyear_financial.csv,issued_capital,"issued capital (annual statements, fs_basis)",KRW (or `currency`),integer,DART,7653,640,,
+kobep_firmyear_financial.csv,ppe,"ppe (annual statements, fs_basis)",KRW (or `currency`),integer,DART,7653,26,,
+kobep_firmyear_financial.csv,inventories,"inventories (annual statements, fs_basis)",KRW (or `currency`),integer,DART,7653,396,,
+kobep_firmyear_financial.csv,receivables,"receivables (annual statements, fs_basis)",KRW (or `currency`),integer,DART,7653,2466,,
+kobep_firmyear_financial.csv,intangibles,"intangibles (annual statements, fs_basis)",KRW (or `currency`),integer,DART,7653,2274,,
+kobep_firmyear_financial.csv,revenue,"revenue (annual statements, fs_basis)",KRW (or `currency`),integer,DART,7653,200,,
+kobep_firmyear_financial.csv,operating_profit,"operating profit (annual statements, fs_basis)",KRW (or `currency`),integer,DART,7653,182,,
+kobep_firmyear_financial.csv,profit,"profit (annual statements, fs_basis)",KRW (or `currency`),integer,DART,7653,83,,
+kobep_firmyear_financial.csv,profit_parent,"profit parent (annual statements, fs_basis)",KRW (or `currency`),integer,DART,7653,1813,,
+kobep_firmyear_financial.csv,eps_basic,Basic earnings per share,KRW per share,number,DART,7653,1009,,
+kobep_firmyear_financial.csv,cost_of_sales,"cost of sales (annual statements, fs_basis)",KRW (or `currency`),integer,DART,7653,433,,
+kobep_firmyear_financial.csv,sga,"sga (annual statements, fs_basis)",KRW (or `currency`),integer,DART,7653,715,,
+kobep_firmyear_financial.csv,pretax_profit,"pretax profit (annual statements, fs_basis)",KRW (or `currency`),integer,DART,7653,47,,
+kobep_firmyear_financial.csv,tax_expense,"tax expense (annual statements, fs_basis)",KRW (or `currency`),integer,DART,7653,145,,
+kobep_firmyear_financial.csv,finance_costs,"finance costs (annual statements, fs_basis)",KRW (or `currency`),integer,DART,7653,617,,
+kobep_firmyear_financial.csv,cfo,"cfo (annual statements, fs_basis)",KRW (or `currency`),integer,DART,7653,103,,
+kobep_firmyear_financial.csv,cfi,"cfi (annual statements, fs_basis)",KRW (or `currency`),integer,DART,7653,103,,
+kobep_firmyear_financial.csv,cff,"cff (annual statements, fs_basis)",KRW (or `currency`),integer,DART,7653,117,,
+kobep_firmyear_financial.csv,capex,"capex (annual statements, fs_basis)",KRW (or `currency`),integer,DART,7653,1330,,
+kobep_firmyear_financial.csv,dividends_paid,"dividends paid (annual statements, fs_basis)",KRW (or `currency`),integer,DART,7653,2723,,
+kobep_firmyear_financial.csv,interest_paid,"interest paid (annual statements, fs_basis)",KRW (or `currency`),integer,DART,7653,1457,,
+kobep_firmyear_financial.csv,tax_paid,"tax paid (annual statements, fs_basis)",KRW (or `currency`),integer,DART,7653,675,,
+kobep_firmyear_financial.csv,roa,profit / assets,ratio,number,derived,7653,90,,
+kobep_firmyear_financial.csv,roe,profit / equity (equity > 0),ratio,number,derived,7653,144,,
+kobep_firmyear_financial.csv,op_margin,operating_profit / revenue (revenue > 0),ratio,number,derived,7653,289,,
+kobep_firmyear_financial.csv,net_margin,profit / revenue (revenue > 0),ratio,number,derived,7653,281,,
+kobep_firmyear_financial.csv,cfo_assets,cfo / assets,ratio,number,derived,7653,111,,
+kobep_firmyear_financial.csv,effective_tax_rate,tax_expense / pretax_profit (pretax > 0),ratio,number,derived,7653,1928,,
+kobep_firmyear_financial.csv,fcf,cfo - capex,KRW (or `currency`),integer,derived,7653,1410,,
+kobep_firmyear_financial.csv,fcf_assets,fcf / assets,ratio,number,derived,7653,1411,,
+kobep_firmyear_financial.csv,capex_assets,capex / assets,ratio,number,derived,7653,1331,,
+kobep_firmyear_financial.csv,debt_equity,liabilities / equity (equity > 0),ratio,number,derived,7653,64,,
+kobep_firmyear_financial.csv,liabilities_assets,liabilities / assets,ratio,number,derived,7653,12,,
+kobep_firmyear_financial.csv,current_ratio,current_assets / current_liabilities,ratio,number,derived,7653,172,,
+kobep_firmyear_financial.csv,interest_coverage,operating_profit / finance_costs,ratio,number,derived,7653,653,,
+kobep_firmyear_financial.csv,size,ln(assets),ln of reporting-currency amount,number,derived,7653,9,,see currency
+kobep_firmyear_financial.csv,ppe_assets,ppe / assets,ratio,number,derived,7653,34,,
+kobep_firmyear_financial.csv,invrec_assets,(inventories + receivables) / assets,ratio,number,derived,7653,272,,
+kobep_firmyear_financial.csv,cash_assets,cash / assets,ratio,number,derived,7653,110,,
+kobep_firmyear_financial.csv,re_te,retained_earnings / equity (equity > 0),ratio,number,derived,7653,392,,
+kobep_firmyear_financial.csv,firm_age,fiscal_year - year of incorporation,years,integer,derived,7653,0,,
+kobep_firmyear_financial.csv,revenue_growth,"revenue growth over the prior year, same currency",ratio,number,derived,7653,905,,
+kobep_firmyear_financial.csv,assets_growth,"asset growth over the prior year, same currency",ratio,number,derived,7653,731,,
+kobep_firmyear_payout.csv,corp_code,DART issuer identifier (8 digits),,string,DART,8219,0,,join key across files
+kobep_firmyear_payout.csv,fiscal_year,Fiscal year of the annual report,year,integer,DART,8219,0,,
+kobep_firmyear_payout.csv,div_cash_total,Cash dividends declared,KRW,integer,DART,8219,20,,alotMatter
+kobep_firmyear_payout.csv,div_basis,REPORTED / INFERRED_ZERO / TOTAL_NOT_DISCLOSED / MISSING,code,string,derived,8219,0,INFERRED_ZERO=2414; MISSING=10; REPORTED=5785; TOTAL_NOT_DISCLOSED=10,"INFERRED_ZERO = dividend section filed with no total and no DPS; TOTAL_NOT_DISCLOSED = DPS filed, total blank or in the wrong unit"
+kobep_firmyear_payout.csv,dps,Cash dividend per share,KRW,integer,DART,8219,2447,,
+kobep_firmyear_payout.csv,payout_ratio_disclosed,Payout ratio as disclosed,%,number,DART,8219,2880,,
+kobep_firmyear_payout.csv,div_yield_disclosed,Dividend yield as disclosed,%,number,DART_DISCLOSED,8219,2564,,computed by the filer on a reference price
+kobep_firmyear_payout.csv,div_stock_total,Stock dividends,KRW,integer,DART,8219,8043,,
+kobep_firmyear_payout.csv,disagree_flag,1 if the filer's repeated figures disagree >10x,0/1,integer,derived,8219,0,0=8118; 1=101,
+kobep_firmyear_payout.csv,treasury_acquired_qty,Treasury shares acquired in the year,shares,integer,DART,8219,6205,,
+kobep_firmyear_payout.csv,treasury_acq_qty_direct,... of which direct purchases (직접취득),shares,integer,DART,8219,6252,,
+kobep_firmyear_payout.csv,treasury_acq_qty_trust,... of which via trust (신탁),shares,integer,DART,8219,6252,,statement amounts lag trust purchases
+kobep_firmyear_payout.csv,treasury_acq_qty_other,"... of which other (merger, odd lots, appraisal)",shares,integer,DART,8219,6252,,
+kobep_firmyear_payout.csv,treasury_retired_qty,Treasury shares retired,shares,integer,DART,8219,7696,,
+kobep_firmyear_payout.csv,treasury_disposed_qty,Treasury shares disposed,shares,integer,DART,8219,7038,,
+kobep_firmyear_payout.csv,treasury_end_qty,Treasury shares held at year end,shares,integer,DART,8219,2506,,
+kobep_firmyear_payout.csv,n_buyback_decisions,Buyback decision filings (B001) in the year,count,integer,DART,8219,0,,
+kobep_firmyear_payout.csv,n_trust_openings,Buyback trust contracts opened in the year,count,integer,DART,8219,0,,
+kobep_firmyear_payout.csv,buyback_value,Won paid for treasury shares,KRW,integer,DART_DISCLOSED,8219,239,,"cash-flow statement, else equity statement, else execution reports"
+kobep_firmyear_payout.csv,buyback_value_basis,Source of buyback_value,code,string,derived,8219,0,CASHFLOW=1124; EQUITY_STMT=39; EXECUTION_REPORT=102; NA_NOT_DISCLOSED=204; NA_SOURCE_CONFLICT=35; NO_ACQUISITION=6158; NO_MARKET_ACQUISITION=557,CASHFLOW / EQUITY_STMT / EXECUTION_REPORT / NO_ACQUISITION / NO_MARKET_ACQUISITION / NA_NOT_DISCLOSED / NA_SOURCE_CONFLICT; statement amounts used only when the parent bought in the market
+kobep_firmyear_payout.csv,buyback_fs_div,OFS or CFS statement used,code,string,DART,8219,7056,CFS=36; OFS=1127,separate first
+kobep_firmyear_payout.csv,total_payout,div_cash_total + buyback_value,KRW,integer,derived,8219,262,,no exchange price used
+kobep_firmyear_payout.csv,payout_basis,CASH_ONLY / CASH_PLUS_REPORTED_BUYBACK / NONE,code,string,derived,8219,0,CASH_ONLY=6744; CASH_PLUS_REPORTED_BUYBACK=1213; NONE=262,
+kobep_firmyear_payout.csv,div_dummy,1 if a cash dividend was paid,0/1,integer,derived,8219,20,0=2483; 1=5716,
+kobep_firmyear_payout.csv,div_initiation,1 if div_dummy = 1 in t and 0 in t-1,0/1,integer,derived,8219,125,0=7770; 1=324,t-1 must be observed
+kobep_firmyear_payout.csv,div_omission,1 if div_dummy = 0 in t and 1 in t-1,0/1,integer,derived,8219,125,0=7801; 1=293,t-1 must be observed
+kobep_firmyear_payout.csv,div_increase,1 if div_cash_total in t exceeds a positive t-1 amount,0/1,integer,derived,8219,125,0=5439; 1=2655,t-1 must be observed
+kobep_firmyear_payout.csv,payout_ratio,total_payout / profit,ratio,number,derived,8219,2699,,
+kobep_firmyear_payout.csv,payout_assets,total_payout / assets,ratio,number,derived,8219,789,,
+kobep_firmyear_payout.csv,payout_equity,total_payout / equity,ratio,number,derived,8219,843,,
+kobep_firmyear_payout.csv,payout_ocf,total_payout / cfo,ratio,number,derived,8219,2443,,
+kobep_firmyear_payout.csv,div_assets,div_cash_total / assets,ratio,number,derived,8219,594,,
+kobep_firmyear_payout.csv,distributable_profit_ub,equity - issued_capital; upper bound of distributable profit,KRW,integer,derived,8219,1230,,Commercial Act art. 462(1)
+kobep_firmyear_payout.csv,payout_capacity_used_lb,total_payout / distributable_profit_ub; lower bound,ratio,number,derived,8219,1624,,
+kobep_missing_reasons.csv,file,Release file,,string,derived,134,0,,
+kobep_missing_reasons.csv,variable,Column,,string,derived,134,0,,
+kobep_missing_reasons.csv,reason_code,Why the cells are blank,code,string,derived,134,0,NA_CURRENCY_MISMATCH=1; NA_FORM_VERSION=5; NA_NOT_APPLICABLE=27; NA_NOT_COLLECTED=1; NA_NOT_DISCLOSED=67; NA_NO_PRIOR_YEAR=5; NA_RULE_UNDETERMINED=2; NA_SOURCE_CONFLICT=1; NA_UNDEFINED_RATIO=23; NA_WITHHELD_PERSONAL=2,"defined in the codebook, section 5"
+kobep_missing_reasons.csv,rule,Condition selecting the cells,text,string,derived,134,0,,
+kobep_missing_reasons.csv,n_cells,Blank cells covered by the rule,count,integer,derived,134,0,,
+kobep_position_ledger.csv,rcept_no,DART receipt number of the 5 % filing,,string,DART,33238,0,,opens the original at dart.fss.or.kr/dsaf001/main.do?rcpNo=
+kobep_position_ledger.csv,reporter_id,KOBEP blockholder entity identifier,,string,derived,33238,0,,see blockholder_entity
+kobep_position_ledger.csv,corp_code,DART issuer identifier (8 digits),,string,DART,33238,0,,join key across files
+kobep_position_ledger.csv,receipt_date,Date DART received the filing,date,string,DART,33238,0,,
+kobep_position_ledger.csv,in_core_window,1 if received 2016-01-01 to 2025-12-31,0/1,integer,derived,33238,0,0=10498; 1=22740,0 = pre-window history 2011-2015 of panel firms
+kobep_position_ledger.csv,form_version,DART form version (FORMULA-VERSION),,number,DART,33238,0,,2.2-6.0
+kobep_position_ledger.csv,form_kind,standard or short form,,string,DART,33238,0,,
+kobep_position_ledger.csv,is_amendment,1 if the filing text marks itself an amendment,0/1,integer,DART,33238,0,0=32483; 1=755,values are read from the post-amendment tables (ACLASS=EXTRACTION)
+kobep_position_ledger.csv,obligation_date,Date the reporting duty arose (RPT_RSP_DT),date,string,DART,33238,0,,
+kobep_position_ledger.csv,base_date,As-of date of the reported holding (RPT_REF_DT),date,string,DART,33238,0,,
+kobep_position_ledger.csv,prev_report_date,Date of the filer's previous report,date,string,DART,33238,3897,,
+kobep_position_ledger.csv,filer_type_code,Filer type code (CRP_TP),code,string,DART,33238,0,A=20; C=204; I=14555; K=7921; N=614; O=3214; U=12; W=52; Y=6646,I domestic corporation; K financial institution; Y pension fund or professional investor; A investment company etc.; N other organisation (domestic); U other organisation (foreign); O foreign corporation; C civil-code partnership; W statutory partnership
+kobep_position_ledger.csv,relation_to_issuer_code,Filer's relation to the issuer (FLT_CRP_RLT),code,integer,DART,33238,710,01=7; 02=1706; 03=48; 10=11819; 13=16154; 14=474; 15=1; 16=2319,"01 officer, 02 major shareholder, 03 de facto controller, 04 unregistered officer, 10 largest shareholder, 13 shareholder, 14 affiliate, 15 affiliate officer, 16 other"
+kobep_position_ledger.csv,outsider_class,INSIDER / OUTSIDER / UNCERTAIN from the relation code,code,string,derived,33238,0,INSIDER=12349; OUTSIDER=16154; UNCERTAIN=4735,"OUTSIDER: 13; INSIDER: 01, 03, 04, 10, 14, 15; UNCERTAIN: 02 (a >=10 % holder may be an outside institution), 16, blank"
+kobep_position_ledger.csv,prev_ratio_stockequiv,"Holding ratio in the previous report, stock-equivalent basis",%,number,DART,33238,4232,,
+kobep_position_ledger.csv,curr_ratio_stockequiv,"Holding ratio in this report, stock-equivalent basis",%,number,DART,33238,16,,the 5 % threshold is defined on this basis
+kobep_position_ledger.csv,prev_ratio_voting,"Previous holding ratio, voting-share basis",%,number,DART,33238,32532,,form 4.2+
+kobep_position_ledger.csv,curr_ratio_voting,"Current holding ratio, voting-share basis",%,number,DART,33238,32436,,form 4.2+
+kobep_position_ledger.csv,report_type_code,"1 new, 2 change in holdings, 3 change in terms, 4 both",code,integer,DART,33238,1,1=4717; 2=21054; 3=5047; 4=2419,
+kobep_position_ledger.csv,holding_purpose_code,"01 influence over management, 02 passive, 03 general investment",code,integer,DART,33238,23245,01=4165; 02=4921; 03=907,coded from short form 3.9 (2020) and standard form 4.0 (late 2022)
+kobep_position_ledger.csv,involuntary,1 if a released transaction row of the filing is a non-purchase acquisition,0/1,integer,derived,33238,0,0=32452; 1=786,"method_ko in 수증(+), 합병(+), 상속(+), 주식매수선택권행사(+), 출자전환, 대물변제수령(+), 무상신주취득(+), 주식배당(+), 계열사편입(+)"
+kobep_position_ledger.csv,market_purchase,1 if a released transaction row of the filing is an on-exchange purchase,0/1,integer,derived,33238,0,0=22703; 1=10535,"method_ko in 장내매수(+), 시간외매매(+)"
+kobep_position_ledger.csv,joint_filing,1 for a joint (연명) report,0/1,integer,DART,33238,0,0=10313; 1=22925,
+kobep_position_ledger.csv,total_shares_issued,Issuer's shares in issue stated in the filing,shares,integer,DART,33238,38,,
+kobep_position_ledger.csv,holding_purpose_code_derived,"Holding purpose 01/02/03: the code where filed, else derived",code,integer,derived,33238,164,01=14830; 02=17337; 03=907,see holding_purpose_basis; derived values are rule-based (98.6 % agreement on released coded filings with text)
+kobep_position_ledger.csv,holding_purpose_basis,How the purpose was obtained,code,string,derived,33238,0,CODED=9993; FORM_COVER=41; FORM_ELIGIBILITY=12380; NO_TEXT=1; PRIOR_FILING=97; TEXT_RULE=10563; UNCLASSIFIED=163,"CODED / FORM_ELIGIBILITY (pre-code short form = 02) / TEXT_RULE / FORM_COVER (standard-form cover names the influence purpose, prose settles nothing = 01; 99.3 % of covered coded filings are 01) / PRIOR_FILING (still unclassified: the same holder's latest earlier CODED, TEXT_RULE or FORM_COVER category on the issuer; not after a short form) / UNCLASSIFIED / NO_TEXT"
+kobep_security_class.csv,security_ko,Security label as it appears in the tables,text (ko),string,DART,16,0,,
+kobep_security_class.csv,security_class,Standardised class,code,string,derived,16,0,BOND_WITH_WARRANT=1; COMMON=1; CONVERTIBLE_BOND=1; CONVERTIBLE_PREFERRED=1; CONVERTIBLE_TO_VOTING=1; DEPOSITARY_RECEIPT=1; EXCHANGEABLE_BOND=1; OTHER=1; REDEEMABLE_INTO_VOTING=1; SUBSCRIPTION_CERTIFICATE=1; UNREADABLE=1; VOTING_PREFERRED=1; VOTING_SHARE=3; WARRANT=1,
+kobep_terms_event.csv,rcept_no,DART receipt number of the 5 % filing,,string,DART,213,0,,opens the original at dart.fss.or.kr/dsaf001/main.do?rcpNo=
+kobep_terms_event.csv,row_no,Row position within the filing's table,,integer,derived,213,0,,
+kobep_terms_event.csv,corp_code,DART issuer identifier (8 digits),,string,DART,213,0,,join key across files
+kobep_terms_event.csv,in_core_window,1 if received 2016-01-01 to 2025-12-31,0/1,integer,derived,213,0,0=21; 1=192,0 = pre-window history 2011-2015 of panel firms
+kobep_terms_event.csv,party_name,Party named in the terms-change row,text,string,DART,213,104,,
+kobep_terms_event.csv,party_id,Party's registration number,,string,DART,213,108,,six-digit values reading as a birth date are withheld
+kobep_terms_event.csv,event_date,Date of the change in terms,date,string,DART,213,110,,
+kobep_terms_event.csv,receipt_date,Date DART received the filing,date,string,DART,213,0,,
+kobep_terms_event.csv,method_ko,Coded method in the terms table,text (ko),string,DART,213,191,,
+kobep_terms_event.csv,security_ko,Security class as filed,text (ko),string,DART,213,193,,
+kobep_terms_event.csv,security_class,Standardised security class,code,string,derived,213,193,CONVERTIBLE_BOND=1; VOTING_SHARE=19,
+kobep_terms_event.csv,unit_price,Price stated in the terms row,KRW,integer,DART_DISCLOSED,213,212,,
+kobep_terms_event.csv,price_source,DART_DISCLOSED when unit_price is present,code,string,derived,213,212,DART_DISCLOSED=1,
+kobep_terms_event.csv,method_en,English gloss of method_ko,text,string,derived,213,191,,
+kobep_transaction_ledger.csv,rcept_no,DART receipt number of the 5 % filing,,string,DART,995936,0,,opens the original at dart.fss.or.kr/dsaf001/main.do?rcpNo=
+kobep_transaction_ledger.csv,row_no,Row position within the filing's table,,integer,derived,995936,0,,
+kobep_transaction_ledger.csv,in_core_window,1 if received 2016-01-01 to 2025-12-31,0/1,integer,derived,995936,0,0=361266; 1=634670,0 = pre-window history 2011-2015 of panel firms
+kobep_transaction_ledger.csv,party_name,Party whose holding moved (filer or related party),text,string,DART,995936,5,,legal persons only
+kobep_transaction_ledger.csv,party_id,Party's registration number,,string,DART,995936,3205,,six-digit values reading as a birth date are withheld
+kobep_transaction_ledger.csv,change_date,Date of the movement,date,string,DART,995936,25,,
+kobep_transaction_ledger.csv,method_ko,Method of acquisition or disposal as filed (HLD_MTH),text (ko),string,DART,995936,10238,,e.g. 장내매수(+) on-market purchase; see vocabulary
+kobep_transaction_ledger.csv,direction,"+1 acquisition, -1 disposal",,integer,derived,995936,13905,,from the method's sign
+kobep_transaction_ledger.csv,security_ko,Security class as filed,text (ko),string,DART,995936,166,,
+kobep_transaction_ledger.csv,security_class,Standardised security class,code,string,derived,995936,0,BOND_WITH_WARRANT=494; COMMON=72361; CONVERTIBLE_BOND=6031; CONVERTIBLE_PREFERRED=1; CONVERTIBLE_TO_VOTING=225; DEPOSITARY_RECEIPT=7538; EXCHANGEABLE_BOND=467; NOT_STATED=166; OTHER=156; REDEEMABLE_INTO_VOTING=5; SUBSCRIPTION_CERTIFICATE=1691; UNREADABLE=9; VOTING_PREFERRED=22; VOTING_SHARE=904409; WARRANT=2361,see security_class
+kobep_transaction_ledger.csv,shares_before,Holding before the movement,shares,integer,DART,995936,7761,,
+kobep_transaction_ledger.csv,shares_change,Size of the movement,shares,integer,DART,995936,333,,
+kobep_transaction_ledger.csv,shares_after,Holding after the movement,shares,integer,DART,995936,1251,,
+kobep_transaction_ledger.csv,unit_price,Price per unit as stated by the filer,see unit_price_kind,number,DART_DISCLOSED,995936,43261,,"a filer-stated price, not an exchange quote"
+kobep_transaction_ledger.csv,price_source,DART_DISCLOSED when unit_price is present,code,string,derived,995936,43261,DART_DISCLOSED=952675,
+kobep_transaction_ledger.csv,unit_price_kind,What unit_price is on this row,code,string,derived,995936,43261,DR_UNIT_UNCONFIRMED=7244; EXECUTED_KRW_PER_SHARE=844277; REFERENCE_KRW_PER_SHARE=101154,"EXECUTED_KRW_PER_SHARE (flow_kind TRADE); REFERENCE_KRW_PER_SHARE (exercise-price adjustment, swap and other non-trade rows); DR_UNIT_UNCONFIRMED (depositary receipts; unit not stated)"
+kobep_transaction_ledger.csv,flow_kind,Economic kind of the movement,code,string,derived,995936,0,DERIVATIVE=1816; LENDING=4549; NON_CASH=4821; OTHER=116001; PERIMETER=5245; TRADE=852727; UNKNOWN=10777,TRADE cash trade; OTHER unspecified; NON_CASH bonus/split/merger; PERIMETER related-party perimeter change; LENDING; DERIVATIVE; UNKNOWN
+kobep_transaction_ledger.csv,method_en,English gloss of method_ko,text,string,derived,995936,10238,,same table as docs/kobep_vocabulary.csv
