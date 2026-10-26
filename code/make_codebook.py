@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Write docs/KOBEP_codebook_v1.0.md and docs/kobep_validation_summary.csv.
+"""Write docs/KOBEP_codebook_v1.1.md and docs/kobep_validation_summary.csv.
 
 Narrative sections are written here; the variable tables are rendered from
 docs/kobep_variable_dictionary.csv and the missing-value table from
@@ -37,6 +37,10 @@ VALIDATION = [
     ("Changed derived purposes vs originals", "all released filings whose derived purpose changed with the "
      "2026-10-23 rules (171 by text rules or cover, 97 carried forward)", 268, "0 errors",
      "human check of every filing against its original"),
+    ("Payout amounts vs annual reports", "40 firm-years, fixed seed (20261026), stratified by "
+     "repurchase source, blank reason, trust purchases and inferred-zero dividends", 120,
+     "0 errors in 120 fields (cash dividend, repurchase amount, recorded source)",
+     "human check against annual and execution reports; code/validation/make_payout_check.py (v1.1)"),
     ("Buyback amount vs an exchange-price estimate", "statement and execution-report "
      "bases, 2016-2025", 1116, "internal plausibility check only",
      "the estimate uses exchange prices and is not released, nor are its ratios"),
@@ -46,13 +50,15 @@ VALIDATION = [
      "a language model screened every field first and its flags set the order of review: the 68 flagged rows "
      "first, then the 392 passed rows (358 of them blind to the model); a derived purpose left blank although "
      "its text can be classified counts as an error"),
-    ("Spot-check: build examined vs original", "all 3,240 fields", 3240,
-     "7 errors (0.22 %; Wilson 95 % upper bound 0.45 %), all blank derived purposes; corrected",
-     "a price-parsing defect found in a first pass was corrected before this build (30,960 price cells "
-     "in the internal ledger, 2.7 % of its 1,128,021 priced cells)"),
-    ("Spot-check: released values vs original", "all 3,240 fields; the 12 fields changed after the "
-     "audit re-judged", 3240, "0 errors; Wilson 95 % upper bound 0.12 % per field, 0.83 % per row",
-     "0 of 3,240 fields and 0 of 460 rows wrong"),
+    ("Spot-check: defects found", "all 3,240 fields", 3240,
+     "decimal prices read as integers (6 of 200 sampled prices flagged by the model screen of the first "
+     "build); 7 blank derived purposes in 160 sampled filings",
+     "both corrected throughout the release before deposit: 30,960 price cells in the internal ledger "
+     "(2.7 % of 1,128,021 priced cells); purpose rules extended, 268 released filings changed and checked"),
+    ("Spot-check: released values re-checked", "all 3,240 fields; the 12 fields changed after the "
+     "audit re-judged", 3240, "0 errors in the sample",
+     "the same sample guided the corrections, so this confirms them; it is not an independent estimate "
+     "of the error rate of unsampled records"),
     ("Language-model screens (screening tools only)", "all 3,240 human-judged fields", 3240,
      "gpt-5.5 98.9 % agree (34 false alarms) and claude-opus-5-5 99.3 % (21) as recorded; 99.1 % (28) "
      "and 99.5 % (16) under the blank-purpose criterion; 0 errors passed by either",
@@ -70,7 +76,7 @@ VALIDATION = [
      "yield, both issuer-disclosed", "audit/audit_price_leak.py"),
 ]
 
-NARRATIVE = """# KOBEP-Core codebook, version 1.0
+NARRATIVE = """# KOBEP-Core codebook, version 1.1
 
 ## 1. What the dataset is
 
@@ -124,8 +130,12 @@ a commercial database or from the exchange.
   event-level indicators (for example, outside entries by holding purpose or
   acquisition route) can be built from these files. It is an example of use,
   not part of the data definition.
-- **No ownership totals.** With natural persons and the ownership summary
-  excluded, sums over the position ledger are legal-person holdings only.
+- **No ownership totals.** The ratios in the position ledger are the
+  combined ratios of the filer and its related parties as filed. Natural-person
+  rows were removed but the ratios were not recomputed, so they can include
+  shares of related natural persons; summed across filings, holders or groups
+  they count overlapping holdings more than once and do not measure ownership
+  concentration. No ownership summary is released.
 
 ## 3. How the files were built
 
@@ -182,7 +192,13 @@ UNCERTAIN is not guessed.
 **Amendments.** `is_amendment` marks a filing that is itself an amendment
 (index: the title carries 정정; position ledger: the filing text says so). An
 original that was later corrected is 0. Values are read from the
-post-amendment tables (`ACLASS="EXTRACTION"`).
+post-amendment tables (`ACLASS="EXTRACTION"`). The ledgers keep every filing as
+received, so an original and its amendment both appear. Since v1.1,
+`superseded_by` gives, for every filing received before the latest amendment in
+its set (same `reporter_id`, `corp_code` and `obligation_date`), the receipt
+number of that amendment; drop rows with `superseded_by` filled before summing
+quantities or amounts. An amendment that changes the obligation date is not
+matched.
 
 **Acquisition flags.** `market_purchase` and `involuntary` are computed from the
 released transaction rows of the filing (method lists in the dictionary).
@@ -285,7 +301,7 @@ def fmt(v):
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    ap.add_argument("--release", default=r"C:\KOBEP\release\KOBEP-Core_v1.0")
+    ap.add_argument("--release", default=r"C:\KOBEP\release\KOBEP-Core_v1.1")
     args = ap.parse_args()
     docs = os.path.join(args.release, "docs")
     d = pd.read_csv(os.path.join(docs, "kobep_variable_dictionary.csv"), dtype=str).fillna("")
@@ -330,7 +346,7 @@ def main() -> None:
     vt = "| Check | Scope | n | Result | Note |\n|---|---|---:|---|---|\n" + "\n".join(
         f"| {a} | {b} | {c:,} | {dd} | {e} |" for a, b, c, dd, e in VALIDATION)
     parts.append(TAIL.format(validation=vt))
-    path = os.path.join(docs, "KOBEP_codebook_v1.0.md")
+    path = os.path.join(docs, "KOBEP_codebook_v1.1.md")
     open(path, "w", encoding="utf-8", newline="\n").write("\n".join(parts))
     print(f"-> {path}  ({sum(len(p) for p in parts):,} chars)")
 

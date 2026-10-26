@@ -71,7 +71,7 @@ def gloss(value: str, table: dict) -> str | None:
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    ap.add_argument("--release", default=r"C:\KOBEP\release\KOBEP-Core_v1.0")
+    ap.add_argument("--release", default=r"C:\KOBEP\release\KOBEP-Core_v1.1")
     args = ap.parse_args()
     data = os.path.join(args.release, "data")
     rows, missing = [], []

@@ -124,7 +124,7 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--db", default=r"C:\KOBEP\ledger.db")
     ap.add_argument("--raw", default=r"C:\KOBEP\raw\doc")
-    ap.add_argument("--out", default=r"C:\KOBEP\release\KOBEP-Core_v1.0\fixtures")
+    ap.add_argument("--out", default=r"C:\KOBEP\release\KOBEP-Core_v1.1\fixtures")
     args = ap.parse_args()
     con = sqlite3.connect(f"file:{args.db}?mode=ro", uri=True)
     people = person_names(con)

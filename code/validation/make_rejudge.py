@@ -29,7 +29,7 @@ from openpyxl import load_workbook
 from openpyxl.worksheet.datavalidation import DataValidation
 
 D = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "deliverables", "spotcheck")
-REL = sys.argv[1] if len(sys.argv) > 1 else r"C:\KOBEP\release\KOBEP-Core_v1.0\data"
+REL = sys.argv[1] if len(sys.argv) > 1 else r"C:\KOBEP\release\KOBEP-Core_v1.1\data"
 
 
 def num(v: str):

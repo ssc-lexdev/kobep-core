@@ -8,7 +8,7 @@ breaks joins. This module reads every identifier as a string and everything
 else as pandas would.
 
     from read_kobep import read
-    events = read("kobep_event_ledger.csv", data="KOBEP-Core_v1.0/data")
+    events = read("kobep_event_ledger.csv", data="KOBEP-Core_v1.1/data")
 
 R:     readr::read_csv(f, col_types = readr::cols(corp_code = "c", rcept_no = "c", ...))
 Stata: import delimited ..., stringcols(_all) and destring the measures you need.
@@ -20,7 +20,7 @@ import os
 import pandas as pd
 
 #: Same list as make_dictionary.IDENTIFIERS (type "string" in the dictionary).
-IDENTIFIERS = ["corp_code", "rcept_no", "entry_rcept_no", "stock_code", "ksic_code",
+IDENTIFIERS = ["corp_code", "rcept_no", "entry_rcept_no", "superseded_by", "stock_code", "ksic_code",
                "party_id", "id_value", "reporter_id", "event_id"]
 
 

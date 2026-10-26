@@ -10,7 +10,7 @@ import argparse
 import json
 import os
 
-VERSION = "1.0"
+VERSION = "1.1"
 TITLE = ("KOBEP-Core: Korean blockholder entry and payout ledger, KOSPI 2011-2025")
 AUTHOR_FAMILY, AUTHOR_GIVEN = "Choi", "Sungsoo"   # copyright holder in the licence files
 # Dataset authors, as in the manuscript (ORCID iDs checked on pub.orcid.org, 2026-10-26)
@@ -18,7 +18,8 @@ AUTHORS = [
     ("Choi", "Sungsoo", "0009-0000-4010-3272", "Seoul AI School, aSSIST University; Korean Bar Association"),
     ("Oh", "Taeyeon", "0000-0002-1867-5554", "Seoul AI School, aSSIST University; Dong-A University"),
 ]
-DOI = "10.5281/zenodo.23663204"     # v1.0 version DOI, reserved at Zenodo 2026-10-26
+DOI = "10.5281/zenodo.23666227"     # v1.1 version DOI (v1.0: 10.5281/zenodo.23663204;
+                                    # all versions: 10.5281/zenodo.23663203)
 
 FILES = [
     ("kobep_firm_master.csv", "corp_code, fiscal_year",
@@ -51,7 +52,7 @@ FILES = [
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    ap.add_argument("--release", default=r"C:\KOBEP\release\KOBEP-Core_v1.0")
+    ap.add_argument("--release", default=r"C:\KOBEP\release\KOBEP-Core_v1.1")
     args = ap.parse_args()
     rep = json.load(open(os.path.join(args.release, "manifest", "extract_report.json"),
                          encoding="utf-8"))
@@ -60,6 +61,7 @@ def main() -> None:
     readme = f"""# {TITLE}
 
 Version {VERSION}. DOI: https://doi.org/{DOI}
+(all versions: https://doi.org/10.5281/zenodo.23663203)
 
 A relational dataset built entirely from Korean statutory disclosures (DART,
 operated by the Financial Supervisory Service). It records every 5 % beneficial-
@@ -148,6 +150,15 @@ re-downloaded from the OpenDART `document.xml` endpoint by receipt number.
 code is in `code/`; `fixtures/` holds redacted originals for the parser tests.
 `code/examples/make_treatment.py` is an example of use (event-level indicators
 built from the files), not part of the data definition.
+
+## Changes
+
+- 1.1 (2026-10): `superseded_by` added to the position ledger (filings replaced
+  by a later amendment); holding ratios documented as filer plus related parties
+  as filed; spot-check results stated as found, corrected and re-checked; payout
+  spot-check (40 firm-years, 0 errors in 120 fields) and its script added. No
+  other data value changed.
+- 1.0 (2026-10-26): first release, https://doi.org/10.5281/zenodo.23663204
 
 ## Licence
 

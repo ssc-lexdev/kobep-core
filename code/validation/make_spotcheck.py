@@ -123,7 +123,7 @@ CHECKS = {
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    ap.add_argument("--release", default=r"C:\KOBEP\release\KOBEP-Core_v1.0")
+    ap.add_argument("--release", default=r"C:\KOBEP\release\KOBEP-Core_v1.1")
     ap.add_argument("--out", required=True)
     args = ap.parse_args()
     d = os.path.join(args.release, "data")

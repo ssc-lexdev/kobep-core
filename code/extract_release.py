@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Extract the KOBEP-Core v1.0 release files from the internal ledger.
+"""Extract the KOBEP-Core v1.1 release files from the internal ledger.
 
 One deterministic pass from `ledger.db` to `data/*.csv`. Nothing in the
 release is edited by hand: run this twice and the checksums must agree.
@@ -26,7 +26,7 @@ out of v1.0. They name people - a reason field reads like "- <name> 증여 (-)
 <shares>주" - and no name filter is reliable enough on free prose.
 
 Usage:
-    python extract_release.py [--db C:/KOBEP/ledger.db] [--out C:/KOBEP/release/KOBEP-Core_v1.0]
+    python extract_release.py [--db C:/KOBEP/ledger.db] [--out C:/KOBEP/release/KOBEP-Core_v1.1]
 """
 from __future__ import annotations
 
@@ -402,9 +402,29 @@ def extract(con: sqlite3.Connection) -> tuple[dict, dict]:
                     None, None, r[20],
                     blank(str(r[21]).replace(",", "")) if r[21] else None,
                     r[22], r[23]))
+    # v1.1: an amended filing repeats the corrected tables of the filing it amends,
+    # and both stay in the ledgers. Within each set of filings by the same filer on
+    # the same issuer with the same obligation date, every filing received before the
+    # set's latest amendment is marked superseded by it (blank otherwise).
+    sets = {}
+    for t in pos:
+        if t[1] is not None and t[8]:
+            sets.setdefault((t[1], t[2], t[8]), []).append(t)
+    sup, n_sets = {}, 0
+    for g in sets.values():
+        ams = [t for t in g if str(t[7]) == "1"]
+        if not ams:
+            continue
+        last = max(ams, key=lambda t: (t[3], t[0]))
+        hit = [t for t in g if (t[3], t[0]) < (last[3], last[0])]
+        for t in hit:
+            sup[t[0]] = last[0]
+        n_sets += bool(hit)
+    pos = [t[:8] + (sup.get(t[0]),) + t[8:] for t in pos]
+    report["superseded"] = {"filings": len(sup), "sets": n_sets}
     files["kobep_position_ledger.csv"] = (
         ["rcept_no", "reporter_id", "corp_code", "receipt_date", "in_core_window",
-         "form_version", "form_kind", "is_amendment", "obligation_date", "base_date",
+         "form_version", "form_kind", "is_amendment", "superseded_by", "obligation_date", "base_date",
          "prev_report_date", "filer_type_code", "relation_to_issuer_code",
          "outsider_class", "prev_ratio_stockequiv", "curr_ratio_stockequiv",
          "prev_ratio_voting", "curr_ratio_voting", "report_type_code",
@@ -434,7 +454,9 @@ def extract(con: sqlite3.Connection) -> tuple[dict, dict]:
     for t in tx:
         if t[6]:
             methods_of.setdefault(t[0], set()).add(t[6])
-    i_mp = 20                       # involuntary, market_purchase
+    # involuntary, market_purchase: located by name (v1.1 inserted superseded_by)
+    i_mp = files["kobep_position_ledger.csv"][0].index("involuntary")
+    assert files["kobep_position_ledger.csv"][0][i_mp + 1] == "market_purchase"
     pos[:] = [p[:i_mp] + (int(bool(methods_of.get(p[0], set()) & INVOLUNTARY)),
                           int(bool(methods_of.get(p[0], set()) & MARKET_PURCHASE))) + p[i_mp + 2:]
               for p in pos]
@@ -636,7 +658,7 @@ def check_joins(files: dict) -> dict:
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--db", default=r"C:\KOBEP\ledger.db")
-    ap.add_argument("--out", default=r"C:\KOBEP\release\KOBEP-Core_v1.0")
+    ap.add_argument("--out", default=r"C:\KOBEP\release\KOBEP-Core_v1.1")
     ap.add_argument("--collection-manifest", default=r"C:\KOBEP\manifest.csv")
     ap.add_argument("--parser", default=os.path.join(
         os.path.dirname(os.path.abspath(__file__)), "parser", "kobep_parser.py"))

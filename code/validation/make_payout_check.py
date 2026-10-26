@@ -14,7 +14,7 @@ to judge three fields per firm-year against the original filings on DART:
 
 Verdicts: OK / WRONG / CANT_TELL in the human_* columns, reason in human_note.
 
-    python make_payout_check.py [--release C:/KOBEP/release/KOBEP-Core_v1.0]
+    python make_payout_check.py [--release C:/KOBEP/release/KOBEP-Core_v1.1]
                                 [--ledger C:/KOBEP/ledger.db] [--out <spotcheck dir>]
 """
 from __future__ import annotations
@@ -50,7 +50,7 @@ def won(v) -> str:
 def main() -> None:
     here = os.path.dirname(os.path.abspath(__file__))
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    ap.add_argument("--release", default=r"C:\KOBEP\release\KOBEP-Core_v1.0")
+    ap.add_argument("--release", default=r"C:\KOBEP\release\KOBEP-Core_v1.1")
     ap.add_argument("--ledger", default=r"C:\KOBEP\ledger.db")
     ap.add_argument("--out", default=os.path.join(here, "..", "..", "deliverables", "spotcheck"))
     a = ap.parse_args()

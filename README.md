@@ -1,11 +1,16 @@
 # KOBEP-Core: code
 
-Code for **KOBEP-Core: Korean blockholder entry and payout ledger, KOSPI 2011-2025** (version 1.0).
+Code for **KOBEP-Core: Korean blockholder entry and payout ledger, KOSPI 2011-2025** (version 1.1).
 
 The data are not in this repository. They are deposited at Zenodo:
 
-- Version 1.0: https://doi.org/10.5281/zenodo.23663204
+- Version 1.1: https://doi.org/10.5281/zenodo.23666227 (tag `v1.1` here)
+- Version 1.0: https://doi.org/10.5281/zenodo.23663204 (tag `v1.0` here)
 - All versions (resolves to the latest): https://doi.org/10.5281/zenodo.23663203
+
+Version 1.1 adds `superseded_by` to the position ledger, documents the holding ratios as filer plus
+related parties as filed, restates the spot-check as found, corrected and re-checked, and adds the
+payout spot-check and its script (`code/validation/make_payout_check.py`).
 
 This repository holds the same `code/`, `docs/` and `fixtures/` folders as the Zenodo deposit,
 so the extraction, parsing, audit, validation and figure code can be read, cited and reused
@@ -37,4 +42,4 @@ Code: MIT (`LICENSE`). Data and documentation: CC BY 4.0 (`LICENSE-DATA.txt`).
 Please cite the dataset as given in `CITATION.cff`:
 
 Choi, S. & Oh, T. KOBEP-Core: Korean blockholder entry and payout ledger, KOSPI 2011-2025.
-*Zenodo* https://doi.org/10.5281/zenodo.23663204 (2026).
+*Zenodo* https://doi.org/10.5281/zenodo.23666227 (2026).

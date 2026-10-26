@@ -18,7 +18,7 @@ D, DER, DISC = "DART", "derived", "DART_DISCLOSED"
 #: Keys and codes that look numeric but must be read as text: leading zeros
 #: matter (corp_code 00100939) and receipt numbers exceed float precision.
 #: `code/read_kobep.py` applies the same list.
-IDENTIFIERS = {"corp_code", "rcept_no", "entry_rcept_no", "stock_code", "ksic_code",
+IDENTIFIERS = {"corp_code", "rcept_no", "entry_rcept_no", "superseded_by", "stock_code", "ksic_code",
                "party_id", "id_value", "reporter_id", "event_id"}
 CRP_TP = ("I domestic corporation; K financial institution; Y pension fund or "
           "professional investor; A investment company etc.; N other organisation "
@@ -70,6 +70,10 @@ LABELS = {
   "form_kind": ("standard or short form", "", D, ""),
   "is_amendment": ("1 if the filing text marks itself an amendment", "0/1", D,
                    "values are read from the post-amendment tables (ACLASS=EXTRACTION)"),
+  "superseded_by": ("rcept_no of the later amendment that replaces this filing", "rcept_no", DER,
+                    "set: same reporter_id, corp_code and obligation_date; every filing received "
+                    "before the set's latest amendment points to it. Before summing quantities or "
+                    "amounts, drop rows with superseded_by filled (v1.1)"),
   "obligation_date": ("Date the reporting duty arose (RPT_RSP_DT)", "date", D, ""),
   "base_date": ("As-of date of the reported holding (RPT_REF_DT)", "date", D, ""),
   "prev_report_date": ("Date of the filer's previous report", "date", D, ""),
@@ -81,9 +85,12 @@ LABELS = {
   "outsider_class": ("INSIDER / OUTSIDER / UNCERTAIN from the relation code", "code", DER,
                      "OUTSIDER: 13; INSIDER: 01, 03, 04, 10, 14, 15; UNCERTAIN: 02 (a >=10 % "
                      "holder may be an outside institution), 16, blank"),
-  "prev_ratio_stockequiv": ("Holding ratio in the previous report, stock-equivalent basis", "%", D, ""),
+  "prev_ratio_stockequiv": ("Holding ratio in the previous report, stock-equivalent basis", "%", D,
+                            "filer and related parties combined, as filed"),
   "curr_ratio_stockequiv": ("Holding ratio in this report, stock-equivalent basis", "%", D,
-                            "the 5 % threshold is defined on this basis"),
+                            "filer and related parties combined, as filed (SUM_TMT_RT); not recomputed "
+                            "after natural-person rows were removed, so it can include related natural "
+                            "persons' shares; the 5 % threshold is defined on this basis"),
   "prev_ratio_voting": ("Previous holding ratio, voting-share basis", "%", D, "form 4.2+"),
   "curr_ratio_voting": ("Current holding ratio, voting-share basis", "%", D, "form 4.2+"),
   "report_type_code": ("1 new, 2 change in holdings, 3 change in terms, 4 both", "code", D, ""),
@@ -326,7 +333,7 @@ LABELS["kobep_missing_reasons.csv"] = MISSING
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    ap.add_argument("--release", default=r"C:\KOBEP\release\KOBEP-Core_v1.0")
+    ap.add_argument("--release", default=r"C:\KOBEP\release\KOBEP-Core_v1.1")
     args = ap.parse_args()
     data = os.path.join(args.release, "data")
     rows, unlabelled = [], []

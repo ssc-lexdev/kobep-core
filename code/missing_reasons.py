@@ -67,6 +67,8 @@ def rules(name: str, df: pd.DataFrame) -> list[tuple[str, str, str, pd.Series]]:
              ((df["form_kind"] == "short") & (v < 3.9))
              | ((df["form_kind"] == "standard") & (v < 4.0))),
             ("holding_purpose_code", ND, "otherwise", T),
+            ("superseded_by", NA, "no later amendment by the same filer on the same issuer "
+             "with the same obligation_date", T),
             ("relation_to_issuer_code", ND, "filer entered '-'", T),
             ("curr_ratio_stockequiv", ND, "summary ratio cell blank", T),
             ("report_type_code", ND, "report type not marked", T),

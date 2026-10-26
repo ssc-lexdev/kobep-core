@@ -2,7 +2,7 @@
 """Tests of the KOBEP parser against the public fixtures and the released files.
 
 Run from the package:   python -B code/parser/test_parser.py
-               or with: python -B test_parser.py --release <KOBEP-Core_v1.0 folder>
+               or with: python -B test_parser.py --release <KOBEP-Core_v1.1 folder>
 (-B keeps Python from writing __pycache__ into the package, which would no
 longer match manifest/checksums.sha256.)
 
@@ -60,7 +60,7 @@ def section(title: str) -> None:
 def release_root(arg: str | None) -> str:
     """The package root: given, or two levels up from code/parser, or the
     default build location."""
-    for cand in (arg, os.path.dirname(os.path.dirname(HERE)), r"C:\KOBEP\release\KOBEP-Core_v1.0"):
+    for cand in (arg, os.path.dirname(os.path.dirname(HERE)), r"C:\KOBEP\release\KOBEP-Core_v1.1"):
         if cand and os.path.isdir(os.path.join(cand, "fixtures")) and os.path.isdir(os.path.join(cand, "data")):
             return cand
     raise SystemExit("release folder with fixtures/ and data/ not found; pass --release")

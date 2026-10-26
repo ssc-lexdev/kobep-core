@@ -28,7 +28,7 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     here = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     ap.add_argument("roots", nargs="*",
-                    default=[here, r"C:\KOBEP\release\KOBEP-Core_v1.0"])
+                    default=[here, r"C:\KOBEP\release\KOBEP-Core_v1.1"])
     args = ap.parse_args()
     hits = []
     for root in args.roots:

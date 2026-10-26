@@ -30,6 +30,7 @@ FOREIGN = [  # (child file, child column, parent file, parent column)
     ("kobep_filing_entity.csv", "reporter_id", "kobep_blockholder_entity.csv", "reporter_id"),
     ("kobep_position_ledger.csv", "rcept_no", "kobep_filing_index.csv", "rcept_no"),
     ("kobep_position_ledger.csv", "reporter_id", "kobep_blockholder_entity.csv", "reporter_id"),
+    ("kobep_position_ledger.csv", "superseded_by", "kobep_position_ledger.csv", "rcept_no"),
     ("kobep_transaction_ledger.csv", "rcept_no", "kobep_position_ledger.csv", "rcept_no"),
     ("kobep_transaction_ledger.csv", "security_ko", "kobep_security_class.csv", "security_ko"),
     ("kobep_terms_event.csv", "rcept_no", "kobep_filing_index.csv", "rcept_no"),
@@ -49,7 +50,7 @@ def read(path: str) -> list[dict]:
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    ap.add_argument("--release", default=r"C:\KOBEP\release\KOBEP-Core_v1.0")
+    ap.add_argument("--release", default=r"C:\KOBEP\release\KOBEP-Core_v1.1")
     args = ap.parse_args()
     data = os.path.join(args.release, "data")
     tables = {f: read(os.path.join(data, f)) for f in PRIMARY}

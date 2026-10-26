@@ -182,11 +182,11 @@ kobep_firmyear_payout.csv,payout_ocf,total_payout / cfo,ratio,number,derived,821
 kobep_firmyear_payout.csv,div_assets,div_cash_total / assets,ratio,number,derived,8219,594,,
 kobep_firmyear_payout.csv,distributable_profit_ub,equity - issued_capital; upper bound of distributable profit,KRW,integer,derived,8219,1230,,Commercial Act art. 462(1)
 kobep_firmyear_payout.csv,payout_capacity_used_lb,total_payout / distributable_profit_ub; lower bound,ratio,number,derived,8219,1624,,
-kobep_missing_reasons.csv,file,Release file,,string,derived,134,0,,
-kobep_missing_reasons.csv,variable,Column,,string,derived,134,0,,
-kobep_missing_reasons.csv,reason_code,Why the cells are blank,code,string,derived,134,0,NA_CURRENCY_MISMATCH=1; NA_FORM_VERSION=5; NA_NOT_APPLICABLE=27; NA_NOT_COLLECTED=1; NA_NOT_DISCLOSED=67; NA_NO_PRIOR_YEAR=5; NA_RULE_UNDETERMINED=2; NA_SOURCE_CONFLICT=1; NA_UNDEFINED_RATIO=23; NA_WITHHELD_PERSONAL=2,"defined in the codebook, section 5"
-kobep_missing_reasons.csv,rule,Condition selecting the cells,text,string,derived,134,0,,
-kobep_missing_reasons.csv,n_cells,Blank cells covered by the rule,count,integer,derived,134,0,,
+kobep_missing_reasons.csv,file,Release file,,string,derived,135,0,,
+kobep_missing_reasons.csv,variable,Column,,string,derived,135,0,,
+kobep_missing_reasons.csv,reason_code,Why the cells are blank,code,string,derived,135,0,NA_CURRENCY_MISMATCH=1; NA_FORM_VERSION=5; NA_NOT_APPLICABLE=28; NA_NOT_COLLECTED=1; NA_NOT_DISCLOSED=67; NA_NO_PRIOR_YEAR=5; NA_RULE_UNDETERMINED=2; NA_SOURCE_CONFLICT=1; NA_UNDEFINED_RATIO=23; NA_WITHHELD_PERSONAL=2,"defined in the codebook, section 5"
+kobep_missing_reasons.csv,rule,Condition selecting the cells,text,string,derived,135,0,,
+kobep_missing_reasons.csv,n_cells,Blank cells covered by the rule,count,integer,derived,135,0,,
 kobep_position_ledger.csv,rcept_no,DART receipt number of the 5 % filing,,string,DART,33238,0,,opens the original at dart.fss.or.kr/dsaf001/main.do?rcpNo=
 kobep_position_ledger.csv,reporter_id,KOBEP blockholder entity identifier,,string,derived,33238,0,,see blockholder_entity
 kobep_position_ledger.csv,corp_code,DART issuer identifier (8 digits),,string,DART,33238,0,,join key across files
@@ -195,14 +195,15 @@ kobep_position_ledger.csv,in_core_window,1 if received 2016-01-01 to 2025-12-31,
 kobep_position_ledger.csv,form_version,DART form version (FORMULA-VERSION),,number,DART,33238,0,,2.2-6.0
 kobep_position_ledger.csv,form_kind,standard or short form,,string,DART,33238,0,,
 kobep_position_ledger.csv,is_amendment,1 if the filing text marks itself an amendment,0/1,integer,DART,33238,0,0=32483; 1=755,values are read from the post-amendment tables (ACLASS=EXTRACTION)
+kobep_position_ledger.csv,superseded_by,rcept_no of the later amendment that replaces this filing,rcept_no,string,derived,33238,32515,,"set: same reporter_id, corp_code and obligation_date; every filing received before the set's latest amendment points to it. Before summing quantities or amounts, drop rows with superseded_by filled (v1.1)"
 kobep_position_ledger.csv,obligation_date,Date the reporting duty arose (RPT_RSP_DT),date,string,DART,33238,0,,
 kobep_position_ledger.csv,base_date,As-of date of the reported holding (RPT_REF_DT),date,string,DART,33238,0,,
 kobep_position_ledger.csv,prev_report_date,Date of the filer's previous report,date,string,DART,33238,3897,,
 kobep_position_ledger.csv,filer_type_code,Filer type code (CRP_TP),code,string,DART,33238,0,A=20; C=204; I=14555; K=7921; N=614; O=3214; U=12; W=52; Y=6646,I domestic corporation; K financial institution; Y pension fund or professional investor; A investment company etc.; N other organisation (domestic); U other organisation (foreign); O foreign corporation; C civil-code partnership; W statutory partnership
 kobep_position_ledger.csv,relation_to_issuer_code,Filer's relation to the issuer (FLT_CRP_RLT),code,integer,DART,33238,710,01=7; 02=1706; 03=48; 10=11819; 13=16154; 14=474; 15=1; 16=2319,"01 officer, 02 major shareholder, 03 de facto controller, 04 unregistered officer, 10 largest shareholder, 13 shareholder, 14 affiliate, 15 affiliate officer, 16 other"
 kobep_position_ledger.csv,outsider_class,INSIDER / OUTSIDER / UNCERTAIN from the relation code,code,string,derived,33238,0,INSIDER=12349; OUTSIDER=16154; UNCERTAIN=4735,"OUTSIDER: 13; INSIDER: 01, 03, 04, 10, 14, 15; UNCERTAIN: 02 (a >=10 % holder may be an outside institution), 16, blank"
-kobep_position_ledger.csv,prev_ratio_stockequiv,"Holding ratio in the previous report, stock-equivalent basis",%,number,DART,33238,4232,,
-kobep_position_ledger.csv,curr_ratio_stockequiv,"Holding ratio in this report, stock-equivalent basis",%,number,DART,33238,16,,the 5 % threshold is defined on this basis
+kobep_position_ledger.csv,prev_ratio_stockequiv,"Holding ratio in the previous report, stock-equivalent basis",%,number,DART,33238,4232,,"filer and related parties combined, as filed"
+kobep_position_ledger.csv,curr_ratio_stockequiv,"Holding ratio in this report, stock-equivalent basis",%,number,DART,33238,16,,"filer and related parties combined, as filed (SUM_TMT_RT); not recomputed after natural-person rows were removed, so it can include related natural persons' shares; the 5 % threshold is defined on this basis"
 kobep_position_ledger.csv,prev_ratio_voting,"Previous holding ratio, voting-share basis",%,number,DART,33238,32532,,form 4.2+
 kobep_position_ledger.csv,curr_ratio_voting,"Current holding ratio, voting-share basis",%,number,DART,33238,32436,,form 4.2+
 kobep_position_ledger.csv,report_type_code,"1 new, 2 change in holdings, 3 change in terms, 4 both",code,integer,DART,33238,1,1=4717; 2=21054; 3=5047; 4=2419,

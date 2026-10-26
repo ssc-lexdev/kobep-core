@@ -1,4 +1,4 @@
-# KOBEP-Core codebook, version 1.0
+# KOBEP-Core codebook, version 1.1
 
 ## 1. What the dataset is
 
@@ -52,8 +52,12 @@ a commercial database or from the exchange.
   event-level indicators (for example, outside entries by holding purpose or
   acquisition route) can be built from these files. It is an example of use,
   not part of the data definition.
-- **No ownership totals.** With natural persons and the ownership summary
-  excluded, sums over the position ledger are legal-person holdings only.
+- **No ownership totals.** The ratios in the position ledger are the
+  combined ratios of the filer and its related parties as filed. Natural-person
+  rows were removed but the ratios were not recomputed, so they can include
+  shares of related natural persons; summed across filings, holders or groups
+  they count overlapping holdings more than once and do not measure ownership
+  concentration. No ownership summary is released.
 
 ## 3. How the files were built
 
@@ -110,7 +114,13 @@ UNCERTAIN is not guessed.
 **Amendments.** `is_amendment` marks a filing that is itself an amendment
 (index: the title carries 정정; position ledger: the filing text says so). An
 original that was later corrected is 0. Values are read from the
-post-amendment tables (`ACLASS="EXTRACTION"`).
+post-amendment tables (`ACLASS="EXTRACTION"`). The ledgers keep every filing as
+received, so an original and its amendment both appear. Since v1.1,
+`superseded_by` gives, for every filing received before the latest amendment in
+its set (same `reporter_id`, `corp_code` and `obligation_date`), the receipt
+number of that amendment; drop rows with `superseded_by` filled before summing
+quantities or amounts. An amendment that changes the obligation date is not
+matched.
 
 **Acquisition flags.** `market_purchase` and `involuntary` are computed from the
 released transaction rows of the filing (method lists in the dictionary).
@@ -361,13 +371,13 @@ depositary receipts, whose filings do not state the unit.
 | `distributable_profit_ub` | equity - issued_capital; upper bound of distributable profit | KRW | derived | Commercial Act art. 462(1) |
 | `payout_capacity_used_lb` | total_payout / distributable_profit_ub; lower bound | ratio | derived |  |
 
-### `kobep_missing_reasons.csv` - 134 rows
+### `kobep_missing_reasons.csv` - 135 rows
 
 | Variable | Label | Unit | Source | Note |
 |---|---|---|---|---|
 | `file` | Release file |  | derived |  |
 | `variable` | Column |  | derived |  |
-| `reason_code` | Why the cells are blank | code | derived | defined in the codebook, section 5 Codes: NA_CURRENCY_MISMATCH=1; NA_FORM_VERSION=5; NA_NOT_APPLICABLE=27; NA_NOT_COLLECTED=1; NA_NOT_DISCLOSED=67; NA_NO_PRIOR_YEAR=5; NA_RULE_UNDETERMINED=2; NA_SOURCE_CONFLICT=1; NA_UNDEFINED_RATIO=23; NA_WITHHELD_PERSONAL=2 |
+| `reason_code` | Why the cells are blank | code | derived | defined in the codebook, section 5 Codes: NA_CURRENCY_MISMATCH=1; NA_FORM_VERSION=5; NA_NOT_APPLICABLE=28; NA_NOT_COLLECTED=1; NA_NOT_DISCLOSED=67; NA_NO_PRIOR_YEAR=5; NA_RULE_UNDETERMINED=2; NA_SOURCE_CONFLICT=1; NA_UNDEFINED_RATIO=23; NA_WITHHELD_PERSONAL=2 |
 | `rule` | Condition selecting the cells | text | derived |  |
 | `n_cells` | Blank cells covered by the rule | count | derived |  |
 
@@ -383,14 +393,15 @@ depositary receipts, whose filings do not state the unit.
 | `form_version` | DART form version (FORMULA-VERSION) |  | DART | 2.2-6.0 |
 | `form_kind` | standard or short form |  | DART |  |
 | `is_amendment` | 1 if the filing text marks itself an amendment | 0/1 | DART | values are read from the post-amendment tables (ACLASS=EXTRACTION) Codes: 0=32483; 1=755 |
+| `superseded_by` | rcept_no of the later amendment that replaces this filing | rcept_no | derived | set: same reporter_id, corp_code and obligation_date; every filing received before the set's latest amendment points to it. Before summing quantities or amounts, drop rows with superseded_by filled (v1.1) |
 | `obligation_date` | Date the reporting duty arose (RPT_RSP_DT) | date | DART |  |
 | `base_date` | As-of date of the reported holding (RPT_REF_DT) | date | DART |  |
 | `prev_report_date` | Date of the filer's previous report | date | DART |  |
 | `filer_type_code` | Filer type code (CRP_TP) | code | DART | I domestic corporation; K financial institution; Y pension fund or professional investor; A investment company etc.; N other organisation (domestic); U other organisation (foreign); O foreign corporation; C civil-code partnership; W statutory partnership Codes: A=20; C=204; I=14555; K=7921; N=614; O=3214; U=12; W=52; Y=6646 |
 | `relation_to_issuer_code` | Filer's relation to the issuer (FLT_CRP_RLT) | code | DART | 01 officer, 02 major shareholder, 03 de facto controller, 04 unregistered officer, 10 largest shareholder, 13 shareholder, 14 affiliate, 15 affiliate officer, 16 other Codes: 01=7; 02=1706; 03=48; 10=11819; 13=16154; 14=474; 15=1; 16=2319 |
 | `outsider_class` | INSIDER / OUTSIDER / UNCERTAIN from the relation code | code | derived | OUTSIDER: 13; INSIDER: 01, 03, 04, 10, 14, 15; UNCERTAIN: 02 (a >=10 % holder may be an outside institution), 16, blank Codes: INSIDER=12349; OUTSIDER=16154; UNCERTAIN=4735 |
-| `prev_ratio_stockequiv` | Holding ratio in the previous report, stock-equivalent basis | % | DART |  |
-| `curr_ratio_stockequiv` | Holding ratio in this report, stock-equivalent basis | % | DART | the 5 % threshold is defined on this basis |
+| `prev_ratio_stockequiv` | Holding ratio in the previous report, stock-equivalent basis | % | DART | filer and related parties combined, as filed |
+| `curr_ratio_stockequiv` | Holding ratio in this report, stock-equivalent basis | % | DART | filer and related parties combined, as filed (SUM_TMT_RT); not recomputed after natural-person rows were removed, so it can include related natural persons' shares; the 5 % threshold is defined on this basis |
 | `prev_ratio_voting` | Previous holding ratio, voting-share basis | % | DART | form 4.2+ |
 | `curr_ratio_voting` | Current holding ratio, voting-share basis | % | DART | form 4.2+ |
 | `report_type_code` | 1 new, 2 change in holdings, 3 change in terms, 4 both | code | DART | Codes: 1=4717; 2=21054; 3=5047; 4=2419 |
@@ -596,6 +607,7 @@ Every blank cell is covered by one rule below (`kobep_missing_reasons.csv`).
 | kobep_position_ledger.csv | `curr_ratio_voting` | NA_NOT_DISCLOSED | otherwise | 5,411 |
 | kobep_position_ledger.csv | `holding_purpose_code` | NA_FORM_VERSION | short form < 3.9 or standard form < 4.0 | 23,244 |
 | kobep_position_ledger.csv | `holding_purpose_code` | NA_NOT_DISCLOSED | otherwise | 1 |
+| kobep_position_ledger.csv | `superseded_by` | NA_NOT_APPLICABLE | no later amendment by the same filer on the same issuer with the same obligation_date | 32,515 |
 | kobep_position_ledger.csv | `relation_to_issuer_code` | NA_NOT_DISCLOSED | filer entered '-' | 710 |
 | kobep_position_ledger.csv | `curr_ratio_stockequiv` | NA_NOT_DISCLOSED | summary ratio cell blank | 16 |
 | kobep_position_ledger.csv | `report_type_code` | NA_NOT_DISCLOSED | report type not marked | 1 |
@@ -645,10 +657,11 @@ rows) before the scores below were taken.
 | Standard-form cover vs coded purpose (FORM_COVER basis) | released standard-form filings with a filed code whose cover names the influence purpose | 4,114 | 99.34 % coded 01 | the cover is used only when no text rule fires |
 | Carried-forward purpose (PRIOR_FILING basis) | released standard-form filings with a filed code and an earlier classified filing by the same holder on the issuer | 4,027 | 99.35 % match the earlier category; 94.85 % of 97 exit filings | used only for filings still unclassified after the text rules and the cover |
 | Changed derived purposes vs originals | all released filings whose derived purpose changed with the 2026-10-23 rules (171 by text rules or cover, 97 carried forward) | 268 | 0 errors | human check of every filing against its original |
+| Payout amounts vs annual reports | 40 firm-years, fixed seed (20261026), stratified by repurchase source, blank reason, trust purchases and inferred-zero dividends | 120 | 0 errors in 120 fields (cash dividend, repurchase amount, recorded source) | human check against annual and execution reports; code/validation/make_payout_check.py (v1.1) |
 | Buyback amount vs an exchange-price estimate | statement and execution-report bases, 2016-2025 | 1,116 | internal plausibility check only | the estimate uses exchange prices and is not released, nor are its ratios |
 | Spot-check design | 460 sampled rows (160 filings x 9, 200 transactions x 6, 100 events x 6 fields), fixed seed, stratified | 3,240 | every field judged by a human reviewer against the original filing | a language model screened every field first and its flags set the order of review: the 68 flagged rows first, then the 392 passed rows (358 of them blind to the model); a derived purpose left blank although its text can be classified counts as an error |
-| Spot-check: build examined vs original | all 3,240 fields | 3,240 | 7 errors (0.22 %; Wilson 95 % upper bound 0.45 %), all blank derived purposes; corrected | a price-parsing defect found in a first pass was corrected before this build (30,960 price cells in the internal ledger, 2.7 % of its 1,128,021 priced cells) |
-| Spot-check: released values vs original | all 3,240 fields; the 12 fields changed after the audit re-judged | 3,240 | 0 errors; Wilson 95 % upper bound 0.12 % per field, 0.83 % per row | 0 of 3,240 fields and 0 of 460 rows wrong |
+| Spot-check: defects found | all 3,240 fields | 3,240 | decimal prices read as integers (6 of 200 sampled prices flagged by the model screen of the first build); 7 blank derived purposes in 160 sampled filings | both corrected throughout the release before deposit: 30,960 price cells in the internal ledger (2.7 % of 1,128,021 priced cells); purpose rules extended, 268 released filings changed and checked |
+| Spot-check: released values re-checked | all 3,240 fields; the 12 fields changed after the audit re-judged | 3,240 | 0 errors in the sample | the same sample guided the corrections, so this confirms them; it is not an independent estimate of the error rate of unsampled records |
 | Language-model screens (screening tools only) | all 3,240 human-judged fields | 3,240 | gpt-5.5 98.9 % agree (34 false alarms) and claude-opus-5-5 99.3 % (21) as recorded; 99.1 % (28) and 99.5 % (16) under the blank-purpose criterion; 0 errors passed by either | no released value depends on a model verdict |
 | Event dates within the ledger window | all release events | 3,267 | 0 dates after 2025-12-31 | extract_release.py assertion |
 | Package integrity | every file in the package | 0 | no stray files; all checksums match | audit/audit_package.py |

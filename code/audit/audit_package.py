@@ -55,7 +55,7 @@ def walk(root: str) -> tuple[list[str], list[str]]:
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    ap.add_argument("--release", default=r"C:\KOBEP\release\KOBEP-Core_v1.0")
+    ap.add_argument("--release", default=r"C:\KOBEP\release\KOBEP-Core_v1.1")
     ap.add_argument("--write", action="store_true", help="rewrite the checksum file first")
     args = ap.parse_args()
     root = args.release

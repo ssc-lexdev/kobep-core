@@ -63,7 +63,7 @@ def norm(s: str) -> str:
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    ap.add_argument("--release", default=r"C:\KOBEP\release\KOBEP-Core_v1.0")
+    ap.add_argument("--release", default=r"C:\KOBEP\release\KOBEP-Core_v1.1")
     ap.add_argument("--ledger", default=r"C:\KOBEP\ledger.db")
     args = ap.parse_args()
     con = sqlite3.connect(f"file:{args.ledger}?mode=ro", uri=True)
